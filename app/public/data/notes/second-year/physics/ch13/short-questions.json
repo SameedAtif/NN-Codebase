@@ -1,0 +1,56 @@
+[
+{
+	"no": "13.1",
+	"statement": "A potential difference is applied across the ends of a copper wire. What is the effect on the drift velocity of free electrons by<ol><li>increasing the potential difference?</li><li>decreasing the length and the temperature of the wire?</li></ol>",
+	"answer": "<ol><li>increasing the potential difference: As we know that the drift velocity of free electrons is directly proportional to the potential difference i.e. V<sub>d</sub> &propto; E. Therefore, if potential difference is increased then the drift velocity of free electrons is also increased.</li><li>decreasing the length and the temperature of the wire: As the resistance depends on temperature and length of the conductor, so on decreasing the temprature and length of the conductors, the resistance decreases and, therefore, drift velocity increases.</li></ol>",
+	"imp": false
+},
+{
+	"no": "13.2",
+	"statement": "Do bends in a wire affect its electrical resistance? Explain.",
+	"answer": "The resistance of a conductor of length L and cross-sectional area A is given by,<ul><li>R = &rho;L/A</li></ul>Where &rho; is the resistivity whose value depends on the nature of the conductor. If length L and cross-sectional area A of the wire remain same after bending, then its electrical resistance will remain same.",
+	"imp": true
+},
+{
+	"no": "13.3",
+	"statement": "What are the resistances of the resistors given in the figures A and B? What is the tolerance of each? Explain what is meant by tolerance?",
+	"answer": "<strong>Tolerance</strong>: Tolerance means the possible variation from the marked value on a resistor. For example, a 1500 &ohm; with a tolerance of &PlusMinus;5% will have an actual value somwhere between 1425 &ohm; to 1575 &ohm;.<p><strong>Figure A</strong>:<ol><li>1<sup>st</sup> band is brown = 1</li><li>2<sup>nd</sup> band is green = 5</li><li>3<sup>rd</sup> band is red = no. of zeros = 00</li><li>4<sup>th</sup> band is gold = tolerance = &PlusMinus;5%</li><li>So, Resistance = 1500 &PlusMinus; 5%</li></ol></p><p><strong>Figure B</strong>:<ol><li>1<sup>st</sup> band is yellow = 4</li><li>2<sup>nd</sup> band is white = 9</li><li>3<sup>rd</sup> band is orange = no. of zeros = 000</li><li>4<sup>th</sup> band is silver = tolerance = &PlusMinus;10%</li><li>So, Resistance = 49000 &PlusMinus; 10%</li></ol></p>",
+	"imp": false
+},
+{
+	"no": "13.4",
+	"statement": "Why does the resistance of a conductor rise with temperature?",
+	"answer": "The resistance offered by a conductor is due to the collisions of electrons with the atoms of lattice. As temprature rises, K.E. of the atoms increases and, hence, more collisions with the electrons occur, thereby increasing the resistance of the conductor.",
+	"imp": true
+},
+{
+	"no": "13.5",
+	"statement": "What are the difficulties in testing whether the filament of a lighted bulb obeys Ohm's law?",
+	"answer": "According to ohm's law, current is directly proportional to applied potential difference provided that the temprature of conductor must remain constant. Therefore, after some time has passed while current is flowing through the lighted bulb, the temprature rises and hence Ohm's law becomes invalid.",
+	"imp": true
+},
+{
+	"no": "13.6",
+	"statement": "Is the filament resistance lower or higher in a 500 W, 220 V light blub than in a 100 W, 220 V blub?",
+	"answer": "As P = V<sup>2</sup>/R &Implies; R = V<sup>2</sup>/P,<ol><li>R<sub>1</sub> = 220<sup>2</sup>/500 = 96.8 &ohm;</li><li>R<sub>2</sub> = 220<sup>2</sup>/100 = 484 &ohm;</li></ol>So the resistance of 500 W bulb is less than the resistance of 100 W bulb. But 500 W bulb will draw more current.",
+	"imp": false
+},
+{
+	"no": "13.7",
+	"statement": "Describe a circuit which will give a continuously varying potential.",
+	"answer": "For continuously varying potential, following circuits can be used:<ul><li>Rheostat as potential divider</li><li>Potentiometer as potential divider</li></ul><strong>Rheostat as potential divider: </strong><p>Consider a Rheostat R with ends A and B. Potential difference V is applied across A and B. The current I passing through R is, I = V/R. The potential difference between B and, third terminal of Rheostat, C is:<ul><li>V<sub>BC</sub> = Ir</li><li>putting values of I,</li><li>V<sub>BC</sub> = (r/R)V</li><li>Where R = resistance of wire AB, and r  = resistance of portion BC of the same wire.</li></ul>The circuit can provide varying potential difference ranging from 0 to maximum potential difference of battery, depending on position of sliding contact C.</p>",
+	"imp": true
+},
+{
+	"no": "13.8",
+	"statement": "Explain why the terminal potential difference of a battery decreases when the current drawn from it is increased?",
+	"answer": "As the relation between terminal potential difference and emf is:<ul><li>V<sub>t</sub> = E - Ir</li></ul>Here r is the internal resistance of the cell. So, when current I is large, the factor Ir becomes large and V<sub>t</sub> becomes small. Therefore, the P.D. of a battery decreases when more current is drawn from it.",
+	"imp": false
+},
+{
+	"no": "13.9",
+	"statement": "What is Wheatstone bridge? How can it be used to determine an unknown resistance?",
+	"answer": "Wheatstone bridge is an electrical circuit which is used to find unknown resistance of a wire. Whenever bridge is balanced i.e. galvanometer shows no deflection then following condition is satisfied:<ul><li>R<sub>1</sub>/R<sub>2</sub> = R<sub>3</sub>/R<sub>4</sub></li></ul>If in the Wheatstone bridge circuit R<sub>1</sub>, R<sub>2</sub> and R<sub>3</sub> are known and R<sub>4</sub> is unknown, then we can find R<sub>4</sub>:<ul><li>R<sub>4</sub> = R<sub>2</sub>R<sub>3</sub>/R<sub>1</sub></li></ul>",
+	"imp": false
+}
+]

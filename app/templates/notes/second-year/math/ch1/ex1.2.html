@@ -1,0 +1,11 @@
+<section>
+
+	<?php
+		$dir = "images/notes/second-year/math/ch1/ex1.2/";
+		$files = array_diff(scandir($dir), array('..', '.'));
+		foreach ($files as $file) {
+			echo "<img src='$dir$file' />";
+		}
+	?>
+
+</section>

@@ -1,0 +1,482 @@
+[
+{
+	"statement": "The largest country with respect to area is",
+	"statement_img": false,
+	"options": [
+		"Canada",
+		"Russia",
+		"India",
+		"China"
+	],
+	"answer": 1,
+	"explanation": "Russia is the largest country with area of 17,075,200 sq. km, while Canada is the second largest."
+},
+{
+	"statement": "Microsoft, the multinational technology company, was co-founded by who?",
+	"statement_img": false,
+	"options": [
+		"Bill Gates",
+		"Steve Ballmer",
+		"Paul Henry",
+		"Steve Jobs"
+	],
+	"answer": 0,
+	"explanation": "Microsoft was founded by Paul Allen and Bill Gates on April 4, 1975."
+},
+{
+	"statement": "Newton's first law is also known as:",
+	"statement_img": false,
+	"options": [
+		"Law of Equivalent Exchange",
+		"Law of Mass Action",
+		"Law of Conservation",
+		"Law of Inertia"
+	],
+	"answer": 3,
+	"explanation": "Law of Inertia states that: <em>An object at rest stays at rest and an object in motion stays in motion, unless acted upon by an unbalanced force</em>."
+},
+{
+	"statement": "Nitrous oxide, commonly used in racing cars, is represented by:",
+	"statement_img": false,
+	"options": [
+		"N",
+		"NO",
+		"NO<sub>2</sub>",
+		"N<sub>2</sub>O"
+	],
+	"answer": 3,
+	"explanation": "Nitrous oxide is also known as \"Nitro\" and NOS."
+},
+{
+	"statement": "Information in computers is stored as:",
+	"statement_img": false,
+	"options": [
+		"Machine language",
+		"Binary",
+		"English",
+		"Symbols"
+	],
+	"answer": 1,
+	"explanation": "All information in computers is stored as a combination of 0s and 1s, called Binary."
+},
+{
+	"statement": "Kathmandu is the capital of which country?",
+	"statement_img": false,
+	"options": [
+		"Nepal",
+		"Kuwait",
+		"Sri Lanka",
+		"Bangladesh"
+	],
+	"answer": 0,
+	"explanation": null
+},
+{
+	"statement": "Which one of these is not a metal?",
+	"statement_img": false,
+	"options": [
+		"Aluminium",
+		"Manganese",
+		"Silica",
+		"Nickel"
+	],
+	"answer": 2,
+	"explanation": "Sillica is a non-metal."
+},
+{
+	"statement": "The second most populous country is",
+	"statement_img": false,
+	"options": [
+		"Russia",
+		"Canada",
+		"China",
+		"India"
+	],
+	"answer": 3,
+	"explanation": "In 2013, India had a population of 1.252 billion."
+},
+{
+	"statement": "Which branch of mathematics deals with angles, triangles and functions such as sine, cosine?",
+	"statement_img": false,
+	"options": [
+		"Geometry",
+		"Trigonometry",
+		"Algebra",
+		"Calculus"
+	],
+	"answer": 1,
+	"explanation": "Trigonometry is the study of angles and triangles."
+},
+{
+	"statement": "What is the capital of Libya?",
+	"statement_img": false,
+	"options": [
+		"Yafran",
+		"Tehran",
+		"Tripoli",
+		"Abu Dhabi"
+	],
+	"answer": 2,
+	"explanation": "Tripoli, the capital of Libya, has a population of about  1.1 million."
+},
+{
+	"statement": "Napoleon Bonaparte, the famous French military leader, was defeated at",
+	"statement_img": false,
+	"options": [
+		"London",
+		"Waterloo",
+		"Gettysburg",
+		"Liverpool"
+	],
+	"answer": 1,
+	"explanation": "Napoleon Bonaparte was defeated at Waterloo by two allied armies."
+},
+{
+	"statement": "The percentage of Nitrogen in air is",
+	"statement_img": false,
+	"options": [
+		"70%",
+		"74%",
+		"78%",
+		"80%"
+	],
+	"answer": 2,
+	"explanation": "The percentage of Nitogen in air is approximately 78%."
+},
+{
+	"statement": "The Greek god of war is",
+	"statement_img": false,
+	"options": [
+		"Ares",
+		"Zeus",
+		"Mars",
+		"Thor"
+	],
+	"answer": 0,
+	"explanation": "Ares is the Greek god of war, while Mars is the Roman god of war."
+},
+{
+	"statement": "Who wrote the series \"Harry Potter\"?",
+	"statement_img": false,
+	"options": [
+		"Benjamin Franklin",
+		"Mark Twain",
+		"Taylor Swift",
+		"J. K. Rowling"
+	],
+	"answer": 3,
+	"explanation": "Joanne \"Jo\" Rowling, also known as J. K. Rowling and Robert Galbraith, is a British author famous for the Harry Potter novel/series."
+},
+{
+	"statement": "Stomata are found on which part of a plant?",
+	"statement_img": false,
+	"options": [
+		"Trunk",
+		"Leaves",
+		"Branches",
+		"Roots"
+	],
+	"answer": 1,
+	"explanation": "Stomate (plural stomata) is a tiny opening or pore that is used for gas exchange. They are mostly found on the under-surface of plant leaves."
+},
+{
+	"statement": "<strong>LCD</strong> stands for",
+	"statement_img": false,
+	"options": [
+		"Liquid Clear Display",
+		"Liquid Color Display",
+		"Light Crystal Display",
+		"Liquid Crystal Display"
+	],
+	"answer": 3,
+	"explanation": "A <strong>L</strong>iquid-<strong>C</strong>rystal <strong>D</strong>isplay uses the light-modulating properties of liquid crystals."
+},
+{
+	"statement": "Paper is made from",
+	"statement_img": false,
+	"options": [
+		"Grass",
+		"Carbon",
+		"Wood",
+		"Stones"
+	],
+	"answer": 2,
+	"explanation": "Wood from trees is converted to fiber to make paper."
+},
+{
+	"statement": "The longest bone in the human body is",
+	"statement_img": false,
+	"options": [
+		"Back bone",
+		"Tibia",
+		"Femur",
+		"Nasal bone"
+	],
+	"answer": 2,
+	"explanation": "The femur or thigh bone, is the longest bone in the human body."
+},
+{
+	"statement": "Who brought the Hindu religion to India?",
+	"statement_img": false,
+	"options": [
+		"Aryans",
+		"Barbarians",
+		"Buddhists",
+		"Africans"
+	],
+	"answer": 0,
+	"explanation": "The Aryans brought Hindu religious thought to India."
+},
+{
+	"statement": "The official language of Brazil is",
+	"statement_img": false,
+	"options": [
+		"Brazilian",
+		"Portuguese",
+		"Spanish",
+		"English"
+	],
+	"answer": 1,
+	"explanation": "The official language is Portuguese, while in some parts it is a mixture of Portuguese and Spanish."
+},
+{
+	"statement": "A . (B + C) = AB + AC is which property of real number?",
+	"statement_img": false,
+	"options": [
+		"Associative property",
+		"Reflexive property",
+		"Trichotomy property",
+		"Distributive property"
+	],
+	"answer": 3,
+	"explanation": "Distributive property holds true for all real number. For example, 2(3 + 4) = (2 . 3) + (2 . 4) = 14."
+},
+{
+	"statement": "The Alhambra palace is located in",
+	"statement_img": false,
+	"options": [
+		"Saudia Arabia",
+		"Egypt",
+		"Spain",
+		"Norway"
+	],
+	"answer": 2,
+	"explanation": "The Alhambra (originally Qalat Al-Hamra) is a palace located in Granada, Andalusia, Spain."
+},
+{
+	"statement": "Which one of these languages has the highest number of native speakers?",
+	"statement_img": false,
+	"options": [
+		"Arabic",
+		"English",
+		"Chinese/Mandarin",
+		"Spanish"
+	],
+	"answer": 2,
+	"explanation": "Chinese (Mandarin, to be more precise) has more than a billion native speakers."
+},
+{
+	"statement": "With reference to Electronics/Computers, <strong>CMOS</strong> stands for",
+	"statement_img": false,
+	"options": [
+		"Complimentary Metal-Oxide-Semiconductor",
+		"Compulsory Metal-Oriented-Semiconductor",
+		"Compulsory Metal-Oriented-Server",
+		"Compulsory Middle-Oriented-Server"
+	],
+	"answer": 0,
+	"explanation": "CMOS is the small amount of memory on a computer motherboard that stores the BIOS settings."
+},
+{
+	"statement": "Which one of these was a US president?",
+	"statement_img": false,
+	"options": [
+		"Michael Jordan",
+		"John F. Kennedy",
+		"Mike Bush",
+		"George Lincoln"
+	],
+	"answer": 1,
+	"explanation": "John F. Kennedy was the 35<sup>th</sub> president of USA."
+},
+{
+	"statement": "Which one of these is not a Shakespearean poem?",
+	"statement_img": false,
+	"options": [
+		"A Fairy Song",
+		"Paradise Lost",
+		"Fear No More",
+		"The Phoenix and the Turtle"
+	],
+	"answer": 1,
+	"explanation": "Paradise Lost is an epic poem by the 17th-century English poet John Milton (1608–1674)."
+},
+{
+	"statement": "One horsepower is equivalent to approximately",
+	"statement_img": false,
+	"options": [
+		"1000 Watts",
+		"500 Watts",
+		"750 Watts",
+		"10 kWatts"
+	],
+	"answer": 2,
+	"explanation": "The powers of engines are usually measured in the imperial unit, horsepower."
+},
+{
+	"statement": "<em>Journey to the West</em> is a/an",
+	"statement_img": false,
+	"options": [
+		"American novel",
+		"Indian novel",
+		"Russian novel",
+		"Chinese novel"
+	],
+	"answer": 3,
+	"explanation": "Journey to the West is a Chinese novel published in the 16th century during the Ming dynasty."
+},
+{
+	"statement": "Nelson Mandela was an anti-racism revolutionary, politician, and philanthropist, who also served as President of",
+	"statement_img": false,
+	"options": [
+		"South Africa",
+		"Egypt",
+		"Brazil",
+		"New Zealand"
+	],
+	"answer": 0,
+	"explanation": "Nelson Mandela served as the President of South Africa from 1994 to 1999."
+},
+{
+	"statement": "How many cents are there in an Australian dollar (AUD)?",
+	"statement_img": false,
+	"options": [
+		"1000",
+		"500",
+		"100",
+		"10"
+	],
+	"answer": 2,
+	"explanation": "Same as the US dollar (USD)."
+},
+{
+	"statement": "The exact time taken by the Earth for a single rotation on its own axis is",
+	"statement_img": false,
+	"options": [
+		"24 hours",
+		"24 hours and 35 seconds",
+		"23 hours 55 minutes and 7.23 seconds",
+		"23 hours 56 minutes and 4.09 seconds"
+	],
+	"answer": 3,
+	"explanation": "A <strong>solar day</strong> is nearly 24 hours. A <strong>sidereal</strong> day is 23 hours 56 minutes and 4.09 seconds long. Sidereal day is more accurate as a solar day varies over the course of a year."
+},
+{
+	"statement": "Which countries were involved in the Hundred Years' War?",
+	"statement_img": false,
+	"options": [
+		"Turkey and Greece",
+		"England and France",
+		"Palestine and Israel",
+		"Japan and China"
+	],
+	"answer": 1,
+	"explanation": "The Hundred Years' War is the modern term for a series of conflicts waged from 1337 to 1453 by the House of Plantagenet, rulers of the Kingdom of England, against the House of Valois, rulers of the Kingdom of France."
+},
+{
+	"statement": "Pablo Escobar is a famous",
+	"statement_img": false,
+	"options": [
+		"Scientist",
+		"Drug Lord",
+		"Musician",
+		"Pirate"
+	],
+	"answer": 1,
+	"explanation": "Pablo Emilio Escobar Gaviria was a Colombian drug lord and drug trafficker."
+},
+{
+	"statement": "Which one of these is not a programming language?",
+	"statement_img": false,
+	"options": [
+		"HTML",
+		"Python",
+		"C++",
+		"Java"
+	],
+	"answer": 0,
+	"explanation": "Although Python is also not a programming language, HTML is definitely not a programming language."
+},
+{
+	"statement": "Which country has a Maple leaf on its flag?",
+	"statement_img": false,
+	"options": [
+		"Qatar",
+		"Spain",
+		"Canada",
+		"Russia"
+	],
+	"answer": 2,
+	"explanation": "Canada is also called \"The Land of the Maple leaf\"."
+},
+{
+	"statement": "Operation Desert Storm was conducted by",
+	"statement_img": false,
+	"options": [
+		"British Army",
+		"Iraqi Army",
+		"Russian Army",
+		"U.S. Army"
+	],
+	"answer": 3,
+	"explanation": "During the Gulf war, the U.S. army conducted the Operation Desert Storm."
+},
+{
+	"statement": "The author of <em>Philosophiæ Naturalis <strong>Principia Mathematica</strong></em> is",
+	"statement_img": false,
+	"options": [
+		"Isaac Newton",
+		"Albert Einstein",
+		"Alfred Nobel",
+		"Aristotle"
+	],
+	"answer": 0,
+	"explanation": "Written in Latin, often referred to as simply the Principia, it is a work in three books by Isaac Newton."
+},
+{
+	"statement": "Atlantis is a fictional city in \"Timaeus\" and \"Critias\", both written by",
+	"statement_img": false,
+	"options": [
+		"Socrates",
+		"Hercule",
+		"Archimedes",
+		"Plato"
+	],
+	"answer": 3,
+	"explanation": "\"Timaeus\" and \"Critias\" both are dialogues written by Plato."
+},
+{
+	"statement": "Which company originally created the PlayStation game console?",
+	"statement_img": false,
+	"options": [
+		"Nintendo",
+		"Atari",
+		"Sony",
+		"Microsoft"
+	],
+	"answer": 2,
+	"explanation": "PlayStation is a series of video game consoles created and owned by Sony Interactive Entertainment. The brand was first introduced on December 3, 1994 in Japan."
+},
+{
+	"statement": "The currency of Greece is",
+	"statement_img": false,
+	"options": [
+		"Drachma",
+		"Greek Dollar",
+		"Greek Pound",
+		"Euro"
+	],
+	"answer": 3,
+	"explanation": "Before 2002, it was Drachma. Now, it is Euro."
+}
+]

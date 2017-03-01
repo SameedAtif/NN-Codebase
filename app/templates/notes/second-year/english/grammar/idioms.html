@@ -1,0 +1,34 @@
+<table>
+	<!-- First <th> for numbering, second for idiom, third & fourth for meaning in English and Urdu and fifth for sentence -->
+	<thead>
+		<tr>
+			<th>No.</th>
+			<th>Idiom</th>
+			<th>Meaning(English)</th>
+			<th>Meaning(Urdu)</th>
+			<th>Sentence</th>
+		</tr>
+	</thead>
+
+	<tbody class="has-filter">
+		<?php
+			$json_file = file_get_contents("https://raw.githubusercontent.com/MustagheesButt/Idioms/master/idioms.json");
+			$idioms = json_decode($json_file);
+			
+			foreach ($idioms as $key=>$value) {
+				if ($value->imp) {
+					echo "<tr class='important'>";
+				}  else {
+					echo "<tr>";
+				}
+				echo "<td>" . ($key+1) . "</td>";
+				echo "<td>" . $value->idiom . "</td>";
+				echo "<td class='center'>" . $value->m_e . "</td>";
+				echo "<td lang='ur' dir='rtl' class='center'>" . $value->m_u . "</td>";
+				echo "<td>" . $value->sentence . "</td>";
+				echo "</tr>";
+			}
+		?>
+	</tbody>
+	
+</table>

@@ -1,0 +1,92 @@
+[
+{
+	"no": "14.1",
+	"statement": "A plane conducting loop is located in a uniform magnetic field that is directed along the x-axis. For what orientation of the loop is the flux maximum? For what orientation is the flux minimum?",
+	"answer": "<ol type='i'><li><strong>Maximum Flux</strong>:<p>When a conducting loop is held perpendicular to the magnetic field, i.e. vector area is parallel to magnetic field, then &theta; = 0&deg;. So, &Phi; = BA cos&theta; = BA cos0&deg; = BA</p><p>So flux will be maximum when plane of conducting loop is perpendicular to magnetic field.</p></li><li><strong>Minimum Flux</strong>:<p>When a conducting loop is held parallel to the magnetic field, i.e. vector area is perpendicular to magnetic field, then &theta; = 90&deg;. So, &Phi; = BA cos&theta; = BA cos90&deg; = 0</p><p>So flux will be minimum when plane of conducting loop is parallel to magnetic field.</p></li></ol>",
+	"imp": false
+},
+{
+	"no": "14.2",
+	"statement": "A current in a conductor produces a magnetic field, which can be calculated using Ampere's law. Since current is defined as the rate of flow of charge, what can you conclude about the magnetic field due to stationary charges? What about moving charges?",
+	"answer": "A stationary charge cannot produce any magnetic field but it can produce electric field. Whereas, a moving charge can produce a magnetic field around the path of its motion similar to a current carrying conductor's magnetic field.",
+	"imp": false
+},
+{
+	"no": "14.3",
+	"statement": "Describe the change in the magnetic field inside a solenoid carrying a steady current I, if<ol type='a'><li>the length of the solenoid is doubled but the number of turns remains the same, and</li><li>the number of turns is doubled, but the length remains the same.</li></ol>",
+	"answer": "Magnetic field produced by a solenoid is given by:<ul><li>B = &micro;<sub>o</sub>nI</li><li>B = &micro;NI/L (&because; n = N/L)</li></ul><ol type='a'><li>Let B&prime; be the magnetic field when the length of solenoid is doubled, i.e. L&prime; = 2L and the number of turns remain same. Then,<ul><li>B&prime; = &micro;<sub>o</sub>NI/2L = 1/2 x &micro;<sub>o</sub>NI/L</li><li>B&prime; = 1/2 x B (&because; B = &micro;<sub>o</sub>NI/L)</li></ul>Therefore, the magnetic field becomes half if the length of solenoid is doubled but the number of turns remain same.</li><li>Let B&prime; be the magnetic field when the number of turns is doubled, i.e. N&prime; = 2N and the length remains same. Then,<ul><li>B&prime; = &micro;<sub>o</sub>(2N)I/L = 2 x &micro;<sub>o</sub>NI/L</li><li>B&prime; = 2B (&because; B = &micro;<sub>o</sub>NI/L)</li></ul>Therefore, the magnetic field becomes double if the number of turns in solenoid is doubled but the length remains same.</li></ol>",
+	"imp": false
+},
+{
+	"no": "14.4",
+	"statement": "At a given instant, a proton moves in the positive x-direction in a region where there is magnetic field in the negative z-direction. What is the direction of the magnetic force? Will the proton continue to move in the positive x-direction? Explain.",
+	"answer": "<p>According to right hand rule, the direction of magnetic force will be along y-axis. Because F = e(V x B).</p><p>No. The proton will not continue to move in the positive x-direction but it will deflect towards y-axis and will circulate in xy-plane.</p>",
+	"imp": false
+},
+{
+	"no": "14.5",
+	"statement": "Two charged particles are projected in to a region where there is a magnetic field perpendicular to their velocities. If the charges are deflected in opposite directions, what can you say about them?",
+	"answer": "<p>When the charged particles are projected across a magnetic field, they experience a force. This magnetic force on the charged particles tends to deflect them into a curved path.</p><p>If the charged particles are deflected opposite to each other, then the particles have opposite charges. So if one particle is positively charged, the other must be negatively charged.</p>",
+	"imp": false
+},
+{
+	"no": "14.6",
+	"statement": "Suppose that a charge q is moving in a uniform magnetic field with a velocity v. Why is there no work done by the magnetic force that acts on the charge q?",
+	"answer": "The magnetic force on the charge q is given by:<ul><li>F<sub>m</sub> = q(V x B)</li></ul>Due to the magnetic force, the charge will move in a circular path. In the circular path, the force F<sub>m</sub> is perpendicular to the velocity v.<ul><li>W = F.d</li><li>W = Fd cos&theta;</li><li>W = Fd cos90&deg; = 0 (&because; &theta; = 90&deg;)</li></ul>So there is no work done by the magnetic force that acts on the charge q. Hence, the magnetic force acts only as a deflecting force.",
+	"imp": false
+},
+{
+	"no": "14.7",
+	"statement": "If a charged particle moves in a straight line through some region of space, can you say that the magnetic field in the region is zero?",
+	"answer": "<ol type='i'><li>Yes. The charged particle moves in a straight line if there is no magnetic field in the region.</li><li>No. Because the charged particle may be moving parallel or anti-parallel to the magnetic field. So &theta; = 0&deg; or &theta; = 180&deg; &Implies; F = qvB sin&theta; = 0. Since there is no magnetic field acting on the charged particle(although the magnetic field exists), it will move in a straight line.</li></ol>",
+	"imp": false
+},
+{
+	"no": "14.8",
+	"statement": "Why does the picture on a T.V. screen become distorted when a magnet is brought near the screen?",
+	"answer": "The picture on a T.V. screen is due to the electrons hitting the screen. If a magnet is brought near a T.V. screen, the path of the electrons is disturbed due to the magnetic force acting on them. Therefore, the picture on the screen gets distorted.",
+	"imp": true
+},
+{
+	"no": "14.9",
+	"statement": "Is it possible to orient a current loop in a uniform magnetic field such that the loop will not tend to rotate? Explain.",
+	"answer": "<p>Yes it is possible. A current carrying loop when placed in a magnetic field experiences a torque, i.e. &tau; = BINA cos&alpha;</p><p>Where &alpha; is the angle between magnetic field B and plane of the loop. When the plane of the loop is at right angle to the magnetic field, i.e. &alpha; = 90&deg;. So &tau; = BINA cos90&deg; = 0. As the value of the torque is zero so the loop will not tend to rotate.",
+	"imp": false
+},
+{
+	"no": "14.10",
+	"statement": "How can a current loop be used to determine the presence of a magnetic field in a given region of space?",
+	"answer": "When a current carrying loop is placed in a uniform magnetic field, at different orientations, a torque is produced in the loop. So if we place the loop in the given region and it gets deflected, then we can say that a magnetic field is present because a torque was produced. If it does not gets deflected, then no magnetic field is present.",
+	"imp": false
+},
+{
+	"no": "14.11",
+	"statement": "How can you use a magnetic field to separate isotopes of chemical element?",
+	"answer": "The isotopes of an element are projected perpendicular to the uniform magnetic field. Then different isotopes follow different paths due to the difference in their masses. This technique is called Mass spectrometry. As,<ul><li>e/m = v/rB</li><li>r = mv/eB</li><li>As v/eB is constant, r &propto; m</li></ul>Therefore, isotopes of different masses will have different radii of their circular paths. Hence, they can be separated by a magnetic field.",
+	"imp": true
+},
+{
+	"no": "14.12",
+	"statement": "What should be the orientation of a current carrying coil in a magnetic field so that torque acting upon the coil is<ol type='a'><li>maximum</li><li>minimum?</li></ol>",
+	"answer": "The torque acting on a rectangular coil of area A, in a magnetic field B while current I is passing throught it, is given by:<ul><li>&tau; = BINA cos&alpha;</li></ul>where &alpha; is the angle between plane of coil and magnetic field.<ol type='a'><li>If plane of coil is parallel to the magnetic field, i.e. &alpha; = 0&deg;<ul><li>&tau; = BINA cos0&deg; = BINA</li></ul>So torque will be maximum.</li><li>If plane of coil is perpendicular to the magnetic field, i.e. &alpha; = 90&deg;<ul><li>&tau; = BINA cos90&deg; = 0</li></ul>So torque will be minimum.</li></ol>",
+	"imp": true
+},
+{
+	"no": "14.13",
+	"statement": "A loop of wire is suspended between the poles of a magnet with its plane parallel to the pole faces. What happens if a direct current is put through the coil? What happens if an alternating current is used instead?",
+	"answer": "As the plane of the coil is parallel to the pole faces, therefore, it is perpendicular to the magnetic field, i.e. &alpha; = 90&deg;<ul><li>&tau; = BINA cos90&deg;</li><li>&tau; = 0</li></ul>Therefore, for both A.C. and D.C., the coil will not rotate.",
+	"imp": false
+},
+{
+	"no": "14.14",
+	"statement": "Why the resistance of an ammeter should be very low?",
+	"answer": "An ammeter is always connected in series with the circuit, therefore, its resistance should be very low so that it does not disturbs the circuit.",
+	"imp": true
+},
+{
+	"no": "14.15",
+	"statement": "Why the voltmeter should have a very high resistance?",
+	"answer": "The resistance of a voltmeter should be very high so that it does not draw any current from the circuit, as it is connected in parallel to the circuit. This enables a voltmeter to measure potential difference accurately. Ideally, a voltmeter should have an infinite resistance.",
+	"imp": true
+}
+]

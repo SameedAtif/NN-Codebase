@@ -1,0 +1,155 @@
+[
+{
+	"statement": "Which one of the following does not satisfies the definition of a set?",
+	"statement_img": false,
+	"options": [
+		"{a,b,c,d}",
+		"{9,4,1,2}",
+		"{1,2,3,4,5,6,1}",
+		"{1,2,3,a,b,c}"
+	],
+	"answer": 2,
+	"explanation": "A set cannot have repeated elements.",
+	"subject": "math"
+},
+{
+	"statement": "\\( \\frac{2x-5}{x^{2}+4} \\) is which type of rational fraction?",
+	"statement_img": false,
+	"options": [
+		"Proper",
+		"Improper",
+		"Linear",
+		"None"
+	],
+	"answer": 0,
+	"explanation": "In a proper fraction, degree of denominator is greater than degree of numerator.",
+	"subject": "math"
+},
+
+
+{
+	"statement": "Define Physics.",
+	"statement_img": false,
+	"options": [
+		"2",
+		"11",
+		"10",
+		"none of these"
+	],
+	"answer": 1,
+	"explanation": "lorem ipsum",
+	"subject": "physics"
+},
+
+
+{
+	"statement": "Two main branches of chemistry are:",
+	"statement_img": false,
+	"options": [
+		"Organic and Inorganic",
+		"Bio and Nuclear",
+		"Organic and Material",
+		"none of these"
+	],
+	"answer": 1,
+	"explanation": "lorem ipsum",
+	"subject": "chemistry"
+},
+
+
+{
+	"statement": "The first computer was made by",
+	"statement_img": false,
+	"options": [
+		"Charles Babbage",
+		"Alan Turing",
+		"Bill Gates",
+		"Steve Jobs"
+	],
+	"answer": 1,
+	"explanation": "lorem ipsum",
+	"subject": "computer"
+},
+
+
+{
+	"statement": "All the streets looked <u>just</u> the same.",
+	"statement_img": false,
+	"options": [
+		"decisively",
+		"normally",
+		"exactly",
+		"simply"
+	],
+	"answer": 2,
+	"explanation": "<em>Exactly</em> is the word closest in meaning to \"just\".",
+	"subject": "english"
+},
+{
+	"statement": "He is a <u>candid</u> politician.",
+	"statement_img": false,
+	"options": [
+		"frank",
+		"faithful",
+		"fearless",
+		"soft"
+	],
+	"answer": 0,
+	"explanation": "According to dictionary meaning, <em>candid</em> means truthful, straightforward and frank.",
+	"subject": "english"
+},
+{
+	"statement": "<u>Sagacity</u> increases with age.",
+	"statement_img": false,
+	"options": [
+		"wisdom",
+		"love",
+		"maturity",
+		"efficiency"
+	],
+	"answer": 0,
+	"explanation": "<em>Sagacity</em> means Wisdom, Intelligence and Understanding.",
+	"subject": "english"
+},
+{
+	"statement": "It is very <u>discreet</u> while deciding audit matters.",
+	"statement_img": false,
+	"options": [
+		"obstinate",
+		"cunning",
+		"trustworthy",
+		"prudent"
+	],
+	"answer": 3,
+	"explanation": "To be <em>discreet</em> is to be careful and prudent.",
+	"subject": "english"
+},
+{
+	"statement": "It is a <u>scandal</u> that the murderer was declared innocent.",
+	"statement_img": false,
+	"options": [
+		"rumor",
+		"silly notion",
+		"talk",
+		"disgraceful action"
+	],
+	"answer": 3,
+	"explanation": "A <em>scandal</em> is a disgraceful action.",
+	"subject": "english"
+},
+
+
+{
+	"statement": "If a+b is c, then b+c is:",
+	"statement_img": false,
+	"options": [
+		"2c - a",
+		"a + c",
+		"c - a",
+		"none of these"
+	],
+	"answer": 0,
+	"explanation": "lorem ipsum",
+	"subject": "intelligence"
+}
+]

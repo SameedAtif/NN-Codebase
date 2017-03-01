@@ -1,0 +1,90 @@
+<div class="question important">
+    <h3 class="statement"><span>18.1</span> How does the motion of an electron in a n-type substance differ from the motion of holes in a p-type substance?</h3>
+    <h4 class="answer">
+		<p>In a n-type substance, electrons are the majority charge carriers and holes are minority charge carriers. It is opposite in the case of p-type substances.</p>
+		<p>In n-type substances, current is produced by the flow of electrons (electric current), while in p-type substances, the flow of holes causes current (conventional current). The direction of these two currents is opposite to each other.</p>
+	</h4>
+</div>
+
+<div class="question">
+    <h3 class="statement"><span>18.2</span> What is the net charge on a n-type or a p-type substance?</h3>
+    <h4 class="answer">Net charge on both n-type and p-type substances is zero, because while doping, neutral impurity is added to a neutral semi-conductor. They remain electrically neutral unless a battery is attached to the circuit which makes electrons and holes drift in opposite directions.</h4>
+</div>
+
+<div class="question">
+    <h3 class="statement"><span>18.3</span> The anode of a diode is 0.2 V positive with respect to its cathode. Is it forward biased?</h3>
+    <h4 class="answer">When electric potential of anode (p-type) is greater with respect to electric potential of cathode (n-type), then such a p-n junction is called forward biased, because the electrons always move from a lower potential to a higher potential.</h4>
+</div>
+
+<div class="question important">
+    <h3 class="statement"><span>18.4</span> Why charge carriers are not present in the depletion region?</h3>
+    <h4 class="answer">When a p-n junction is formed, some of the electrons of n-type region diffuse into p-type region because of their random motion. This creates a chargeless region around the junction, called depletion region. The depletion region resists the flow of current.</h4>
+</div>
+
+<div class="question important">
+    <h3 class="statement"><span>18.5</span> What is the effect of forward and reverse biasing of a diode on the width of depletion region?</h3>
+    <h4 class="answer">Forward biasing will reduce the width of depletion region while reverse biasing will increase the width of the depletion region.</h4>
+</div>
+
+<div class="question">
+    <h3 class="statement"><span>18.6</span> Why ordinary silicon diodes do not emit light?</h3>
+    <h4 class="answer">In case of Silicon, the energy gap between valence band and conduction band is of 1 eV. When electron jumps from conduction band to valence band, it radiates a photon of energy 1 eV. The photon of energy 1 eV does not lie in the visible range of electromagnetic radiation, therefore, light is not emitted.</h4>
+</div>
+
+<div class="question important">
+    <h3 class="statement"><span>18.7</span> Why a photodiode is operated in reverse biased state?</h3>
+    <h4 class="answer">Photodiodes are used for detection of light. When no light falls on the reverse biased junction of the photodiode, almost no current flows. When light falls on it, hole pairs are generated and the diode starts conducting. The reverse current increases with the intensity of light, and hence, presence of light can be detected.</h4>
+</div>
+
+<div class="question important">
+    <h3 class="statement"><span>18.8</span> Why is the base current in a transistor very small?</h3>
+    <h4 class="answer">The base region is very thin and is lightly doped as compared to the emitter and collector. This means that it has very few number of holes or electrons in it. Due to reverse biasing of collector-base junction, almost all the electrons enter into the collector. A few charge carriers pass through the base circuit and a negligible current flows through it.<div class="center">OR</div>The base current in transistor is very small because of very thin size of depletion region and low level of doping in base of transistor.</h4>
+</div>
+
+<div class="question important">
+    <h3 class="statement"><span>18.9</span> What is the biasing requirement of the junctions of a transistor for its normal operation? Explain how these requirements are met in a common emitter amplifier?</h3>
+    <h4 class="answer">
+		<p>For a transistor's normal operation, the input junction is always forward biased while the output junction is reverse biased.</p>
+		<p>In case of a common emitter amplifier, input is applied between base and emitter. The output is obtained between collector and emitter. Therefore, emitter base junction is always forward biased and collector base junction is always reverse biased.</p>
+	</h4>
+</div>
+
+<div class="question">
+    <h3 class="statement"><span>18.10</span> What is the principle of virtual ground? Apply it to find the gain of an inverting amplifier?</h3>
+    <h4 class="answer">
+		<p>In an inverting amplifier, input voltage V<sub>i</sub> to be amplified is applied at inverting terminal (-) through resistance. V<sub>o</sub> is the output voltage. The non-inverting terminal is grounded and its potential is zero. Since, V<sub>+</sub> is at ground potential so V<sub>-</sub> is virtually at ground potential, i.e. V<sub>-</sub> = 0</p>
+		<img src="./images/notes/second-year/physics/inverting-amp.png" />
+		<p>The open loop voltage gain of this amplifier is about 10<sup>5</sup>,
+		$$ A_{OL} = \frac{ V_{o} }{ V_{i} } = 10^{5} $$
+		$$ V_{i} = V_{+} + (-V_{o}) = 0 - V_{-} = -V_{-} $$
+		$$ A_{OL} = \frac{ V_{o} }{ -V_{-} } = -\frac{ V_{o} }{ V_{-} } = 10^{5} $$
+		$$ V_{-} = 0 $$
+		That is, V<sub>-</sub> is virtually at ground potential. This is called principle of virtual ground.
+		</p>
+		<p>Now, the current through R<sub>1</sub> is,
+		$$ I_{1} = \frac{ V_{i} - V_{-} }{ R_{1} } = \frac{ V_{i} - 0 }{ R_{1} } = \frac{ V_{i} }{ R_{1} } $$
+		and current through R<sub>2</sub> is,
+		$$ I_{2} = \frac{ V_{-} - V_{o} }{ R_{2} } = \frac{ 0 - V_{o} }{ R_{2} } = -\frac{ V_{o} }{ R_{2} } $$
+		Using Kirchoff's current rule,
+		$$ I_{1} = I_{2} $$
+		$$ \frac{ V_{2} }{ R_{1} } = -\frac{ V_{o} }{ R_{2} } $$
+		$$ Or\ G = \frac{ V_{o} }{ V_{i} } = -\frac{ R_{2} }{ R_{1} } $$
+		Which is the voltage gain of the inverting amplifier.
+		</p>
+	</h4>
+</div>
+
+<div class="question">
+    <h3 class="statement"><span>18.11</span> The inputs of a gate are 1 and 0. Identify the gate if its output is
+		<ol type="a">
+			<li>0,</li>
+			<li>1?</li>
+		</ol>
+	</h3>
+    <h4 class="answer">
+		<ol type="a">
+			<li>The gate is <strong>AND</strong>.</li>
+			<li>The gate is <strong>OR</strong>.</li>
+		</ol>
+	</h4>
+</div>

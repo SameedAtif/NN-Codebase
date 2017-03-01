@@ -1,0 +1,62 @@
+[
+{
+	"no": "16.1",
+	"statement": "A sinusoidal current has rms value of 10 A. What is the maximum or peak value?",
+	"answer": "<ul class='no-bullets'><li>\\( I_{rms} = 10 \\ A \\)</li><li>As, \\( I_{rms} = \\frac{I_{o}}{\\sqrt{2}} \\)</li><li>\\( I_{o} = I_{rms} \\times \\sqrt{2} = 10 \\times \\sqrt{2} = 14.14 \\ A \\)</li><li>Peak value = \\( I_{o} = 14.14 \\ A \\)</li></ul>",
+	"imp": true
+},
+{
+	"no": "16.2",
+	"statement": "Name the device that will<ol type='a'><li>permit flow of direct current but oppose the flow of alternating current</li><li>permit flow of alternating current but not the direct current.</li></ol>",
+	"answer": "<ol type='a'><li>Inductor</li><li>Capacitor</li></ol>",
+	"imp": true
+},
+{
+	"no": "16.3",
+	"statement": "How many times per second will an incandescent lamp reach maximum brilliance when connected to a 50 Hz source?",
+	"answer": "50 Hz = 50 cycles per second. Maximum value is reached twice in one cycle, so 50 x 2 = 100. Therefore, the bulb reaches maximum brilliance 100 times per second.",
+	"imp": true
+},
+{
+	"no": "16.4",
+	"statement": "A circuit contains an iron-cored inductor, a switch and a D.C. source arranged in series. The switch is closed and after an interval reopened. Explain why a spark jumps across the switch contacts?",
+	"answer": "When switch is closed, then current flows through the inductor and energy is stored in it inside the magnetic field. When the switch is reopened, energy stored in the inductor flows as a high current through the switch and a spark jumps across the switch contacts.",
+	"imp": true
+},
+{
+	"no": "16.5",
+	"statement": "How does doubling the frequency affect the reactance of <ol type='a'><li>an inductor</li><li>a capacitor?</li></ol>",
+	"answer": "<ol type='a'><li>For an inductor:<ul class='no-bullets'><li>Inductor's reactance = \\( X_{L}</sub> = &omega;L \\) , where \\( &omega; = 2&pi;f \\)</li><li>\\( X_{L} = 2&pi;fL \\), now we double the frequency,</li><li>\\( X'_{L} = 2&pi;(2f)L = 2(2&pi;fL) \\)</li><li>\\( X'_{L} = 2X_{L} \\), hence it doubles.</li></ul></li><li>For a capacitor:<ul class='no-bullets'><li>Capacitor's reactance = \\( X_{C} = \\frac{1}{&omega;C} \\), where \\( &omega; = 2&pi;f \\)</li><li>\\( X_{C} = \\frac{1}{2&pi;fC} \\), now we double the frequency,</li><li>\\( X'_{C} = \\frac{1}{2&pi;(2f)C} = \\frac{1}{2(2&pi;fC)} \\)</li><li>\\( X'_{C} = \\frac{1}{2}X_{C} \\), hence it becomes half of the original value.</li></ul></li></ol>",
+	"imp": true
+},
+{
+	"no": "16.6",
+	"statement": "In a R-L circuit, will the current lag or lead the voltage? Illustrate your answer by a vector diagram.",
+	"answer": "In R-L series circuit, the current will lag the voltage by an angle &theta;:<ul class='no-bullets'><li>&theta; = tan<sup>-1</sup>(&omega;L/R)</li><li>&theta; = tan<sup>-1</sup>(X<sub>L</sub>/R)</li></ul><img src='./images/notes/second-year/physics/rl-vector-dia.jpg' class='img-block-center' />",
+	"imp": false
+},
+{
+	"no": "16.7",
+	"statement": "A choke coil placed in series with an electric lamp in an A.C. circuit causes the lamp to become dim. Why is it so? A variable capacitor added in series in this circuit may be adjusted until the lamp glows with normal brilliance. Explain, how this is possible?",
+	"answer": "<p>We know that reactance of an inductor is X<sub>L</sub> = 2&pi;fL and in this case total impedance will be \\( Z = \\sqrt{X_{L}^{2} + R^{2}} \\).</p><p>As choke coil has large reactance, therefore, current in circuit will be very small and lamp will become dim.</p><p>When variable capacitor is added in series with this circuit then at resonance frequency reactance of capacitor will become equal to X<sub>L</sub> and Z(impedance) of circuit will get minimum(equal to R). Therefore, current will again get maximum and bulb will glow normally.</p>",
+	"imp": false
+},
+{
+	"no": "16.8",
+	"statement": "Explain the conditions under which electromagnetic waves are produced from a source?",
+	"answer": "Electromagnetic waves can be produced by:<ul><li>Changing electric or magnetic field.</li><li>By accelerating the charged particles.</li><li>Oscillating the charged particles by connecting it to an alternating voltage source.</li></ul>",
+	"imp": false
+},
+{
+	"no": "16.9",
+	"statement": "How the reception of a particular radio station is selected on your radio set?",
+	"answer": "<p>Receiving antenna consists of an inductor and a variable capacitor connected in parallel, which is called L-C circuit and its frequency is given by:</p>\\( f = \\frac {1}{ 2 \\pi \\sqrt{LC} } \\)<p>When frequency of radio waves match the frequency of L-C circuit then due to resonance we will be able to hear the radio waves.</p>",
+	"imp": true
+},
+{
+	"no": "16.10",
+	"statement": "What is meant by A.M. and F.M.?",
+	"answer": "<ol type='i'><li><strong>A.M.</strong>: stands for <strong>A</strong>mplitude <strong>M</strong>odulation. A type of modulation in which amplitude of the carrier wave is increased or decreased as the amplitude of the superposing modulating signal/wave increases or decreases. A.M. transmission frequencies range from 540 KHz to 1600 KHz. Sound quality of A.M. is not good.</li><li><strong>F.M.</strong>: stands for <strong>F</strong>requency <strong>M</strong>odulation. A type of modulation in which frequency of the carrier wave is increased or decreased as the amplitude of the superposing modulating signal/wave increases or decreases, while amplitude of the carrier wave remains constant. F.M. transmission frequencies range from 88 MHz to 108 MHz. F.M. provides high quality sound transmission.</li></ol>",
+	"imp": false
+}
+]

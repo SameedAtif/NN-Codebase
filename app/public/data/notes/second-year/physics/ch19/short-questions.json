@@ -1,0 +1,56 @@
+[
+{
+	"no": "12.1",
+	"statement": "The potential is constant throughout a given region of space. Is the electric field zero or non-zero in this region? Explain.",
+	"answer": "For constant potential in a region, the electric field is zero, as, <ul><li>V<sub>1</sub> = V<sub>2</sub></li><li>&Delta;V = V<sub>2</sub> - V<sub>1</sub> &Implies; &Delta;V = 0</li><li>Now, as V = Ed &Implies; E = V/d</li><li>E = 0</li></ul>Hence, when potential difference is zero, electric field is also zero.",
+	"imp": false
+},
+{
+	"no": "12.2",
+	"statement": "Suppose that you follow an electric field line due to a positive point charge. Do electric field and the potential increase or decrease?",
+	"answer": "Electric field intensity as well as electric potential will decrease by following electric field lines around a positive point charge, because electric field lines are directed away form positive charge so distance will increase when field line is followed, as<ul><li>V = kq/r &Implies; V &propto; 1/r and E = kq/r<sup>2</sup> &Implies; E &propto; 1/r<sup>2</sup></li></ul>",
+	"imp": true
+},
+{
+	"no": "12.3",
+	"statement": "How can you identify that which plate of a capacitor is positively charged?",
+	"answer": "We can identify the positively charged plate by following methods:<ul><li>The plate connected with positive terminal of battery is positively charged while the other is negatively charged.</li><li>We can use Gold leaf electroscope to determine the polarity of plates.</li><li>When the charged capacitor is connected across a resistance, the current starts flowing from positively charged plate to negatively charged plate, until it is discharged completely.</li></ul>",
+	"imp": true
+},
+{
+	"no": "12.4",
+	"statement": "Describe the force or forces on a positive point charge when placed between parallel plates:<ol><li>with similar and equal charges</li><li>with opposite and equal charges</li></ol>",
+	"answer": "<ol><li>with similar and equal charges: In this case, both plates will attract or repel, depending on the charge, with force of same magnitude but opposite direction.<ul><li>F<sub>1</sub> + F<sub>2</sub> = F - F = 0</li></ul>Hence net. force will be zero.</li><li>with opposite and equal charges: In this case, both forces are equal and in same direction.<ul><li>F<sub>1</sub> + F<sub>2</sub> = F + F = 2F</li></ul>Hence net. force is 2F.</li></ol>",
+	"imp": false
+},
+{
+	"no": "12.5",
+	"statement": "Electric lines of force never cross. Why?",
+	"answer": "Electric field lines cannot intersect each other because these are the paths followed by resultant electrostatic force on test charge, which will always be single even if the electrostatic forces are more than one. This is because E has only one direction at any given point. If the lines cross, E would have two directions at a single point i.e. point of intersection of two field lines which is not possible.",
+	"imp": true
+},
+{
+	"no": "12.6",
+	"statement": "If a point charge q of mass m is released in a non-uniform electric field with field lines pointing in the same direction, will it make a rectilinear motion?",
+	"answer": "Yes, q will make a rectilinear path, if its weight is neglected, since the field line is pointing in some direction, so the charge q will move along the line.",
+	"imp": false
+},
+{
+	"no": "12.7",
+	"statement": "Is E necessarily zero inside a charged rubber balloon if balloon is spherical? Assume that charge is distributed uniformly over the surface.",
+	"answer": "As there is no charge at the center of the ballon, so q = 0. According to Gauss's law:<ol><li>&phi; = (1/&epsilon;<sub>o</sub>)q</li><li>&phi; = 0</li><li>But electric flux, &phi; = E.A</li><li>E.A = 0</li><li>E = 0 (&because; A &ne; 0)</li></ol>Therefore, electric intensity inside a charged rubber balloon will be zero.",
+	"imp": false
+},
+{
+	"no": "12.8",
+	"statement": "Is it true that Gauss's law states that the total number of lines of forces crossing any closed surface in the outward direction is proportional to the net positive charge enclosed within surface?",
+	"answer": "According to Gauss's law, total flux &phi; = (1/&epsilon;<sub>o</sub>)(total charge Q). So,<ol><li>1/&epsilon;<sub>o</sub> = constant</li><li>&phi; &propto; Q</li></ol>Here &phi; is the flux which is the total number of lines passing through a certain area and it is directly proportional to charge enclosed within the surface. Therefore, the given statement is true.",
+	"imp": false
+},
+{
+	"no": "12.9",
+	"statement": "Do electrons tend to go to region of high potential or of low potential?",
+	"answer": "Yes. As electrons are negatively charged particles, they tend to move from region of lower potential to region of higher potential.",
+	"imp": true
+}
+]

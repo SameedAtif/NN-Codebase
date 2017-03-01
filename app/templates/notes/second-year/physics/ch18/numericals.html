@@ -1,0 +1,181 @@
+<div class="question important">
+	<h3 class="statement"><span>18.1</span> The current flowing into the base of a transistor is 100 &micro;A. Find its collector current I<sub>C</sub>, its emitter current I<sub>E</sub> and the ratio I<sub>C</sub>/I<sub>E</sub>, if the value of current gain &beta; is 100.</h3>
+	
+	<h4>Given</h4>
+	<ol class="no-bullets">
+		<li>I<sub>B</sub> = 100 &micro;A = 10<sup>-4</sup> A</li>
+		<li>&beta; = 100</li>
+	</ol>
+	
+	<h4>To Find</h4>
+	<ol class="no-bullets">
+		<li>$$ I_{C} = ? $$</li>
+		<li>$$ I_{E} = ? $$</li>
+		<li>$$ \frac{ I_{C} }{ I_{E} } = ? $$</li>
+	</ol>
+	
+	<h4>Solution</h4>
+	<ol class="no-bullets">
+		<li>$$ As,\ \frac{ I_{C} }{ I_{B} } = &beta; = 100 $$</li>
+		<li>$$ I_{C} = 100I_{B} = 100 \times 10^{-4} $$</li>
+		<li>$$ I_{C} = 10\ mA $$</li>
+		<li>$$ Now,\ I_{E} = I_{C} + I_{B} $$</li>
+		<li>$$ I_{E} = 10^{-2} + 10^{-4} = 10^{-2}(1 + 0.01)\ A $$</li>
+		<li>$$ I_{E} = 10^{-2}(1.01) \times 10^{3} \times 10^{-3}\ A = 10(1.01)\ mA $$</li>
+		<li>$$ I_{E} = 10.01\ mA $$</li>
+		<li>$$ Now, $$</li>
+		<li>$$ \frac{ I_{C} }{ I_{E} } = \frac{ 10\ mA }{ 10.01\ mA } $$</li>
+		<li>$$ \frac{ I_{C} }{ I_{E} } = 0.99 $$</li>
+	</ol>	
+	
+</div>
+
+<div class="question">
+	<h3 class="statement"><span>18.2</span> Fig. P. 18.2 shows a transistor which operates a relay as the switch S is closed. The relay is energized by a current of 10 mA. Calculate the value R<sub>B</sub> which will just make the relay operate. The current gain &beta; of the transistor is 200. When the transistor conducts, its V<sub>BE</sub> can be assumed to be 0.6 V.</h3>
+	<img src="./images/notes/second-year/physics/num18.2.jpg" />
+	
+	<h4>Given</h4>
+	<ol class="no-bullets">
+		<li>I<sub>C</sub> = 10 mA = 10<sup>-2</sup> m</li>
+		<li>Current gain = &beta; = 200</li>
+		<li>Base-Emitter voltage = V<sub>BE</sub> = 0.6 V</li>
+		<li>V<sub>CC</sub> = 9 V</li>
+	</ol>
+	
+	<h4>To Find</h4>
+	<ol class="no-bullets">
+		<li>R<sub>B</sub> = ?</li>
+	</ol>
+	
+	<h4>Solution</h4>
+	<ol class="no-bullets">
+		<li>$$ As,\ &beta; = \frac{ I_{C} }{ I_{B} } $$</li>
+		<li>$$ I_{B} = \frac{ I_{C} }{ &beta; } = \frac{ 10^{-2} }{ 200 } = 0.5 \times 10^{-4}\ A $$</li>
+		<li>$$ As,\ V = V_{CC} - V_{BE} $$</li>
+		<li>$$ V = 9 - 0.6 = 8.4\ V $$</li>
+		<li>$$ Now, $$</li>
+		<li>$$ V = I_{B}R_{B} $$</li>
+		<li>$$ R_{B} = \frac{ V }{ I_{B} } = \frac{ 8.4 }{ 0.5 \times 10^{-4} } $$</li>
+		<li>$$ R_{B} = 16.8 \times 10^{-4}\ &ohm; = 168\ k&ohm; $$</li>
+	</ol>	
+	
+</div>
+
+<div class="question">
+	<h3 class="statement"><span>18.3</span> In circuit (Fig. P. 18.3), there is negligible potential drop between B and E, if, &beta; is 100. Calculate
+		<ol type="i">
+			<li>base current</li>
+			<li>collector current</li>
+			<li>potential drop across R<sub>C</sub></li>
+			<li>V<sub>CE</sub></li>
+		</ol>
+	</h3>
+	<img src="./images/notes/second-year/physics/num18.3.jpg" />
+	
+	<h4>Given</h4>
+	<ol class="no-bullets">
+		<li>V<sub>CC</sub> = 9 V</li>
+		<li>V<sub>BE</sub> = 0 V</li>
+		<li>R<sub>C</sub> = 1 k&ohm; = 10<sup>3</sup> &ohm;</li>
+		<li>R<sub>B</sub> = 800 k&ohm; = 8 &times; 10<sup>5</sup> &ohm;</li>
+		<li>&beta; = 100</li>
+	</ol>
+	
+	<h4>To Find</h4>
+	<ol class="no-bullets">
+		<li>I<sub>B</sub> = ?</li>
+		<li>I<sub>C</sub> = ?</li>
+		<li>V<sub>C</sub> = ?</li>
+		<li>V<sub>CE</sub> = ?</li>
+	</ol>
+	
+	<h4>Solution</h4>
+	<ol type="i">
+		<li>
+			<ol class="no-bullets">
+				<li>$$ As,\ V_{CC} = I_{B}R_{B} + V_{BE} $$</li>
+				<li>$$ 9 = I_{B}R_{B} + 0 $$</li>
+				<li>$$ I_{B} = \frac{ 9 }{ R_{B} } = \frac{ 9 }{ 8 \times 10^{5} } $$</li>
+				<li>$$ I_{B} = 11.25 \times 10^{-6}\ A = 11.25\ &micro;A $$</li>
+			</ol>
+		</li>
+		<li>
+			<ol class="no-bullets">
+				<li>$$ As,\ I_{C} = &beta;I_{B} $$</li>
+				<li>$$ I_{C} = 100 \times 11.25 \times 10^{-6} $$</li>
+				<li>$$ I_{C} = 1.125 \times 10^{-3}\ A = 1.125\ mA $$</li>
+			</ol>
+		</li>
+		<li>
+			<ol class="no-bullets">
+				<li>$$ Now,\ V_{C} = I_{C}R_{C} $$</li>
+				<li>$$ V_{C} = 1.125 \times 10^{-3} \times 10^{3} $$</li>
+				<li>$$ V_{C} = 1.125\ V $$</li>
+			</ol>
+		</li>
+		<li>
+			<ol class="no-bullets">
+				<li>$$ From\ the\ figure, $$</li>
+				<li>$$ V_{CC} = V_{C} + V_{CE} $$</li>
+				<li>$$ 9 = 1.125 + V_{CE} $$</li>
+				<li>$$ V_{CE} = 9 - 1.125 $$</li>
+				<li>$$ V_{CE} = 7.875\ V $$</li>
+			</ol>
+		</li>
+	</ol>	
+	
+</div>
+
+<div class="question">
+	<h3 class="statement"><span>18.4</span> Calculate the output of the op-amp circuit shown in Fig. P. 18.4.</h3>
+	<img src="./images/notes/second-year/physics/num18.4.jpg" />
+	
+	<h4>Given</h4>
+	<ol class="no-bullets">
+		<li>R<sub>1</sub> = 10 k&ohm;</li>
+		<li>R<sub>2</sub> = 4 k&ohm;</li>
+		<li>R<sub>3</sub> = 20 k&ohm;</li>
+	</ol>
+	
+	<h4>To Find</h4>
+	<ol class="no-bullets">
+		<li>Output voltage = V<sub>O</sub> = ?</li>
+	</ol>
+	
+	<h4>Solution</h4>
+	<ol class="no-bullets">
+		<li>$$ Current\ through\ R_{1} = I_{1} = \frac{ (5 - 0)V }{ 10 \times 10^{3} } = 0.5 \times 10^{-3}\ A $$</li>
+		<li>$$ Current\ through\ R_{2} = I_{2} = \frac{ (-2 - 0)V }{ 4 \times 10^{3} } = -0.5 \times 10^{-3}\ A $$</li>
+		<li>$$ Using\ Kirchhoff's\ current\ rule, $$</li>
+		<li>$$ Total\ current\ through\ R_{3} = I_{3} = I_{1} + I_{2} $$</li>
+		<li>$$ I_{3} = 0.5 \times 10^{-3} - 0.5 \times 10^{-3} = 0 $$</li>
+		<li>$$ Now,\ I_{3} = \frac{ V_{O} - 0 }{ R_{3} } \implies V_{O} = I_{3}R_{3} = 0 $$</li>
+		<li>$$ V_{O} = 0 $$</li>
+	</ol>	
+	
+</div>
+
+<div class="question important">
+	<h3 class="statement"><span>18.5</span> Calculate the gain of non-inverting amplifier shown in Fig. P. 18.5.</h3>
+	<img src="./images/notes/second-year/physics/num18.5.jpg" />
+	
+	<h4>Given</h4>
+	<ol class="no-bullets">
+		<li>R<sub>1</sub> = 10 k&ohm;</li>
+		<li>R<sub>2</sub> = 40 k&ohm;</li>
+	</ol>
+	
+	<h4>To Find</h4>
+	<ol class="no-bullets">
+		<li>Gain of the non-inverting amplifier = G = ?</li>
+	</ol>
+	
+	<h4>Solution</h4>
+	<ol class="no-bullets">
+		<li>$$ As,\ G = 1 + \frac{ R_{2} }{ R_{1} } $$</li>
+		<li>$$ G = 1 + \frac{ 40 \times 10^{3} }{ 10 \times 10^{3} } $$</li>
+		<li>$$ G = 1 + \frac{4}{1} = 1 + 4 $$</li>
+		<li>$$ G = 5 $$</li>
+	</ol>	
+	
+</div>

@@ -1,0 +1,11 @@
+<section>
+
+	<?php
+		$dir = "images/past_papers/second-year/math/2012/";
+		$files = array_diff(scandir($dir), array('..', '.'));
+		foreach ($files as $file) {
+			echo "<img class='scanned-img' src='$dir$file' />";
+		}
+	?>
+
+</section>

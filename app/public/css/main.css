@@ -1,0 +1,551 @@
+html, body {
+	margin: 0;
+}
+h1, h2, h3, h4, h5, h6, h7, p {
+	margin: 2% 0;
+}
+h1 {
+	font-size: 42px;
+}
+h2 {
+	font-size: 32px;
+}
+h3 {
+	font-size: 26px;
+}
+h4 {
+	font-size: 20px;
+}
+body {
+	font-family: Roboto, sans-serif;
+}
+@font-face {
+	font-family: "Nastaliq";
+	src: url("NotoNastaliq.ttf");
+}
+[lang=ur] {
+	font-family: "Nastaliq", Roboto;
+	text-align: right;
+}
+[lang=ur] h3 {
+	font-size: 24px;
+}
+[lang=ur] h4 {
+	font-size: 20px;
+}
+[lang=ur] p {
+	font-size: 18px;
+}
+[lang=ur] pre {
+	font-family: inherit;
+	font-size: 16px;
+}
+a {
+	text-decoration: none;
+	color: #afe9ff;
+}
+a:hover {
+	color: #235b6f;
+}
+a.dark, .dark-links a {
+	color: #235b6f;
+}
+a.dark:hover, .dark-links a:hover {
+	color: #afe9ff;
+}
+input, select, textarea {
+	background-color: transparent;
+	border: 0;
+	border-bottom: 2px solid black;
+	font-family: Roboto;
+	padding: 1em;
+}
+button[type=submit] {
+	display: inline-block;
+}
+
+/**
+ ** STAND-ALONE STYLES & COMPONENTS
+ **/
+.ghost-btn {
+	font-family: Roboto;
+	background-color: transparent;
+	border: 2px solid black;
+	padding: 1em;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	text-transform: uppercase;
+}
+.ghost-btn.active {
+	background-color: #25af25;
+	color: #ffffff;
+	border: 2px solid #25af25;
+	box-shadow: 0 0 15px #25af25;
+}
+.btn-blue {
+	background-color: #00abea;
+	transition: 0.5s;
+}
+.btn-blue:hover {
+	border-color: #00abea;
+}
+.flex.feature-flex .flex-child {
+	background-color: rgba(129, 196, 255, 0.5);
+	border-radius: 5px;
+    border: 1px solid;
+}
+.center {
+	text-align: center;
+}
+.img-block-center {
+	display: block;
+	margin: 0 auto;
+}
+.no-padding {
+	padding: 0;
+}
+.no-bullets {
+	list-style: none;
+	padding-left: 2%;
+}
+
+nav .nav-top {
+	background-color: #00abea;
+	padding: 2% 0;
+	text-align: center;
+}
+nav .nav-top .logo {
+	width: 30%;
+}
+nav .nav-bottom {
+	background-color: #007ead;
+}
+nav .nav-bottom .menu-btn {
+	color: #ffffff;
+	font-size: 32px;
+	text-align: center;
+}
+nav .nav-bottom .menu-btn i.fa-bars {
+	padding: 1%;
+	cursor: pointer;
+}
+nav .nav-bottom ul.nav-menu {
+	margin: 0;
+	list-style: none;
+	display: none;
+}
+nav .nav-bottom ul.nav-menu.active {
+	display: block;
+}
+nav .nav-bottom ul.nav-menu li a {
+	display: block;
+	padding: 3%;
+}
+nav .nav-bottom ul.nav-menu li ul.dropdown {
+	display: none;
+	list-style-type: square;
+	list-style-position: inside;
+	padding: 0;
+}
+nav .nav-bottom ul.nav-menu li:hover > a, nav .nav-bottom ul.nav-menu > a:hover {
+	background-color: rgba(0, 0, 0, 0.8);
+	color: #afe9ff;
+}
+nav .nav-bottom ul.nav-menu li:hover ul.dropdown {
+	display: block;
+}
+nav .nav-bottom ul.nav-menu li ul.dropdown a {
+	background-color: rgba(0, 0, 0, 0.5);
+	transition: 0.5s;
+}
+nav .nav-bottom ul.nav-menu li ul.dropdown a:hover {
+	background-color: rgba(0, 0, 0, 0.8);
+}
+
+main .jumbotron {
+	background-image: url("../images/backgrounds/jumbotron-bg.jpg");
+	background-size: cover;
+	background-attachment: fixed;
+	color: #ffffff;
+	padding: 5%;
+}
+main .jumbotron .left > h1 {
+	font-weight: 400;
+	text-align: center;
+}
+main .jumbotron .left > h1 small {
+	font-weight: 200;
+	font-style: italic;
+}
+main .cards {
+	padding: 0;
+	color: #ffffff;
+	display: flex;
+	flex-wrap: wrap;
+}
+main .cards .card {
+	padding: 2em;
+	flex: 1 1 330px;
+}
+main .cards .card h1 {
+	font-size: 32px;
+	font-weight: 400;
+}
+main .cards .card h4 {
+	font-size: 24px;
+	font-weight: 300;
+}
+main .cards .card button {
+	width: 100px;
+	cursor: pointer;
+}
+main .cards .card:nth-child(1) {
+	background-color: #3498db;
+}
+main .cards .card:nth-child(2) {
+	background-color: #e74c3c;
+}
+main .cards .card:nth-child(3) {
+	background-color: #9b59b6;
+}
+main .features {
+	background-image: url("../images/backgrounds/galaxy.jpg");
+	background-attachment: fixed;
+	background-size: cover;
+	text-align: center;
+	color: #ffffff;
+}
+main .features > h3 {
+	font-size: 32px;
+}
+main .motto {
+	font-family: Georgia;
+	font-style: italic;
+}
+main .motto h3 {
+	font-size: 32px;
+}
+main section {
+	padding: 5%;
+}
+main .flex {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+main .flex .flex-child {
+	margin: 1em;
+	padding: 2em;
+	flex: 0 1 330px;
+}
+
+footer div.ftr-top {
+	background-color: #00abea;
+	padding: 4% 2%;
+}
+footer div.ftr-top:after /* overflow fix */ {
+	content: " ";
+	display: block;
+	clear: both;
+}
+footer div.ftr-top > div {
+	display: inline-block;
+	float: left;
+	width: 33%;
+}
+footer div.ftr-top > div ul {
+	list-style: none;
+	padding: 0;
+}
+footer div.ftr-top > div ul li {
+	padding: 2% 0;
+	word-wrap: break-word;
+}
+footer div.ftr-bottom {
+	background-color: #007ead;
+	padding: 2% 2%;
+	clear: both;
+}
+footer div.ftr-bottom .fa-heart {
+	color: crimson;
+	filter: drop-shadow(0px 0px 0px #000000);
+}
+
+/**
+ ** COMING SOON
+ **/
+.coming-soon {
+	background-image: url("../images/backgrounds/mountains.jpg");
+	background-size: cover;
+	height: 700px;
+	text-align: center;
+}
+
+/**
+ ** NOTES.PHP
+ **/
+.accordion > li {
+	padding: 2%;
+	list-style: none;
+}
+.accordion > li > h4 {
+	background-color: #00abea;
+	margin: 0;
+	padding: 2%;
+}
+.accordion > li ol {
+	background-color: #bdc3c7;
+}
+.accordion > li ol li {
+	padding: 2%;
+}
+
+/**
+ ** SERVED CONTENT (SERVER.PHP)
+ **/
+.content-main-header {
+    background-image: url("../images/backgrounds/mit-wallpaper.jpg");
+	background-size: cover;
+	background-attachment: fixed;
+	color: #ffffff;
+	padding: 10% 5% 5%;
+    overflow: auto;
+}
+.content-main-header h2:first-child {
+	font-size: 18px;
+	font-weight: 400;
+}
+.content-main-header h2:last-child {
+	font-size: 32px;
+	text-transform: uppercase;
+}
+.content-header .type {
+	text-align: center;
+	text-transform: capitalize;
+}
+.question {
+	padding: 5px;
+	margin: 10px;
+}
+.statement, .answer {
+	font-weight: 400;
+}
+ .scanned-img {
+	width: 100%;
+}
+
+/**
+ ** TOOLS
+ **/
+.tools {
+	margin-bottom: 5%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.tool {
+	width: 100%;
+	margin: 1em;
+	text-align: center;
+}
+.filtered-out-1, .filtered-out-2 {
+	display: none;
+}
+ .highlighted {
+	background-color: rgb(153, 255, 161);
+    box-shadow: 0 0 25px rgb(153, 255, 161);
+}
+
+/**
+ ** TABLE STYLES
+ **/
+table {
+	border-spacing: 0;
+	width: 100%;
+}
+tbody tr:hover {
+	background-color: rgba(25, 181, 254, 0.7);
+}
+td {
+	padding: 0.4em;
+}
+
+/**
+ ** ONLINE TESTS (OTESTS.PHP)
+ **/
+.test_list-flex .flex-child {
+	background-color: #EEF0F3;
+	border-top: 3px solid transparent;
+}
+.test_list-flex .flex-child:hover {
+	border-top-color: #3e62e0;
+}
+.test_list-flex .flex-child h3 {
+    border-bottom: 3px solid rgba(171, 171, 171, 0.5);
+    padding: 2%;
+}
+.test_list-flex .flex-child > a {
+	background-color: #3e62e0;
+	color: #ffffff;
+	display: inline-block;
+    margin-top: 1em;
+	padding: 1em 2em;
+    border-radius: 30px;
+}
+.test_list-flex .flex-child > a:hover {
+	background-color: #3553bd;
+}
+.test-home {
+	background-size: cover;
+}
+.test-home.net {
+	background-image: url("../images/otests/nust.jpg");
+}
+.test-home.net form {
+	background-color: rgba(255, 255, 255, 0.5);
+	padding: 2%;
+}
+.test-home.net form .setting {
+    background-color: rgba(0, 171, 234, 0.5);
+    padding: 1%;
+    margin: 1% 0;
+}
+
+/**
+ ** CONTACT.PHP
+ **/
+section#contact-main {
+	background-image: url("../images/backgrounds/contact.jpg");
+	background-size: cover;
+}
+#contact-main .container {
+	background-color: rgba(255, 255, 255, 0.5);
+	padding: 5%;
+}
+#contact-main form {
+	text-align: center;
+}
+#contact-main form input, #contact-main form textarea {
+	width: 80%;
+}
+#contact-main form input {
+	margin: 1em 0;
+}
+#contact-main form textarea {
+	height: 200px;
+	resize: none;
+}
+form input[name="sec[]"] {
+	display: none;
+}
+
+/**
+ ** SIDEBAR
+ **/
+.sidebar {
+	padding: 1.5%;
+}
+.sidebar .side-element {
+	text-align: center;
+}
+.sidebar .side-element#trending {
+	display: none;
+}
+
+/**
+ ** MOBILE CSS - below is for desktop i.e. screens greater than 800px
+ **/
+@media (min-width: 800px) {
+	nav .nav-bottom .menu-btn i.fa-bars {
+		display: none;
+	}
+	nav .nav-bottom ul.nav-menu {
+		display: block;
+		text-align: center;
+	}
+	nav .nav-bottom ul.nav-menu > li {
+		display: inline-block;
+		margin: 0 2%;
+	}
+	nav .nav-bottom ul.nav-menu > li > a {
+		height: 35px;
+		padding: 15px 0 0 0;
+	}
+	nav .nav-bottom ul.nav-menu li ul.dropdown {
+		position: absolute;
+		width: 250px;
+		list-style: none;
+		text-align: left;
+		z-index: 1;
+	}
+	nav .nav-bottom ul.nav-menu li ul.dropdown > li a {
+		padding: 5%;
+	}
+	nav .nav-bottom ul.nav-menu li:hover > a, nav .nav-bottom ul.nav-menu > a:hover {
+		background-color: transparent;
+		color: #ffffff;
+	}
+	nav .nav-bottom ul.nav-menu li ul.dropdown a {
+		background-color: rgba(0, 0, 0, 0.8);
+	}
+	nav .nav-bottom ul.nav-menu li ul.dropdown a:hover {
+		background-color: rgba(0, 0, 0, 1);
+	}
+	
+	main .jumbotron {
+		background-image: url("../images/backgrounds/jumbotron-desktop-bg.jpg");
+	}
+	main .jumbotron .left {
+		display: inline-block;
+		width: 60%;
+		float: left;
+	}
+	main .jumbotron .left > h1 {
+		text-align: left;
+	}
+	main .jumbotron .right {
+		display: inline-block;
+		width: 40%;
+	}
+	
+	/**
+	 ** TOOLS
+	 **/
+	.tool {
+		margin: 0;
+		width: 33%;
+	}
+	
+	/**
+	 ** SIDEBAR
+	 **/
+	main.sided {
+		width: 70%;
+		display: inline-block;
+	}
+	.sidebar {
+		padding: 0;
+		margin-top: 12%;
+		width: 29%;
+		float: right;
+	}
+	.sidebar .side-element {
+		margin: 5% 0;
+		text-align: left;
+	}
+	.sidebar .side-element#trending {
+		display: block;
+	}
+}
+
+@media (max-width: 480px) {
+	h1 {
+		font-size: 36px;
+	}
+	h2 {
+		font-size: 26px;
+	}
+	nav .nav-top .logo {
+		width: 60%;
+	}
+}

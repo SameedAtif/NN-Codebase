@@ -1,0 +1,71 @@
+<section>
+
+	<?php/*
+		$dir = "images/notes/second-year/math/ch1/ex1.1/";
+		$files = array_diff(scandir($dir), array('..', '.'));
+		foreach ($files as $file) {
+			echo "<img src='$dir$file' />";
+		}*/
+	?>
+	
+	<div class="question">
+		<h3 class="statement"><span>1.</span> Given that:</h3>
+		<h4 class="answer">
+		<ol type="a">
+			<li>\( f(x) = x^{2} - x \) Find: <ol type="i">
+																<li>\( f(-2) = (-2)^{2} - (-2) = 4 + 2 = 6 \)</li>
+																<li>\( f(0) = (0)^{2} - (0) = 0 + 0 = 0 \)</li>
+																<li>\( f(x - 1) = (x - 1)^{2} - (x - 1) = x^{2} - 2x + 1 -x + 1 = x^{2} - 3x + 2 \)</li>
+																<li>\( f(x^{2} + 4) = (x^{2} + 4)^{2} - (x^{2} + 4) = x^{4} + 8x^{2} + 16 - x^{2} - 4 = x^{4} + 7x^{2} + 12 \)</li>
+															</ol>
+			</li>
+			<li>\( f(x) = \sqrt{x + 4} \) Find: <ol type="i">
+																	<li>\( f(-2) = \sqrt{-2 + 4} = \sqrt{2} \)</li>
+																	<li>\( f(0) = \sqrt{0 + 4} = \sqrt{4} = 2 \)</li>
+																	<li>\( f(x - 1) = \sqrt{x - 1 + 4} = \sqrt{x + 3} \)</li>
+																	<li>\( f(x^{2} + 4) = \sqrt{x^{2} + 4 + 4} = \sqrt{x^{2} + 8} \)</li>
+																</ol>
+			</li>
+		</ol>
+		</h4>
+	</div>
+	
+	<div class="question">
+		<h3 class="statement"><span>2.</span> Find \( \frac{f(a + h) - f(a)}{h} \) and simplify where</h3>
+		<h4 class="answer">
+		<ol type="i">
+			<li>\( f(x) = 6x - 9 \): <ul>
+													<li>\( f(a + h) = 6(a + h) - 9) = 6a + 6h - 9 \)</li>
+													<li>and \( f(a) = 6a - 9 \)</li>
+													<li>Now \( \frac{f(a + h) - f(a)}{h} = \frac{(6a + 6h - 9) - (6a - 9)}{h} \)</li>
+													<li>\( = \frac{6a + 6h - 9 - 6a + 9}{h} = \frac{6h}{h} = 6 \)</li>
+												</ul>
+			</li>
+			<li>\( f(x) = sin(x) \): <ul>
+													<li>\( \because sin\theta - sin\phi = 2cos\left ( \frac{\theta + \phi}{2} \right )sin\left ( \frac{\theta + \phi}{2} \right ) \)</li>
+													<li>\( f(a + h) = sin(a + h) \ and \ f(a) = sin(a) \)</li>
+													<li>Now \( \frac{f(a + h) - f(a)}{h} = \frac{sin(a + h) - sin(a)}{h} \)</li>
+													<li>\( = \frac{1}{h}\left [ sin(a + h) - sin(a) \right ] \)</li>
+													<li>\( = \frac{1}{h}\left [ 2cos\left ( \frac{a + h + a}{2} \right )sin\left ( \frac{a + h - a}{2} \right ) \right ] = \frac{1}{h}\left [ 2cos\left ( \frac{2a + h}{2} \right )sin\left ( \frac{h}{2} \right ) \right ] \)</li>
+													<li>\( = \frac{1}{h}\left [ 2cos\left( \frac{2a}{2} + \frac{h}{2} \right ) sin\left ( \frac{h}{2} \right ) \right ] = \frac{2}{h}cos\left ( a + \frac{h}{2} \right )sin\left ( \frac{h}{2} \right ) \)</li>
+												</ul>
+			</li>
+			<li>\(  \) Find: <ul>
+										<li>\( f(-2) = \sqrt{-2 + 4} = \sqrt{2} \)</li>
+										<li>\( f(0) = \sqrt{0 + 4} = \sqrt{4} = 2 \)</li>
+										<li>\( f(x - 1) = \sqrt{x - 1 + 4} = \sqrt{x + 3} \)</li>
+										<li>\( f(x^{2} + 4) = \sqrt{x^{2} + 4 + 4} = \sqrt{x^{2} + 8} \)</li>
+									</ul>
+			</li>
+			<li>\(  \) Find: <ul>
+										<li>\( f(-2) = \sqrt{-2 + 4} = \sqrt{2} \)</li>
+										<li>\( f(0) = \sqrt{0 + 4} = \sqrt{4} = 2 \)</li>
+										<li>\( f(x - 1) = \sqrt{x - 1 + 4} = \sqrt{x + 3} \)</li>
+										<li>\( f(x^{2} + 4) = \sqrt{x^{2} + 4 + 4} = \sqrt{x^{2} + 8} \)</li>
+									</ul>
+			</li>
+		</ol>
+		</h4>
+	</div>
+
+</section>
