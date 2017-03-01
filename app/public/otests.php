@@ -3,22 +3,43 @@
 	require("../includes/functions.php");
 	
 	global $test;
-	
+	$Model = [
+		"NET" => [
+			"title" => "NET (NUST Entry Test) Mockup Exam",
+			"desc" => "Online mockup examination of NET (NUST Entry Test).",
+			"test_title" => null, // `title` is page title, `test_title` is, well, test's title.
+			"path_home" => "online_tests/NET/home",
+			"path_test" => "online_tests/NET/test",
+			"path_data" => null,
+			"test_data" => ["subjects" => $_POST["subjects"], "timed" => $timed] // whatever is to be passed while rendering test template
+		],
+		"SAT" => [
+			"title" => "SAT (Scholastic Aptitude Test)",
+			"desc" => "Online mockup examination of SAT (Scholastic Aptitude Test) in co-operation with Khanacademy.",
+			"test_title" => null,
+			"path_home" => "online_tests/SAT/home",
+			"path_test" => "online_tests/SAT/test",
+			"path_data" => null,
+			"test_data" => []
+		],
+		"general_knowledge" => [
+			"title" => "General Knowledge",
+			"desc" => "Test you general knowledge with our specially crafted quiz to benchmark your knowledge and memory.",
+			"test_title" => "General Knowledge",
+			"path_home" => "online_tests/Generic/home",
+			"path_test" => "online_tests/Generic/test",
+			"path_data" => null,
+			"test_data" => ["test" => "general_knowledge", "test_title" => "General Knowledge"]
+		]
+	];
+
 	/**
-	** GET REQUEST
-	**/
+	 ** GET REQUEST
+	 **/
 	if ( !empty($_GET["test"]) ) {
 		$test = $_GET["test"];
-		if ($test == "NET") {
-			render("header", ["title" => "NET | Online Tests",
-										"desc" => "Online mockup examination of NET(NUST Entry Test)."]);
-		} elseif ($test == "SAT") {
-			render("header", ["title" => "SAT | Online Tests",
-										"desc" => "Online mockup examination of SAT(Scholastic Aptitude Test) in co-operation with Khanacademy."]);
-		} elseif ($test == "gk") {
-			render("header", ["title" => "General Knowledge | Online Tests",
-										"desc" => "Test you general knowledge with our specially crafted quiz to benchmark your knowledge and memory."]);
-		}
+		render("header", ["title" => $Model[$test]["title"] . " | Online Tests",
+									"desc" => $Model[$test]["desc"]]);
 	}
 	else {
 		render("header", ["title" => "Online Tests",
@@ -31,20 +52,11 @@
 		
 		<?php
 			/**
-			** GET REQUEST
-			**/
+			 ** GET REQUEST
+			 **/
 			// Test Handler
 			if ( isset($test) ) {
-				if ($test == "NET") {
-					render("online_tests/NET/home");
-				}
-				elseif ($test == "SAT") {
-					render("online_tests/SAT/home");
-				}
-				elseif ($test == "gk") {
-					render("online_tests/Generic/home", ["test_title" => "General Knowledge",
-																				"description" => "This test will contain 40 general knowledge questions. You will have about 40 minutes to complete it. You may spend as much time on a question as you want, but remember that total time is 40 minutes. You can start anytime by pressing the <strong>Begin</strong> button at the bottom."]);
-				}
+				render($Model[$test]["path_home"], ["test_title" => $Model[$test]["test_title"]]);
 			}
 			// Result Handler - Result page also does not requires a description(meta tag)
 			elseif ( isset($_GET["result"]) ) {
@@ -53,24 +65,17 @@
 																"time_taken" => $_GET["tt"]]);
 			}
 			/**
-			** POST REQUEST
-			**/
+			 ** POST REQUEST
+			 **/
 			elseif ( !empty($_POST) ) {
 				$name = $_POST["name"];
 				( !empty($_POST["timed"]) ) ? $timed = true : $timed = false;
-				if ($name == "NET") {
-					render("online_tests/NET/test", [ "subjects" => $_POST["subjects"], "timed" => $timed ]);
-				}
-				elseif ($name == "SAT") {
-					render("online_tests/SAT/test", []);
-				}
-				elseif($name == "gk") {
-					render("online_tests/Generic/test", ["test" => "gk", "test_title" => "General Knowledge"]);
-				}
+				
+				render($Model[$name]["path_test"], $Model[$name]["test_data"]);
 			}
 			/**
-			** DEFAULT
-			**/
+			 ** DEFAULT
+			 **/
 			else {
 				render("online_tests/otests_default");
 			}
