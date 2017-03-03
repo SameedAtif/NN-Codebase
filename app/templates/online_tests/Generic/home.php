@@ -4,8 +4,9 @@
 	
 	<form method="POST" action="otests.php">
 		<!-- Identification purposes-->
-		<input type="hidden" name="name" value="general_knowledge" />
-		<input type="hidden" name="timed" value="true" />
+		<input type="hidden" name="name" value=<?= $test ?> />
+		<?php //<input type="hidden" name="timed" value="true" />
+		?>
 		
 		<h4>You need to keep in mind the following:</h4>
 		<ul>

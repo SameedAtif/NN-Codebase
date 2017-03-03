@@ -6,7 +6,7 @@
 		"<strong>R</strong>ed <strong>G</strong>reen <strong>B</strong>lack",
 		"<strong>R</strong>ed <strong>G</strong>rey <strong>B</strong>lack",
 		"<strong>R</strong>ed <strong>G</strong>reen <strong>B</strong>lue",
-		"<strong>R</strong>ed <strong>G</strong>rey<strong>B</strong>lue"
+		"<strong>R</strong>ed <strong>G</strong>rey <strong>B</strong>lue"
 	],
 	"answer": 2,
 	"explanation": "RGB (Red, Green, and Blue) refers to a system for representing the colors to be used on computer displays."

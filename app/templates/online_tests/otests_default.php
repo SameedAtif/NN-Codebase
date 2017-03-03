@@ -21,8 +21,8 @@
 		
 		<div class="flex-child">
 			<h3>Computer Science</h3>
-			<p>Description and details go here. Lorem Ipsum dalor consit.</p>
-			<a href="#">Start</a>
+			<p>Test your Computer Science knowledge with this quiz.</p>
+			<a href="otests.php?test=computer_science">Start</a>
 		</div>
 		
 		<div class="flex-child">
@@ -44,7 +44,7 @@
 		
 		<div class="flex-child">
 			<h3>SAT</h3>
-			<p>SAT preparation test in co-operation with <a href="https://www.khanacademy.org/" target="_blank">Khanacademy</a>.</p>
+			<p>SAT preparation test in co-operation with <a href="https://www.khanacademy.org/" class="dark" target="_blank">Khanacademy</a>.</p>
 			<a href="otests.php?test=SAT">Start</a>
 		</div>
 		

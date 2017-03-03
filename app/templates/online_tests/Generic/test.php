@@ -3,13 +3,7 @@
 	
 	<?php
 		$test_name = $_POST["name"];
-		$source;
-		
-		if ($test_name == "general_knowledge") {
-			$source = "./data/otests/general_knowledge.json";
-		} else {
-			echo "Failed to load a source(test data)!";
-		}
+		$source = $path_data; // path to JSON file
 		
 		echo "<div id='meta' style='display: none;'><span id='source'>" . $source . "</span></div>";
 		
