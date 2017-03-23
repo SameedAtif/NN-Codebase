@@ -143,8 +143,7 @@ nav .nav-bottom ul.nav-menu li a {
 }
 nav .nav-bottom ul.nav-menu li ul.dropdown {
 	display: none;
-	list-style-type: square;
-	list-style-position: inside;
+	list-style-type: none;
 	padding: 0;
 }
 nav .nav-bottom ul.nav-menu li:hover > a, nav .nav-bottom ul.nav-menu > a:hover {
@@ -176,6 +175,10 @@ main .jumbotron .left > h1 {
 main .jumbotron .left > h1 small {
 	font-weight: 200;
 	font-style: italic;
+}
+main .trending-widget {
+	background-image: url("../images/backgrounds/trending-bg.jpg");
+	background-size: cover;
 }
 main .cards {
 	padding: 0;
@@ -437,6 +440,25 @@ section#contact-main {
 }
 form input[name="sec[]"] {
 	display: none;
+}
+/** ABOUT US **/
+#about-header {
+	background-image: url('../images/backgrounds/about-mascot.jpg');
+	background-size: cover;
+	height: 125px;
+	line-height: 125px;
+}
+#about-header h1 {
+	color: #ffffff;
+	margin: 0;
+}
+#about-mission p {
+	font-family: Georgia;
+	font-style: italic;
+	font-size: 18px;
+	text-align: justify;
+	line-height: 26px;
+	padding: 0 5%;
 }
 
 /**

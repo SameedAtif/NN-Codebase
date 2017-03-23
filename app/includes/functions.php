@@ -21,7 +21,6 @@
 	/**
 	 ** TITLE GENERATOR - generates title for served content
 	 **/
-	
 	function gen_title($chapter, $subject, $grade, $type) {
 		if ( strpos($chapter, "-") !== false ) {
 			$data = explode("-", $chapter);
@@ -34,32 +33,10 @@
 		}
 		$title["chapter"] = ucwords( $chapter );
 		
-		switch ($subject) {
-			case "physics":
-				$title["subject"] = "Physics";
-				break;
-			case "math":
-				$title["subject"] = "Mathematics";
-				break;
-			case "computer":
-				$title["subject"] = "Computer Science";
-				break;
-			case "chemistry":
-				$title["subject"] = "Chemistry";
-				break;
-			case "biology":
-				$title["subject"] = "Biology";
-				break;
-			case "english":
-				$title["subject"] = "English";
-				break;
-			case "urdu":
-				$title["subject"] = "Urdu";
-				break;
-			case "pakstudy-urdu" || "pakstudy-english":
-				$title["subject"] = "Pak. Study";
-				break;
-		}
+		$subjects = ["physics" => "Physics", "math" => "Mathematics", "computer" => "Computer Science",
+				"chemistry" => "Chemistry", "biology" => "Biology", "english" => "English",
+				"urdu" => "Urdu", "pakstudy-urdu" => "Pak. Study (Urdu)", "pakstudy-english" => "Pak. Study (English)"];
+		$title["subject"] = $subjects[$subject];
 		
 		switch ($grade) {
 			case "first-year":
@@ -224,7 +201,13 @@
 			return $a["score"] > $b["score"] ? -1 : 1; //Compare the scores
 		});
 		
-		file_put_contents( "./data/trending_now.json", json_encode($data) );
+		if ($data == null) {
+			echo "Something went wrong. Trending data was null. Update failed!";
+			$txt = "A null error was detected at " . date("Y-m-d");
+			file_put_contents('./data/trending_error.txt', $txt.PHP_EOL , FILE_APPEND | LOCK_EX);
+		} else {
+			file_put_contents( "./data/trending_now.json", json_encode($data) );
+		}
 	}
 	
 	// return data of top objects in trending_now.json

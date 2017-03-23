@@ -2,7 +2,7 @@
 	require("../includes/functions.php");
 
 	render("header", ["title" => "NotesNetwork",
-								"desc" => "A place where you can find high quality study materials like notes, guides, past papers, mockup entry tests and way much more, for matric and intermediate students."]);
+								"desc" => "A place where you can find high quality study materials including notes, guides, past papers, mockup entry tests and way much more, for matric and intermediate students."]);
 ?>
 
     <main>
@@ -26,7 +26,7 @@
 			</div>
 		</header>
 		
-		<section>
+		<section class="trending-widget">
 			<h2>Popular These Days</h2>
 			<ol class="no-bullets dark-links">
 				<?php
