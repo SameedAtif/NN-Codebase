@@ -119,6 +119,34 @@
 			echo "$path -> Path not found!";
 		}
 	}
+
+	/**
+	 ** Render Images - can be used for both rendering images-based notes and past papers
+	 **/
+	function render_images($_category, $_grade, $_subject, $_chapter, $_type) {
+		if ($_category == "past_papers") {
+			$dir = "images/$_category/$_grade/$_subject/$_chapter/"; // in case of past papers chapter is the year
+			$files = array_diff(scandir($dir), array('..', '.'));
+
+			foreach ($files as $file) {
+				$alt_tag = "";
+				if ( strpos($file, "-lhr") != false ) {
+					$alt_tag = "Lahore";
+				} elseif ( strpos($file, "-gjw") != false ) {
+					$alt_tag = "Gujranwala";
+				} else {
+					$alt_tag = "Unknown";
+				}
+				echo "<img src='$dir$file' class='scanned-img' alt='$alt_tag Board' />";
+			}
+		} else {
+			$dir = "images/$_category/$_grade/$_subject/$_chapter/$_type/";
+			$files = array_diff(scandir($dir), array('..', '.'));
+			foreach ($files as $file) {
+				echo "<img src='$dir$file' class='scanned-img' />";
+			}
+		}
+	}
 	
 	/**
 	 ** For rendering Mathematics

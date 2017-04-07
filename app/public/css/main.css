@@ -242,11 +242,14 @@ main .flex .flex-child {
 	flex: 0 1 330px;
 }
 
+footer {
+	clear: both; /* because of sidebar */
+}
 footer div.ftr-top {
 	background-color: #00abea;
 	padding: 4% 2%;
 }
-footer div.ftr-top:after /* overflow fix */ {
+footer div.ftr-top:after { /* overflow fix */
 	content: " ";
 	display: block;
 	clear: both;

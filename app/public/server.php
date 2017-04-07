@@ -58,7 +58,7 @@
 			<h2><?php  if ( isset($chapter) ) {echo $title_comps["chapter"];} else {echo $year;} ?></h2>
 		</div>
 		
-		<h2 class="type"><?= $title_comps["type"] ?></h2>
+		<h2 class="type"><?php if ( isset($chapter) ) echo $title_comps["type"]; else echo "Past Papers"; ?></h2>
 	</header>
 	
     <main class="sided">
@@ -75,7 +75,12 @@
 				
 				// being a good citizen
 				if ( file_exists(__DIR__ . "/../templates/" . $path) ) {
-					render($path);
+					if ($category == "past_papers") {
+						echo "<h2>Lahore Board</h2><div class='lahore-board'></div><h2>Gujranwala Board</h2><div class='gujranwala-board'></div><h2>Unknown Board</h2><div class='unknown-board'></div>";
+						render($path, ["category" => $category, "grade" => $grade, "subject" => $subject, "chapter" => $chapter, "type" => $type, "year" => $year]);
+					} else {
+						render($path, ["category" => $category, "grade" => $grade, "subject" => $subject, "chapter" => $chapter, "type" => $type, "year" => $year]);
+					}
 					update_trending_data("http://notesnetwork.org" . $_SERVER['REQUEST_URI'], $title);
 				} else {
 					echo "<h2>The File does not exists! The path provided probably does not exists.</h2>";

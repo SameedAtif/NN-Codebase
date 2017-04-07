@@ -58,6 +58,11 @@ function initialize() {
 	currQuestions = Questions;
 	currQuestion = currQuestions[currQuestionCounter];
 	currQuestion.display();
+
+	MathJax.Hub.Config({
+	    jax: ["input/TeX","output/HTML-CSS"],
+	    displayAlign: "left"
+	});
 }
 
 function save() {
@@ -211,7 +216,7 @@ var Question = function(stmnt, opts, ans, subj, exp) {
 		document.getElementById("nthQuestion").innerHTML = currQuestionCounter+1 + " of " + currQuestions.length;
 		
 		// For rendering dynamic mathematics written in LaTeX
-		MathJax.Hub.Queue(["Typeset",MathJax.Hub]);
+		MathJax.Hub.Queue(["Typeset", MathJax.Hub]);
 	};
 }
 

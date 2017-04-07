@@ -1,11 +1,3 @@
-<section>
-
-	<?php
-		$dir = "images/past_papers/second-year/chemistry/2011/";
-		$files = array_diff(scandir($dir), array('..', '.'));
-		foreach ($files as $file) {
-			echo "<img class='scanned-img' src='$dir$file' />";
-		}
-	?>
-
-</section>
+<?php
+	render_images($category, $grade, $subject, $year);
+?>

@@ -78,5 +78,25 @@ $(document).ready(function () {
 			item.parentNode.className += " filtered-out-2";
 		});
 	});
+
+	// Arrange Past papers categorically
+	if ($("h2.type").html() == "Past Papers") {
+		var table = {
+			"Lahore Board": ".lahore-board",
+			"Gujranwala Board": ".gujranwala-board",
+			"Unknown Board": ".unknown-board"
+		};
+		$(".scanned-img").each(function (index) {
+			var alt = $(this).attr("alt");
+			$(table[alt]).append($(this));
+		});
+		// remove the ones with nothing in 'em
+		$.each(table, function (index, item) {
+			if($(item).children().length <= 0) {
+				$(item)[0].previousSibling.outerHTML = "";
+				$(item).remove();
+			}
+		});
+	}
 	
 });
