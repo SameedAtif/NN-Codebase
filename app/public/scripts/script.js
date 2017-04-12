@@ -3,11 +3,13 @@ $(document).ready(function () {
 		$("ul.nav-menu").toggleClass("active");
 	});
 	
-	 
-    $( ".accordion" ).accordion({
+	$( ".accordion" ).accordion({
 		heightStyle: "content"
 	});
-	
+	$( ".accordion-closed" ).accordion({
+		heightStyle: "content", collapsible: true, active: false
+	});
+
 	// IMPORTANT HIGHLIGHTER
 	$(".imp-highlighter").click(function () {
 		$(this).toggleClass("active");

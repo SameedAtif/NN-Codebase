@@ -15,7 +15,7 @@
 			"title" => "SAT (Scholastic Aptitude Test)",
 			"desc" => "Online mockup examination of SAT (Scholastic Aptitude Test) in co-operation with Khanacademy.",
 			"path_home" => "online_tests/SAT/home",
-			"path_test" => "online_tests/SAT/test",
+			"path_test" => null,
 			"test_data" => []
 		],
 		"general_knowledge" => [
