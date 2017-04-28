@@ -50,7 +50,7 @@
 		}
 		
 		if ( strpos($type, "ex") !== false ) {
-			$title["type"] = "Exercise " . (float) filter_var( $type, FILTER_SANITIZE_NUMBER_FLOAT, FILTER_FLAG_ALLOW_FRACTION );
+			$title["type"] = str_replace("ex", "Exercise ", $type);
 		} else {
 			$title["type"] = str_replace("-", " ", $type);
 		}
@@ -166,7 +166,47 @@
 		}
 	</script>';
 	}
-	
+
+	/**
+	 ** For rendering Sidebar
+	 **/
+	function loadSidebar() {
+		echo '<aside class="sidebar">
+			
+			<div class="side-element" id="fb-widget">
+				<!-- Facebook Like widget -->
+				<div id="fb-root"></div>
+				<script>(function(d, s, id) {
+				  var js, fjs = d.getElementsByTagName(s)[0];
+				  if (d.getElementById(id)) return;
+				  js = d.createElement(s); js.id = id;
+				  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.8&appId=1856099134626810";
+				  fjs.parentNode.insertBefore(js, fjs);
+				}(document, "script", "facebook-jssdk"));</script>
+				<!-- Facebook Page Plugin -->
+				<div class="fb-page" data-href="https://www.facebook.com/notesnetworkofficial/" data-tabs="" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/notesnetworkofficial/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/notesnetworkofficial/">NotesNetwork</a></blockquote></div>
+			</div>
+			
+			<div class="side-element" id="side-ad">
+				<h5>ADVERTISEMENT</h5>
+			</div>
+			
+			<div class="side-element" id="trending">
+				<h4>TRENDING NOW</h4>
+				<ol class="no-bullets dark-links">';
+						$data = get_trending_data();
+						forEach ($data as $key => $ele) {
+							if ($key >= 14) {
+								break;
+							}
+							echo "<li><a href='" . $ele->url . "'>" . $ele->title . "</a></li>";
+						}
+				echo '</ol>
+			</div>
+			
+		</aside>';
+	}
+
 	/**
 	 ** TRENDING NOW
 	 **/

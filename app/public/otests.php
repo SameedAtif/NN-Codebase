@@ -9,7 +9,7 @@
 			"desc" => "Online mockup examination of NET (NUST Entry Test).",
 			"path_home" => "online_tests/NET/home",
 			"path_test" => "online_tests/NET/test",
-			"test_data" => ["subjects" => $_POST["subjects"], "timed" => $timed] // whatever is to be passed while rendering test template
+			"test_data" => ["subjects" => $_POST["subjects"], "timed" => $_POST["timed"]] // whatever is to be passed while rendering test template
 		],
 		"SAT" => [
 			"title" => "SAT (Scholastic Aptitude Test)",

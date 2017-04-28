@@ -5,7 +5,7 @@
 			($timed == "on") ? print("Full Scale NET &dash; Timed") : print("Full Scale NET &dash; Timeless");
 		}
 		else {
-			($timed == true) ? print("Subject Specific NET &dash; Timed") : print("Subject Specific NET &dash; Timeless");
+			($timed == "on") ? print("Subject Specific NET &dash; Timed") : print("Subject Specific NET &dash; Timeless");
 		}
 	?>
 	</h2>

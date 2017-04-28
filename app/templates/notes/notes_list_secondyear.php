@@ -1,12 +1,9 @@
 <section>
-	<h2 class="center">Second Year Notes</h2>
-	<p class="center">We have the best notes for Second Year (Intermediate/FSc Part-II) students. We have notes for Physics, Maths, Biology, Chemistry, Computer Science, English, Urdu and Pakistan Studies in the best quality.</p>
-</section>
-
-<section>
-	<h3>Subjects:</h3>
-	<p>Select a subject to see a list of its chapters.</p>
+	<p>We have the best notes for Second Year (Intermediate/FSc Part-II) students. We have notes for Physics, Maths, Biology, Chemistry, Computer Science, English, Urdu and Pakistan Studies in the best quality.</p>
 	
+	<h3>Subjects:</h3>
+	<p>Select a subject to see a list of its chapters. Then select whatever you want from the available links (MCQs, Short Answers, Long Answers, Solved exercises etc).</p>	
+
 	<ul class="accordion no-padding dark-links">
 		<li>
 			<h4>Physics</h4>
@@ -116,7 +113,20 @@
 					</span>
 				</li>
 				
-				<li>Chapter 2: Differentiation</li>
+				<li>Chapter 2: Differentiation
+					<span>
+						<a href="server.php?category=notes&grade=second-year&subject=math&chapter=ch2&type=ex2.1">Exercise 2.1</a>,
+						<a href="server.php?category=notes&grade=second-year&subject=math&chapter=ch2&type=ex2.2">Exercise 2.2</a>,
+						<a href="server.php?category=notes&grade=second-year&subject=math&chapter=ch2&type=ex2.3">Exercise 2.3</a>,
+						<a href="server.php?category=notes&grade=second-year&subject=math&chapter=ch2&type=ex2.4">Exercise 2.4</a>,
+						<a href="server.php?category=notes&grade=second-year&subject=math&chapter=ch2&type=ex2.5">Exercise 2.5</a>,
+						<a href="server.php?category=notes&grade=second-year&subject=math&chapter=ch2&type=ex2.6">Exercise 2.6</a>,
+						<a href="server.php?category=notes&grade=second-year&subject=math&chapter=ch2&type=ex2.7">Exercise 2.7</a>,
+						<a href="server.php?category=notes&grade=second-year&subject=math&chapter=ch2&type=ex2.8">Exercise 2.8</a>,
+						<a href="server.php?category=notes&grade=second-year&subject=math&chapter=ch2&type=ex2.9">Exercise 2.9</a>,
+						<a href="server.php?category=notes&grade=second-year&subject=math&chapter=ch2&type=ex2.10">Exercise 2.10</a>
+					</span>
+				</li>
 				
 				<li>Chapter 3: Integration</li>
 				
@@ -424,4 +434,5 @@
 		</li>
 		
 	</ul>
+
 </section>

@@ -16,7 +16,7 @@
 			<div>
 				<label>Time Settings:</label>
 				<div class="setting">
-					<input type="checkbox" name="timed" /><label>Timed</label>
+					<input type="checkbox" name="timed" value="on" checked="checked" /><label>Timed</label>
 				</div>
 				
 				<label>Select Subjects:</label>

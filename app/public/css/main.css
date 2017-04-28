@@ -384,6 +384,13 @@ td {
 }
 
 /**
+ ** COMMENTS SECTION
+ **/
+#disqus_thread {
+	padding: 1%;
+}
+
+/**
  ** ONLINE TESTS (OTESTS.PHP)
  **/
 .test_list-flex .flex-child {
