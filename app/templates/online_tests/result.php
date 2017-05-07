@@ -56,7 +56,7 @@
 
 <section>
 	<h3>Details</h3>
-	<p>Note: <span class="userChoice correct">Green and underlined</span> means it was your marked option and it was correct. <span class="correct">Only green</span> means it was correct but you didn't mark it. <span class="userChoice">Red</span> means you marked the wrong option.</p>
+	<p>Note: <span class="userChoice correct">Green and checked</span> means it was your marked option and it was correct. <span class="correct">Only green</span> means it was correct but you didn't mark it. <span class="userChoice">Red</span> means you marked the wrong option.</p>
 	<div id="details"></div>
 </section>
 
@@ -89,8 +89,8 @@ tbody tr td:first-child {
 .correct {
 	color: green;
 }
-.userChoice.correct {
-	text-decoration: underline;
+.userChoice.correct:after {
+	content: ' \02713';
 }
 </style>
 <script>

@@ -99,7 +99,7 @@ button[type=submit] {
 .flex.feature-flex .flex-child {
 	background-color: rgba(129, 196, 255, 0.5);
 	border-radius: 5px;
-    border: 1px solid;
+	border: 1px solid;
 }
 .center {
 	text-align: center;
@@ -114,6 +114,9 @@ button[type=submit] {
 .no-bullets {
 	list-style: none;
 	padding-left: 2%;
+}
+.clear-fix {
+	clear: both;
 }
 
 nav .nav-top {
@@ -235,6 +238,7 @@ main .motto {
 main .motto h3 {
 	font-size: 32px;
 }
+
 main section {
 	padding: 5%;
 }
@@ -245,13 +249,10 @@ main .flex {
 }
 main .flex .flex-child {
 	margin: 1em;
-	padding: 2em;
+	padding: 1.5em;
 	flex: 0 1 330px;
 }
 
-footer {
-	clear: both; /* because of sidebar */
-}
 footer div.ftr-top {
 	background-color: #00abea;
 	padding: 4% 2%;
@@ -317,20 +318,21 @@ footer div.ftr-bottom .fa-heart {
  ** SERVED CONTENT (SERVER.PHP)
  **/
 .content-main-header {
-    background-image: url("../images/backgrounds/mit-wallpaper.jpg");
+    background-image: url("../images/backgrounds/jumbotron-bg.jpg");
 	background-size: cover;
 	background-attachment: fixed;
 	color: #ffffff;
 	padding: 10% 5% 5%;
     overflow: auto;
 }
-.content-main-header h2:first-child {
+.content-main-header .heading-top {
 	font-size: 18px;
 	font-weight: 400;
 }
-.content-main-header h2:last-child {
+.content-main-header .heading-bottom {
 	font-size: 32px;
 	text-transform: uppercase;
+	max-width: 450px;
 }
 .content-header .type {
 	text-align: center;
@@ -401,8 +403,8 @@ td {
 	border-top-color: #3e62e0;
 }
 .test_list-flex .flex-child h3 {
-    border-bottom: 3px solid rgba(171, 171, 171, 0.5);
-    padding: 2%;
+	border-bottom: 3px solid rgba(171, 171, 171, 0.5);
+	padding: 2%;
 }
 .test_list-flex .flex-child > a {
 	background-color: #3e62e0;
@@ -415,15 +417,7 @@ td {
 .test_list-flex .flex-child > a:hover {
 	background-color: #3553bd;
 }
-.test-home {
-	background-size: cover;
-}
 .test-home.net {
-	background-image: url("../images/otests/nust.jpg");
-	padding: 5% 0;
-}
-.test-home.net form {
-	background-color: rgba(255, 255, 255, 0.5);
 	padding: 5%;
 }
 .test-home.net form button[type=submit] {
@@ -433,9 +427,13 @@ td {
 	width: 30%;
 }
 .test-home.net form .setting {
-    background-color: rgba(0, 171, 234, 0.5);
+    border-bottom: 2px solid #000000;
     padding: 1%;
     margin: 1% 0;
+    transition: 1s;
+}
+.test-home.net form .setting:hover {
+	background-color: #dddddd;
 }
 
 /**
@@ -490,6 +488,10 @@ form input[name="sec[]"] {
  **/
 .sidebar {
 	padding: 1.5%;
+}
+.sidebar:after {
+	display: block;
+	clear: both;
 }
 .sidebar .side-element {
 	text-align: center;
@@ -552,6 +554,10 @@ form input[name="sec[]"] {
 	main .jumbotron .right {
 		display: inline-block;
 		width: 40%;
+	}
+
+	main section {
+		padding: 3%;
 	}
 	
 	/**

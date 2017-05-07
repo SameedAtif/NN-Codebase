@@ -2,6 +2,7 @@
 <html>
     <head>
         <title><?= $title ?></title>
+        <base href="/app/public/">
 		<meta name="description" content="<?php if ( isset($desc) ) { echo $desc; } else { echo "A place where you can find high quality study materials like notes, guides, past papers, mockup entry tests and way much more, for matric and intermediate students."; }  ?>" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
@@ -36,11 +37,11 @@
 							<li><a href="./past_papers.php?grade=second-year">Second Year</a></li>
 						</ul>
 					</li>
-					<li><a href="#">Educational Resources</a></li>
-					<li><a href="./otests.php">Online Tests</a>
+					<li><a href="#">Articles</a></li>
+					<li><a href="online-tests/">Online Tests</a>
 						<ul class="dropdown">
-							<li><a href="./otests.php?test=NET">NET</a></li>
-							<li><a href="./otests.php?test=SAT">SAT</a></li>
+							<li><a href="online-tests/NET/">NET</a></li>
+							<li><a href="online-tests/SAT/">SAT</a></li>
 						</ul>
 					</li>
 					<li><a href="./contact.php">Contact</a>

@@ -1,0 +1,15 @@
+Options +FollowSymLinks
+RewriteEngine on
+
+# add trailing slash
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_URI} !(.*)/$
+RewriteRule ^(.*)$ %{REQUEST_URI}/ [L,R=301]
+
+RewriteRule ^notes/(.*)/$ notes.php?grade=$1
+
+RewriteRule ^notes/$ notes.php
+
+RewriteRule ^online-tests/(.*)/$ otests.php?test=$1
+
+RewriteRule ^online-tests/$ otests.php

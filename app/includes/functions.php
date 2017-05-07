@@ -204,7 +204,29 @@
 				echo '</ol>
 			</div>
 			
-		</aside>';
+		</aside>
+		<div class="clear-fix"></div>
+		';
+	}
+	/**
+	 ** For rendering Comments section
+	 **/
+	function loadCommentsSection() {
+		echo "<!-- COMMENTS SECTION - Powered by Disqus -->\n<div id=\"disqus_thread\"></div>\n
+	<script>var disqus_config = function () {";
+
+		$uniform_URI = str_replace(["?i=1", "&i=1", "/app/public"], "", $_SERVER['REQUEST_URI']);
+		echo "this.page.url = \"http://notesnetwork.org" . $uniform_URI . "\";\n";  // Replace PAGE_URL with your page's canonical URL variable
+		echo "this.page.identifier = \"" . $uniform_URI . "\";"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+
+		echo '};(function() { // DON\'T EDIT BELOW THIS LINE
+	var d = document, s = d.createElement(\'script\');
+	s.src = \'https://notesnetwork.disqus.com/embed.js\';
+	s.setAttribute(\'data-timestamp\', +new Date());
+	(d.head || d.body).appendChild(s);
+	})();
+	</script>
+	<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>';
 	}
 
 	/**
@@ -214,8 +236,8 @@
 		$data = json_decode( file_get_contents("./data/trending_now.json"), true );
 		
 		// remove ?i=1 or &i=1 if present
-		$url = str_replace("?i=1", "", $url);
-		$url = str_replace("&i=1", "", $url);
+		$url = preg_replace("/\?i=[0-9]$/", "", $url);
+		$url = preg_replace("/&i=[0-9]$/", "", $url);
 		
 		// see if URL already has an entry
 		$exists = false; $index = -1;

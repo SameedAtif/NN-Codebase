@@ -2,7 +2,7 @@
 	<h1 class="center"><?= $test_title ?></h1>
 	<p>This test will contain 40 <?= $test_title ?> questions. You will have about 40 minutes to complete it. You may spend as much time on a question as you want, but remember that total time is 40 minutes. You can start anytime by pressing the <strong>Begin</strong> button at the bottom.</p>
 	
-	<form method="POST" action="otests.php">
+	<form method="POST" action="online-tests/">
 		<!-- Identification purposes-->
 		<input type="hidden" name="name" value=<?= $test ?> />
 		<?php //<input type="hidden" name="timed" value="true" />

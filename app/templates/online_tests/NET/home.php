@@ -1,7 +1,7 @@
 <section class="test-home net">
-	<h1 class="center">NET Mockup Online Test</h1>
-	
-	<form method="POST" action="otests.php">
+	<h2>Ready?</h2>
+	<p>Once ready, click the below button to begin!</p>
+	<form method="POST" action="online-tests/">
 		<!-- Identification purposes-->
 		<input type="hidden" name="name" value="NET" />
 

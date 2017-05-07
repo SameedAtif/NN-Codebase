@@ -7,8 +7,8 @@
 				<a href="./"><li>Home</li></a>
 				<a href="./notes.php"><li>Notes</li></a>
 				<a href="./past_papers.php"><li>Past Papers</li></a>
-				<a href="#"><li>Educational Resources</li></a>
-				<a href="./otests.php"><li>Online Tests</li></a>
+				<a href="#"><li>Articles</li></a>
+				<a href="online-tests/"><li>Online Tests</li></a>
 				<a href="./contact.php"><li>Contact</li></a>
 			</ul>
 		</div>

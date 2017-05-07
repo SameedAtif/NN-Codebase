@@ -22,13 +22,13 @@
 		<div class="flex-child">
 			<h3>Computer Science</h3>
 			<p>Test your Computer Science knowledge with this quiz.</p>
-			<a href="otests.php?test=computer_science">Start</a>
+			<a href="online-tests/computer_science/">Start</a>
 		</div>
 		
 		<div class="flex-child">
 			<h3>General Knowledge</h3>
 			<p>Our General Knowledge quiz is designed to benchmark your knowledge and memory. Try it out now!</p>
-			<a href="otests.php?test=general_knowledge">Start</a>
+			<a href="online-tests/general_knowledge/">Start</a>
 		</div>
 		
 	</div>
@@ -39,13 +39,13 @@
 		<div class="flex-child">
 			<h3>NET</h3>
 			<p>Mockup NUST Entry Test. See how much you are ready by giving a full scale, timed or time-independent test.</p>
-			<a href="otests.php?test=NET">Start</a>
+			<a href="online-tests/NET/">Start</a>
 		</div>
 		
 		<div class="flex-child">
 			<h3>SAT</h3>
 			<p>SAT preparation test in co-operation with <a href="https://www.khanacademy.org/" class="dark" target="_blank">Khanacademy</a>.</p>
-			<a href="otests.php?test=SAT">Start</a>
+			<a href="online-tests/SAT/">Start</a>
 		</div>
 		
 	</div>

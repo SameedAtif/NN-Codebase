@@ -1,5 +1,4 @@
-<section class="test-home" style="background-color: #b3b3b3;">
-	<h1 class="center">SAT Practice Test</h1>
+<section class="test-home dark-links">
 
 	<h2>What is the SAT and why is it important?</h2>
 	<p>Created by the College Board, the SAT is an entrance exam used by most colleges and universities to make admissions decisions. It has 2 types SAT 1 and SAT 2 (also known as SAT Subject Test). The idea (in theory, at least) is to provide colleges with one common criterion that can be used to compare all applicants. However, it is just one factor in the admissions decision. Schools also consider your high school GPA, academic transcript, letters of recommendation, extracurricular activities, interviews, and personal essays. The weight placed on SAT scores varies from school to school.</p>
