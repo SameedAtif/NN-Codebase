@@ -304,5 +304,61 @@
 	function get_trending_data() {
 		return json_decode( file_get_contents("./data/trending_now.json") );
 	}
+
+	/**
+	 ** ARTICLE VIEWS
+	 **/
+	function update_article_views($uri, $title) {
+		$data = json_decode( file_get_contents("./data/articles/views_data.json"), true );
+		
+		// see if URI already has an entry
+		$exists = false; $index = -1;
+		forEach ($data as $key => $value) {
+			if ($value["uri"] == $uri) {
+				$exists = true;
+				$index = $key;
+			}
+		}
+		
+		$views_count = 1; // for returning
+		if ($exists == true) {
+				$views_count = ++$data[$index]["views"];
+		} else {
+			array_push($data, array(
+				"uri" => $uri,
+				"title" => $title,
+				"views" => 1
+			));
+		}
+		
+		// SORTING in DESCENDING ORDER
+		usort($data, function($a, $b) { //Sort the array using a user defined function
+			return $a["views"] > $b["views"] ? -1 : 1; //Compare the scores
+		});
+		
+		if ($data == null) {
+			echo "Something went wrong. Article views data was null. Update failed!";
+			$txt = "A null error was detected at " . date("Y-m-d");
+			file_put_contents('./data/articles/views_data_error.txt', $txt.PHP_EOL , FILE_APPEND | LOCK_EX);
+			die("Article views update failed!");
+		} else {
+			file_put_contents( "./data/articles/views_data.json", json_encode($data) );
+		}
+
+		// return views count
+		return $views_count;
+	}
 	
+	// return data of top objects in trending_now.json
+	function get_article_views($uri) {
+		$data = json_decode( file_get_contents("./data/articles/views_data.json") );
+		forEach ($data as $key => $value) {
+			if ($value["uri"] == $uri) {
+				return $value["views"];
+			} else {
+				echo "URI not found!";
+				return -1;
+			}
+		}
+	}
 ?>

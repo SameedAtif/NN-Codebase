@@ -10,6 +10,10 @@ RewriteRule ^notes/(.*)/$ notes.php?grade=$1
 
 RewriteRule ^notes/$ notes.php
 
+RewriteRule ^articles/(.*)/$ articles.php?uri=$1
+
+RewriteRule ^articles/$ articles.php
+
 RewriteRule ^online-tests/(.*)/$ otests.php?test=$1
 
 RewriteRule ^online-tests/$ otests.php

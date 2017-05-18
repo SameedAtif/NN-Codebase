@@ -37,7 +37,7 @@
 							<li><a href="./past_papers.php?grade=second-year">Second Year</a></li>
 						</ul>
 					</li>
-					<li><a href="#">Articles</a></li>
+					<li><a href="articles/">Articles</a></li>
 					<li><a href="online-tests/">Online Tests</a>
 						<ul class="dropdown">
 							<li><a href="online-tests/NET/">NET</a></li>

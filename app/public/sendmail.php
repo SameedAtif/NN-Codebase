@@ -23,17 +23,17 @@
 		die("incorrect email address!");
 	}
 	
-	$mail = new PHPMailer;
+	$mail = new PHPMailer();
 
 	$mail->SMTPDebug = 3;                               // Enable verbose debug output
 
-	// $mail->isSMTP();                                      // Set mailer to use SMTP
+	$mail->isSMTP();                                      // Set mailer to use SMTP
 	$mail->Host = '';  // Specify main and backup SMTP servers
-	// $mail->SMTPAuth = true;                               // Enable SMTP authentication
+	$mail->SMTPAuth = true;                               // Enable SMTP authentication
 	$mail->Username = '';                 // SMTP username
 	$mail->Password = '';                           // SMTP password
-	// $mail->SMTPSecure = 'tls';                            // Enable TLS encryption, `ssl` also accepted
-	// $mail->Port = 587;                                    // TCP port to connect to
+	$mail->SMTPSecure = 'tls';                            // Enable TLS encryption, `ssl` also accepted
+	$mail->Port = 587;                                    // TCP port to connect to
 
 	$mail->setFrom($fromAddress, $fromName);
 	$mail->addAddress('');    // Add a recipient

@@ -15,18 +15,14 @@
 	$path;
 	
 	if ($category == "notes") {
-		
 		$grade = $_GET["grade"];
 		$subject = $_GET["subject"];
 		$chapter = $_GET["chapter"];
 		$type = $_GET["type"];
-		
 	} elseif ($category == "past_papers") {
-		
 		$grade = $_GET["grade"];
 		$subject = $_GET["subject"];
 		$year = $_GET["year"];
-		
 	} else {
 		die("Unknown Category");
 	}
@@ -69,7 +65,7 @@
 				if ($type == "idioms") {
 					tools("f_alphabet", "f_text", "imp_highlighter");
 				}
-				else {
+				elseif($category == "notes") {
 					tools(null, "f_text", "imp_highlighter");
 				}
 				

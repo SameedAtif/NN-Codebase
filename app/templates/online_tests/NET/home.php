@@ -5,7 +5,9 @@
 		<!-- Identification purposes-->
 		<input type="hidden" name="name" value="NET" />
 
-		<button type="submit" class="ghost-btn btn-green">Begin</button>
+		<div class="center">
+			<button type="submit" class="ghost-btn btn-green btn-lg">Begin</button>
+		</div>
 		
 		<p>It is recommended that, before starting, you read the rules stated below.</p>
 		<p>To change between Chemistry and Computer Science, modify the settings below. You can also include/exclude other subjects.</p>

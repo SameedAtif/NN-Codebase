@@ -100,5 +100,17 @@ $(document).ready(function () {
 			}
 		});
 	}
+
+	/**
+	 ** GOOGLE ANALYTICS
+	 ** EVENT TRACKING - only enable in production
+	**/
+	/*var imp_click_counter = 0;
+	$(".imp-highlighter").click(function () {
+		if (imp_click_counter % 2 == 0) {
+			ga('send', 'event', 'Tools', 'Highlight', 'Highlighted Important Stuff');
+		}
+		imp_click_counter++;
+	});*/
 	
 });

@@ -1,4 +1,5 @@
 <section id="contact-main">
+	<h1 class="center">Contact Us</h1>
 	<div class="container">
 		<h2 class="center">We would <i class="fa fa-heart-o"></i> to hear from you!</h1>
 		<p class="center">Want to request something, report a mistake or just provide some feedback? It's simple.</p>
@@ -19,7 +20,7 @@
 </section>
 
 <section>
-	<h2 class="center">Or just email us at <a href="mailto: support@notesnetwork.org" class="dark">support@notesnetwork.org</a></h2>
+	<h2 class="center">Or just email us at <a href="mailto: notesnetworkofficial@gmail.com" class="dark">notesnetworkofficial@gmail.com</a></h2>
 </section>
 
 <script src="scripts/form.js"></script>
