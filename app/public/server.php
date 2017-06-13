@@ -50,8 +50,8 @@
 	
 	<header class="content-header">
 		<div class="content-main-header" style="background-image: url('images/notes/<?= $grade ?>/<?= $subject ?>/header-bg.jpg');">
-			<h2 class="heading-top"><?=  $title_comps["grade"] ?> &dash; <?= $title_comps["subject"] ?></h2>
-			<h2 class="heading-bottom"><?php  if ( isset($chapter) ) {echo $title_comps["chapter"];} else {echo $year;} ?></h2>
+			<h2 class="heading-small"><?=  $title_comps["grade"] ?> &dash; <?= $title_comps["subject"] ?></h2>
+			<h2 class="heading-large"><?php  if ( isset($chapter) ) {echo $title_comps["chapter"];} else {echo $year;} ?></h2>
 		</div>
 		
 		<h2 class="type"><?php if ( isset($chapter) ) echo $title_comps["type"]; else echo "Past Papers"; ?></h2>

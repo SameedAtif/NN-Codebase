@@ -7,7 +7,7 @@
 				<a href="./"><li>Home</li></a>
 				<a href="./notes.php"><li>Notes</li></a>
 				<a href="./past_papers.php"><li>Past Papers</li></a>
-				<a href="#"><li>Articles</li></a>
+				<a href="articles/"><li>Articles</li></a>
 				<a href="online-tests/"><li>Online Tests</li></a>
 				<a href="./contact.php"><li>Contact</li></a>
 			</ul>
@@ -44,6 +44,11 @@
 <link rel="stylesheet" type="text/css" href="css/main.css">
 
 <!-- EXTERNAL SCRIPTS -->
+<?php
+	if (isset($injection))
+		foreach ($injection as $element)
+			echo $element;
+?>
 <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
 <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
 <script src="scripts/script.js"></script>

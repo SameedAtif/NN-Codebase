@@ -1,5 +1,5 @@
 <section>
-	<p>We have the best notes for Second Year (Intermediate/FSc Part-II) students. We have notes for Physics, Maths, Biology, Chemistry, Computer Science, English, Urdu and Pakistan Studies in the best quality.</p>
+	<p>We have the best notes for Second Year (Intermediate/FSc Part-II) students. Notes for Physics, Maths, Biology, Chemistry, Computer Science, English, Urdu and Pakistan Studies are available in the best quality.</p>
 	
 	<h3>Subjects:</h3>
 	<p>Select a subject to see a list of its chapters. Then select whatever you want from the available links (MCQs, Short Answers, Long Answers, Solved exercises etc).</p>	
@@ -128,15 +128,60 @@
 					</span>
 				</li>
 				
-				<li>Chapter 3: Integration</li>
+				<li>Chapter 3: Integration
+					<span>
+						<a href="server.php?category=notes&grade=second-year&subject=math&chapter=ch3&type=ex3.1">Exercise 3.1</a>,
+						<a href="server.php?category=notes&grade=second-year&subject=math&chapter=ch3&type=ex3.2">Exercise 3.2</a>,
+						<a href="server.php?category=notes&grade=second-year&subject=math&chapter=ch3&type=ex3.3">Exercise 3.3</a>,
+						<a href="server.php?category=notes&grade=second-year&subject=math&chapter=ch3&type=ex3.4">Exercise 3.4</a>,
+						<a href="server.php?category=notes&grade=second-year&subject=math&chapter=ch3&type=ex3.5">Exercise 3.5</a>,
+						<a href="server.php?category=notes&grade=second-year&subject=math&chapter=ch3&type=ex3.6">Exercise 3.6</a>,
+						<a href="server.php?category=notes&grade=second-year&subject=math&chapter=ch3&type=ex3.7">Exercise 3.7</a>,
+						<a href="server.php?category=notes&grade=second-year&subject=math&chapter=ch3&type=ex3.8">Exercise 3.8</a>
+					</span>
+				</li>
 				
-				<li>Chapter 4: Introduction to Analytic Geometry</li>
+				<li>Chapter 4: Introduction to Analytic Geometry
+					<span>
+						<a href="server.php?category=notes&grade=second-year&subject=math&chapter=ch4&type=ex4.1">Exercise 4.1</a>,
+						<a href="server.php?category=notes&grade=second-year&subject=math&chapter=ch4&type=ex4.2">Exercise 4.2</a>,
+						<a href="server.php?category=notes&grade=second-year&subject=math&chapter=ch4&type=ex4.3">Exercise 4.3</a>,
+						<a href="server.php?category=notes&grade=second-year&subject=math&chapter=ch4&type=ex4.4">Exercise 4.4</a>,
+						<a href="server.php?category=notes&grade=second-year&subject=math&chapter=ch4&type=ex4.5">Exercise 4.5</a>
+					</span>
+				</li>
 				
-				<li>Chapter 5: Linear Inequalities and Linear Programming</li>
+				<li>Chapter 5: Linear Inequalities and Linear Programming
+					<span>
+						<a href="server.php?category=notes&grade=second-year&subject=math&chapter=ch5&type=ex5.1">Exercise 5.1</a>,
+						<a href="server.php?category=notes&grade=second-year&subject=math&chapter=ch5&type=ex5.2">Exercise 5.2</a>,
+						<a href="server.php?category=notes&grade=second-year&subject=math&chapter=ch5&type=ex5.3">Exercise 5.3</a>
+					</span>
+				</li>
 				
-				<li>Chapter 6: Conic section</li>
+				<li>Chapter 6: Conic section
+					<span>
+						<a href="server.php?category=notes&grade=second-year&subject=math&chapter=ch6&type=ex6.1">Exercise 6.1</a>,
+						<a href="server.php?category=notes&grade=second-year&subject=math&chapter=ch6&type=ex6.2">Exercise 6.2</a>,
+						<a href="server.php?category=notes&grade=second-year&subject=math&chapter=ch6&type=ex6.3">Exercise 6.3</a>,
+						<a href="server.php?category=notes&grade=second-year&subject=math&chapter=ch6&type=ex6.4">Exercise 6.4</a>,
+						<a href="server.php?category=notes&grade=second-year&subject=math&chapter=ch6&type=ex6.5">Exercise 6.5</a>,
+						<a href="server.php?category=notes&grade=second-year&subject=math&chapter=ch6&type=ex6.6">Exercise 6.6</a>,
+						<a href="server.php?category=notes&grade=second-year&subject=math&chapter=ch6&type=ex6.7">Exercise 6.7</a>,
+						<a href="server.php?category=notes&grade=second-year&subject=math&chapter=ch6&type=ex6.8">Exercise 6.8</a>,
+						<a href="server.php?category=notes&grade=second-year&subject=math&chapter=ch6&type=ex6.9">Exercise 6.9</a>
+					</span>
+				</li>
 				
-				<li>Chapter 7: Vectors</li>
+				<li>Chapter 7: Vectors
+					<span>
+						<a href="server.php?category=notes&grade=second-year&subject=math&chapter=ch7&type=ex7.1">Exercise 7.1</a>,
+						<a href="server.php?category=notes&grade=second-year&subject=math&chapter=ch7&type=ex7.2">Exercise 7.2</a>,
+						<a href="server.php?category=notes&grade=second-year&subject=math&chapter=ch7&type=ex7.3">Exercise 7.3</a>,
+						<a href="server.php?category=notes&grade=second-year&subject=math&chapter=ch7&type=ex7.4">Exercise 7.4</a>,
+						<a href="server.php?category=notes&grade=second-year&subject=math&chapter=ch7&type=ex7.5">Exercise 7.5</a>
+					</span>
+				</li>
 			</ol>
 		</li>
 		
@@ -425,7 +470,7 @@
 				<li>باب ۹: اسلامی جمہوریہ پاکستان میں معاشی منصوبہ بندی اور ترقی</li>
 				<li>باب ۱۰: اسلامی جمہوریہ پاکستان کی خارجہ پالیسی 
 					<span>
-						<a href="#">MCQs</a>,
+						<!--a href="#">MCQs</a-->,
 						<a href="server.php?category=notes&grade=second-year&subject=pakstudy-urdu&chapter=ch10&type=short-questions">SQs</a>,
 						<a href="server.php?category=notes&grade=second-year&subject=pakstudy-urdu&chapter=ch10&type=long-questions">LQs</a>
 					</span>

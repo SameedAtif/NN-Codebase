@@ -1,8 +1,15 @@
 html, body {
 	margin: 0;
 }
+body {
+	font-family: Roboto, sans-serif;
+}
+@font-face {
+	font-family: "Nastaliq";
+	src: url("NotoNastaliq.ttf");
+}
 h1, h2, h3, h4, h5, h6, h7, p {
-	margin: 2% 0;
+	margin: 1.5rem 0;
 }
 h1 {
 	font-size: 42px;
@@ -16,12 +23,20 @@ h3 {
 h4 {
 	font-size: 20px;
 }
-body {
-	font-family: Roboto, sans-serif;
+p {
+	line-height: 1.5rem;
 }
-@font-face {
-	font-family: "Nastaliq";
-	src: url("NotoNastaliq.ttf");
+q, blockquote {
+	quotes: "\201C" "\201D" "\2018" "\2019";
+	font-family: Georgia;
+}
+q:before, blockquote:before {
+    content: open-quote;
+    font-size: 32px;
+}
+q:after, blockquote:after {
+    content: close-quote;
+    font-size: 32px;
 }
 [lang=ur] {
 	font-family: "Nastaliq", Roboto;
@@ -284,7 +299,7 @@ footer div.ftr-top > div ul li {
 }
 footer div.ftr-bottom {
 	background-color: #007ead;
-	padding: 2% 2%;
+	padding: 0.5rem 2rem;
 	clear: both;
 }
 footer div.ftr-bottom .fa-heart {
@@ -332,14 +347,20 @@ footer div.ftr-bottom .fa-heart {
 	padding: 10% 5% 5%;
     overflow: auto;
 }
-.content-main-header .heading-top {
+.content-main-header .heading-small {
 	font-size: 18px;
 	font-weight: 400;
 }
-.content-main-header .heading-bottom {
+.content-main-header .heading-large {
 	font-size: 32px;
 	text-transform: uppercase;
 	max-width: 450px;
+}
+.content-main-header .heading-subheading {
+	font-family: Georgia;
+	font-style: italic;
+	font-size: 24px;
+	font-weight: 400;
 }
 .content-header .type {
 	text-align: center;
@@ -405,11 +426,15 @@ table.bordered td {
 .blog .post {
 	background-color: #efefef;
 	border-bottom: 2px solid #007ead;
+	margin-top: 1rem;
 }
 .blog .post > .description {
 	font-family: Georgia;
 	font-weight: 400;
 	font-style: italic;
+}
+.blog article > section {
+	padding: 0 1rem;
 }
 
 /**
@@ -439,12 +464,6 @@ table.bordered td {
 }
 .test-home.net {
 	padding: 5%;
-}
-.test-home.net form button[type=submit] {
-	display: block;
-	font-size: 18px;
-	margin: 0 auto;
-	width: 30%;
 }
 .test-home.net form .setting {
     border-bottom: 2px solid #000000;

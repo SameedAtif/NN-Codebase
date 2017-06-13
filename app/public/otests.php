@@ -52,7 +52,7 @@
 		echo'
     <header class="content-header">
 		<div class="content-main-header" style="background-image: url(\'images/otests/' . $test . '/header-bg.jpg\');">
-			<h1 class="heading-bottom">' . $Model[$test]["title"] . '</h1>
+			<h1 class="heading-large">' . $Model[$test]["title"] . '</h1>
 		</div>
 	</header>
 	';

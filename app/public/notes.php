@@ -36,7 +36,7 @@
 	];
 
 	$grade = "default";
-	if (!empty($_GET)) {
+	if ( isset($_GET["grade"]) ) {
 		$grade = $_GET["grade"];
 	}
 	
