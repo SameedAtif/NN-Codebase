@@ -10,6 +10,10 @@ RewriteRule ^notes/(.*)/$ notes.php?grade=$1
 
 RewriteRule ^notes/$ notes.php
 
+# server.php (notes and past papers)
+
+RewriteRule ^content/(.*)/(.*)/(.*)/(.*)/(.*)/$ server.php?category=$1&grade=$2&subject=$3&chapter=$4&type=$5
+
 RewriteRule ^articles/(.*)/$ articles.php?uri=$1
 
 RewriteRule ^articles/$ articles.php
@@ -17,3 +21,13 @@ RewriteRule ^articles/$ articles.php
 RewriteRule ^online-tests/(.*)/$ otests.php?test=$1
 
 RewriteRule ^online-tests/$ otests.php
+
+# login & profile shit below
+
+RewriteRule ^profile/(.*)/(.*)/$ members.php?profile=$1&test=$2
+
+RewriteRule ^profile/(.*)/$ members.php?profile=$1
+
+RewriteRule ^login/$ members.php?login
+
+RewriteRule ^account/$ members.php

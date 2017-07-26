@@ -1,5 +1,5 @@
 <?php 
-	require("../includes/functions.php");
+	require("../includes/config.php");
 
 	render("header", ["title" => "NotesNetwork",
 								"desc" => "A place where you can find high quality study materials including notes, guides, past papers, mockup entry tests and way much more, for matric and intermediate students."]);
@@ -12,15 +12,7 @@
 				<h1>The Best Notes, Past Papers and Online Tests <small>anywhere, anytime</small></h1>
 			</div>
 			<div class="right">
-				<!-- Facebook JavaScript SDK -->
-				<div id="fb-root"></div>
-				<script>(function(d, s, id) {
-				  var js, fjs = d.getElementsByTagName(s)[0];
-				  if (d.getElementById(id)) return;
-				  js = d.createElement(s); js.id = id;
-				  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.8&appId=1856099134626810";
-				  fjs.parentNode.insertBefore(js, fjs);
-				}(document, 'script', 'facebook-jssdk'));</script>
+				<!-- FB JS SDK is now in header -->
 				<!-- Facebook Page Plugin -->
 				<div class="fb-page" data-href="https://www.facebook.com/notesnetworkofficial/" data-tabs="" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/notesnetworkofficial/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/notesnetworkofficial/">NotesNetwork</a></blockquote></div>
 			</div>

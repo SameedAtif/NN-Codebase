@@ -1,6 +1,6 @@
 <?php
 	
-	require("../includes/functions.php");
+	require("../includes/config.php");
 	
 	/**
 	 ** SERVER.PHP serves content which user requests. For that, it needs 4 parameters: category(notes, past papers, etc), grade, subject, type(SQ, LQ, MCQs, Numericals)

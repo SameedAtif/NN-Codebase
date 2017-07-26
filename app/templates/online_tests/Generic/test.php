@@ -5,7 +5,7 @@
 		$test_name = $_POST["name"];
 		$source = $path_data; // path to JSON file
 		
-		echo "<div id='meta' style='display: none;'><span id='source'>" . $source . "</span></div>";
+		echo "<div id='meta' style='display: none;'><span id='test_name'>" . $test_name . "</span><span id='source'>" . $source . "</span></div>";
 		
 		$data = file_get_contents($source);
 		$questions = json_decode($data);
@@ -108,8 +108,6 @@
 	}
 	
 </style>
-
-<?php loadMathjax(); ?>
 
 <script>
 	window.onload = function () {

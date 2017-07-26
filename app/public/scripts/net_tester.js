@@ -25,17 +25,17 @@ function loadQuestions(path) {
 	
 }
 
-var   subjects = document.getElementById("subjList").innerHTML.split(" ", 5),
-		questionsRaw = [],
-		Questions = [],
-		currQuestions = [],
-		currQuestion,
-		currQuestionCounter = 0;
-		// remove empty string from `subjects` array
-		subjects = subjects.filter(function(e){ return e === 0 || e });
+var subjects = document.getElementById("subjList").innerHTML.split(" ", 5),
+	questionsRaw = [],
+	Questions = [],
+	currQuestions = [],
+	currQuestion,
+	currQuestionCounter = 0;
+	// remove empty string from `subjects` array
+	subjects = subjects.filter(function(e){ return e === 0 || e });
 
-var  QuestionsArea = document.getElementById("question"),
-		OptionsArea = document.getElementsByClassName("option-text");
+var QuestionsArea = document.getElementById("question"),
+	OptionsArea = document.getElementsByClassName("option-text");
 
 // INITIALIZATION
 function initialize() {
@@ -249,7 +249,16 @@ function calculateResult() {
 function displayResult() {
 	calculateResult();
 	
-	$.get("otests.php", {result: true, marks: marks, tt: timeTaken, perc: percentage}, function (data) {
+	var userChoices = [];
+	Questions.forEach(function (item, index) {
+		userChoices[index] = item.userAnswer;
+	});
+
+	$.get("otests.php/", {test_name: "NET Mockup Exam", user_choices: userChoices, result: true, subject_list: subjects, marks: marks, total: Questions.length, time_taken: timeTaken, perc: percentage}, function (data) {
+		console.log(data);
+		if (data == "inserted")
+			return 0; // redirect to test detail in user's profile
+
 		var resultPage = document.createElement("main");
 		resultPage.innerHTML = data;
 		

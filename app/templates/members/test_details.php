@@ -1,10 +1,16 @@
+<?php
+	$rows = query("SELECT * FROM tests WHERE counter = ?", $_GET["test"]);
+	$test_info = $rows[0];
+
+	/**  WARNING: If it is not public, make a 404 redirect or display a message. Just don't show the details! **/
+?>
 <section>
 	<h1 class="center">Results</h1>
 	<div class="score">
-		<h2>You scored <?= $marks ?> in <?= $time_taken ?> minute(s).</h2>
+		<h2>You scored <?= $test_info["score"] ?> in <?= $test_info["time_taken"] ?> minute(s).</h2>
 		<p class="score-text"></p>
 	</div>
-	<h2 class="percentage center"><?= $percentage ?>%</h2>
+	<h2 class="percentage center"><?= $test_info["score"]/$test_info["total"]*100 ?>%</h2>
 	
 </section>
 

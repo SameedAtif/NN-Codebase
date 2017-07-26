@@ -10,6 +10,7 @@
 
 var Model = {
 	source: "",
+	test_name: "",
 	totalQuestions: -1,
 	totalTime: null,
 	timeRemaining: null,
@@ -17,6 +18,7 @@ var Model = {
 		this.totalQuestions = MainController.getCards().length;
 		this.userChoices = new Array(this.totalQuestions);
 		this.source = document.querySelector("#meta #source").innerHTML;
+		this.test_name = document.querySelector("#meta #test_name").innerHTML;
 		console.log("Model initialized!");
 	},
 	userChoices: []
@@ -86,8 +88,11 @@ var MainController = {
 			
 			percentage = Math.round( (obtainedMarks/totalMarks) * 100 * 10) / 10; // Math.round(n * 10) / 10 to round to 1 decimal place
 			
-			// now display result
-			$.get("otests.php", {result: true, marks: obtainedMarks, tt: timeTaken, perc: percentage}, function (html) {
+			// display result (if user is signed in, they will be redirected)
+			$.get("otests.php/", {test_name: Model.test_name, user_choices: Model.userChoices, result: true, subject_list: null, marks: obtainedMarks, total: Model.totalQuestions, time_taken: timeTaken, perc: percentage}, function (html) {
+				console.log(html);
+				if (html == "inserted")
+					return 0; // redirect to test detail in user's profile
 				var resultPage = document.createElement("main");
 				resultPage.innerHTML = html;
 				

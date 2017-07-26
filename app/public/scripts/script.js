@@ -3,12 +3,14 @@ $(document).ready(function () {
 		$("ul.nav-menu").toggleClass("active");
 	});
 	
-	$( ".accordion" ).accordion({
+	$(".accordion").accordion({
 		heightStyle: "content"
 	});
 	$( ".accordion-closed" ).accordion({
 		heightStyle: "content", collapsible: true, active: false
 	});
+	
+	$("#tabs").tabs();
 
 	// IMPORTANT HIGHLIGHTER
 	$(".imp-highlighter").click(function () {
@@ -112,5 +114,62 @@ $(document).ready(function () {
 		}
 		imp_click_counter++;
 	});*/
-	
+
+	/********** LOGIN FUNCTIONS **********/
+	function fb_login() {
+		FB.login(function(response) {
+			if (response.authResponse) {
+				console.log('Welcome!  Fetching your information.... ');
+				//console.log(response); // dump complete info
+				var access_token = response.authResponse.accessToken; //get access token
+				var user_id = response.authResponse.userID; //get FB UID
+
+				FB.api('/me', {fields: "name,email,picture.width(300)"}, function(response) {
+					var username = response.id,
+					    full_name = response.name,
+					    user_email = response.email,
+					    user_profile_pic = response.picture.data.url,
+					    about_info = "The spirit indeed is willing, but the flesh is weak.";
+					$.ajax({
+						type: "POST",
+						url: "members.php/",
+						data: {
+							"username": username,
+							"full_name": full_name,
+							"email": user_email,
+							"pic_url": user_profile_pic,
+							"registered_with": "FB",
+							"about": about_info,
+							"access_token": access_token
+						},
+						success: function (responseText) {
+							console.log(responseText);
+							if (responseText == "logged in" || responseText == "registered")
+								location.reload(); // refresh page
+						}
+					});
+				});
+
+			} else {
+				//user hit cancel button
+				console.log("User cancelled login or did not fully authorize.");
+			}
+		}, { scope: "public_profile,email" });
+	}
+
+	$(".login-btn.btn--facebook").click(function () {
+		fb_login();
+	});
+
+	$("#logout").click(function () {
+		$.ajax({
+			type: "POST",
+			url: "members.php",
+			data: {"logout": true},
+			success: function (responseText) {
+				console.log(responseText);
+				location.reload();
+			}
+		});
+	});
 });

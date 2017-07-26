@@ -1,15 +1,15 @@
 <section>
 	<h2 class="center">
 	<?php
-		if ( sizeof($subjects) == 5) {
-			($timed == "on") ? print("Full Scale NET &dash; Timed") : print("Full Scale NET &dash; Timeless");
+		if ( sizeof($_POST["subjects"]) == 5) {
+			($_POST["timed"] == "on") ? print("Full Scale NET &dash; Timed") : print("Full Scale NET &dash; Timeless");
 		}
 		else {
-			($timed == "on") ? print("Subject Specific NET &dash; Timed") : print("Subject Specific NET &dash; Timeless");
+			($_POST["timed"] == "on") ? print("Subject Specific NET &dash; Timed") : print("Subject Specific NET &dash; Timeless");
 		}
 	?>
 	</h2>
-	<div style="display: none;" id="subjList"><?php foreach ($subjects as $subject) { echo $subject . " "; } ?></div>
+	<div style="display: none;" id="subjList"><?php foreach ($_POST["subjects"] as $subject) { echo $subject . " "; } ?></div>
 	
 	<div class="test-component">
 		<span id="currSection">Current Section</span>
@@ -83,7 +83,7 @@
 	
 </section>
 
-<script src="scripts/tester.js"></script>
+<script src="scripts/net_tester.js"></script>
 
 <style>
 	.test-component {
@@ -160,11 +160,9 @@
 	
 </style>
 
-<?php loadMathjax(); ?>
-
 <script>
 	window.onload = function () {
-		loadQuestions("https://raw.githubusercontent.com/MustagheesButt/Online-tests/master/NET/set1.json");
+		loadQuestions(<?= "\"" . $path_data[1] . "\"" ?>);
 		if ( $("section h2").text().indexOf("Timeless") == -1) {
 			timer(180);
 		} else {

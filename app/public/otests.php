@@ -1,50 +1,30 @@
 <?php
 	
-	require("../includes/functions.php");
+	require("../includes/config.php");
 	
 	global $test;
-	$Model = [
-		"NET" => [
-			"title" => "NET (NUST Entry Test) Mockup Exam",
-			"desc" => "Online mockup examination of NET (NUST Entry Test).",
-			"path_home" => "online_tests/NET/home",
-			"path_test" => "online_tests/NET/test",
-			"test_data" => ["subjects" => $_POST["subjects"], "timed" => $_POST["timed"]] // whatever is to be passed while rendering test template
-		],
-		"SAT" => [
-			"title" => "SAT (Scholastic Aptitude Test) Practice",
-			"desc" => "Online mockup examination of SAT (Scholastic Aptitude Test) in co-operation with Khanacademy.",
-			"path_home" => "online_tests/SAT/home",
-			"path_test" => null,
-			"test_data" => []
-		],
-		"general_knowledge" => [
-			"title" => "General Knowledge Test",
-			"desc" => "Test you general knowledge with our specially crafted quiz to benchmark your knowledge and memory.",
-			"path_home" => "online_tests/Generic/home",
-			"path_test" => "online_tests/Generic/test",
-			"test_data" => ["test" => "general_knowledge", "test_title" => "General Knowledge", "path_data" => "./data/otests/general_knowledge.json"]
-		],
-		"computer_science" => [
-			"title" => "Computer Science Test",
-			"desc" => "Test you Computer Science knowledge with our specially crafted quiz to benchmark your knowledge and memory.",
-			"path_home" => "online_tests/Generic/home",
-			"path_test" => "online_tests/Generic/test",
-			"test_data" => ["test" => "computer_science", "test_title" => "Computer Science", "path_data" => "./data/otests/computer_science.json"]
-		]
-	];
+	$Model = $TestsModel; // in constants.php
 
+	if ( isset($_GET["result"]) && isset($_SESSION["username"]) ) {
+		$query_string = "INSERT INTO `tests` (`user_id`, `test_id`, `subjects`, `score`, `total`, `time_taken`, `date`, `answers`) VALUES (?, ?, ?, ?, ?, ?, ?, ?);";
+		$test_id = array_search($_GET["test_name"], array_keys($Model)); // index of test
+
+		$result = query($query_string, $_SESSION["id"], $test_id, json_encode($_GET["subject_list"]), $_GET["marks"], $_GET["total"], $_GET["time_taken"], date("Y/m/d"), json_encode($_GET["user_choices"]) );
+
+		die("inserted");
+	}
+	
 	/**
 	 ** GET REQUEST
 	 **/
 	if ( isset($_GET["test"]) ) {
 		$test = $_GET["test"];
 		render("header", ["title" => $Model[$test]["title"] . " | Online Tests",
-								"desc" => $Model[$test]["desc"]]);
+							"desc" => $Model[$test]["desc"]]);
 	}
 	else {
 		render("header", ["title" => "Online Tests",
-								"desc" => "Online mockup examination of most popular entry tests, including NET, FAST Entry Test, NAT/NTS, PUCIT."]);
+							"desc" => "Online mockup examination of most popular entry tests, including NET, FAST Entry Test, NAT/NTS, PUCIT."]);
 	}
 	
 	// Header for headings
@@ -73,8 +53,8 @@
 			// Result Handler - Result page also does not requires a description(meta tag)
 			elseif ( isset($_GET["result"]) ) {
 				render("online_tests/result", ["marks" => $_GET["marks"],
-												"percentage" => $_GET["perc"],
-												"time_taken" => $_GET["tt"]]);
+											"percentage" => $_GET["perc"],
+											"time_taken" => $_GET["time_taken"]]);
 			}
 			/**
 			 ** POST REQUEST
@@ -84,6 +64,8 @@
 				( isset($_POST["timed"]) ) ? $timed = true : $timed = false;
 				
 				render($Model[$name]["path_test"], $Model[$name]["test_data"]);
+
+				loadMathjax();
 			}
 			/**
 			 ** DEFAULT

@@ -1,6 +1,7 @@
 <?php
 	require("../includes/PHPMailerAutoload.php");
-	
+	require("../includes/constants.php");
+
 	/* Get POST data */
 	$fromName = isset($_POST["name"]) ? $_POST["name"] : "Unknown";
 	$fromAddress = isset($_POST["address"]) ? $_POST["address"] : "Unknown Address";
@@ -28,10 +29,10 @@
 	$mail->SMTPDebug = 3;                               // Enable verbose debug output
 
 	$mail->isSMTP();                                      // Set mailer to use SMTP
-	$mail->Host = '';  // Specify main and backup SMTP servers
+	$mail->Host = SMTP_HOST;  // Specify main and backup SMTP servers
 	$mail->SMTPAuth = true;                               // Enable SMTP authentication
-	$mail->Username = '';                 // SMTP username
-	$mail->Password = '';                           // SMTP password
+	$mail->Username = SMTP_USERNAME;                 // SMTP username
+	$mail->Password = SMTP_PASSWORD;                           // SMTP password
 	$mail->SMTPSecure = 'tls';                            // Enable TLS encryption, `ssl` also accepted
 	$mail->Port = 587;                                    // TCP port to connect to
 
