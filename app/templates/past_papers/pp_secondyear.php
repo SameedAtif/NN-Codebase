@@ -9,43 +9,43 @@
       <li>
          <h4>Physics</h4>
          <ol class="dark-links">
-            <li><a href="server.php?category=past_papers&grade=second-year&subject=physics&year=2010">2010</a></li>
-            <li><a href="server.php?category=past_papers&grade=second-year&subject=physics&year=2011">2011</a></li>
-            <li><a href="server.php?category=past_papers&grade=second-year&subject=physics&year=2012">2012</a></li>
-            <li><a href="server.php?category=past_papers&grade=second-year&subject=physics&year=2013">2013</a></li>
-            <li><a href="server.php?category=past_papers&grade=second-year&subject=physics&year=2014">2014</a></li>
-            <li><a href="server.php?category=past_papers&grade=second-year&subject=physics&year=2015">2015</a></li>
+            <li><a href="./content/past-papers/second-year/physics/2010/">2010</a></li>
+            <li><a href="./content/past-papers/second-year/physics/2011/">2011</a></li>
+            <li><a href="./content/past-papers/second-year/physics/2012/">2012</a></li>
+            <li><a href="./content/past-papers/second-year/physics/2013/">2013</a></li>
+            <li><a href="./content/past-papers/second-year/physics/2014/">2014</a></li>
+            <li><a href="./content/past-papers/second-year/physics/2015/">2015</a></li>
             <li>2016</li>
          </ol>
       </li>
       <li>
          <h4>Maths</h4>
          <ol class="dark-links">
-            <li><a href="server.php?category=past_papers&grade=second-year&subject=math&year=2010">2010</a></li>
-            <li><a href="server.php?category=past_papers&grade=second-year&subject=math&year=2011">2011</a></li>
-            <li><a href="server.php?category=past_papers&grade=second-year&subject=math&year=2012">2012</a></li>
-            <li><a href="server.php?category=past_papers&grade=second-year&subject=math&year=2013">2013</a></li>
-            <li><a href="server.php?category=past_papers&grade=second-year&subject=math&year=2014">2014</a></li>
-            <li><a href="server.php?category=past_papers&grade=second-year&subject=math&year=2015">2015</a></li>
+            <li><a href="./content/past-papers/second-year/math/2010/">2010</a></li>
+            <li><a href="./content/past-papers/second-year/math/2011/">2011</a></li>
+            <li><a href="./content/past-papers/second-year/math/2012/">2012</a></li>
+            <li><a href="./content/past-papers/second-year/math/2013/">2013</a></li>
+            <li><a href="./content/past-papers/second-year/math/2014/">2014</a></li>
+            <li><a href="./content/past-papers/second-year/math/2015/">2015</a></li>
             <li>2016</li>
          </ol>
       </li>
       <li>
          <h4>Chemistry</h4>
          <ol class="dark-links">
-            <li><a href="server.php?category=past_papers&grade=second-year&subject=chemistry&year=2010">2010</a></li>
-            <li><a href="server.php?category=past_papers&grade=second-year&subject=chemistry&year=2011">2011</a></li>
-            <li><a href="server.php?category=past_papers&grade=second-year&subject=chemistry&year=2012">2012</a></li>
-            <li><a href="server.php?category=past_papers&grade=second-year&subject=chemistry&year=2013">2013</a></li>
-            <li><a href="server.php?category=past_papers&grade=second-year&subject=chemistry&year=2014">2014</a></li>
-            <li><a href="server.php?category=past_papers&grade=second-year&subject=chemistry&year=2015">2015</a></li>
+            <li><a href="./content/past-papers/second-year/chemistry/2010/">2010</a></li>
+            <li><a href="./content/past-papers/second-year/chemistry/2011/">2011</a></li>
+            <li><a href="./content/past-papers/second-year/chemistry/2012/">2012</a></li>
+            <li><a href="./content/past-papers/second-year/chemistry/2013/">2013</a></li>
+            <li><a href="./content/past-papers/second-year/chemistry/2014/">2014</a></li>
+            <li><a href="./content/past-papers/second-year/chemistry/2015/">2015</a></li>
             <li>2016</li>
          </ol>
       </li>
       <li>
          <h4>Biology</h4>
          <ol class="dark-links">
-            <li><a href="server.php?category=past_papers&grade=second-year&subject=biology&year=2010">2010</a></li>
+            <li><a href="./content/past-papers/second-year/biology/2010/">2010</a></li>
             <li>2011</li>
             <li>2012</li>
             <li>2013</li>
@@ -57,7 +57,7 @@
       <li>
          <h4>Computer Science</h4>
          <ol class="dark-links">
-            <li><a href="server.php?category=past_papers&grade=second-year&subject=computer&year=2010">2010</a></li>
+            <li><a href="./content/past-papers/second-year/computer/2010/">2010</a></li>
             <li>2011</li>
             <li>2012</li>
             <li>2013</li>

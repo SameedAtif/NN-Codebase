@@ -5,13 +5,14 @@
 	global $test;
 	$Model = $TestsModel; // in constants.php
 
+	/** Saving test **/
 	if ( isset($_GET["result"]) && isset($_SESSION["username"]) ) {
 		$query_string = "INSERT INTO `tests` (`user_id`, `test_id`, `subjects`, `score`, `total`, `time_taken`, `date`, `answers`) VALUES (?, ?, ?, ?, ?, ?, ?, ?);";
-		$test_id = array_search($_GET["test_name"], array_keys($Model)); // index of test
+		$test_id = array_search($_GET["test_name"], array_keys($Model)); // index of test (to get details like test name)
 
 		$result = query($query_string, $_SESSION["id"], $test_id, json_encode($_GET["subject_list"]), $_GET["marks"], $_GET["total"], $_GET["time_taken"], date("Y/m/d"), json_encode($_GET["user_choices"]) );
 
-		die("inserted");
+		die(SITE_PROTOCOL . "://" . SITE_DOMAIN . SITE_BASE_LINK . "profile/" . $_SESSION["id"] . "/" . $result["counter"] . "/");
 	}
 	
 	/**

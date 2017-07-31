@@ -12,7 +12,9 @@ RewriteRule ^notes/$ notes.php
 
 # server.php (notes and past papers)
 
-RewriteRule ^content/(.*)/(.*)/(.*)/(.*)/(.*)/$ server.php?category=$1&grade=$2&subject=$3&chapter=$4&type=$5
+RewriteRule ^content/notes/(.*)/(.*)/(.*)/(.*)/$ server.php?category=notes&grade=$1&subject=$2&chapter=$3&type=$4
+
+RewriteRule ^content/past-papers/(.*)/(.*)/(.*)/$ server.php?category=past_papers&grade=$1&subject=$2&year=$3
 
 RewriteRule ^articles/(.*)/$ articles.php?uri=$1
 

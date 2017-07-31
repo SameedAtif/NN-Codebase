@@ -11,7 +11,7 @@
 	session_start();
 
 	// require authentication for some pages
-	if (in_array($_SERVER["PHP_SELF"], ["/app/public/members.php"]) && preg_replace("/i=\d+/", "", $_SERVER["QUERY_STRING"]) == "")
+	if (in_array($_SERVER["PHP_SELF"], [SITE_BASE_LINK . "members.php"]) && preg_replace("/i=\d+/", "", $_SERVER["QUERY_STRING"]) == "")
 	{
 		if (empty($_SESSION["username"]))
 		{

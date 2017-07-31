@@ -90,9 +90,11 @@ var MainController = {
 			
 			// display result (if user is signed in, they will be redirected)
 			$.get("otests.php/", {test_name: Model.test_name, user_choices: Model.userChoices, result: true, subject_list: null, marks: obtainedMarks, total: Model.totalQuestions, time_taken: timeTaken, perc: percentage}, function (html) {
-				console.log(html);
-				if (html == "inserted")
-					return 0; // redirect to test detail in user's profile
+				if (html[0] != "<") { // '<' would mean it's an HTML tag
+					window.location = html; // in this case, html is the URL
+					return 0;
+				}
+				
 				var resultPage = document.createElement("main");
 				resultPage.innerHTML = html;
 				
@@ -221,6 +223,7 @@ var HUDView = {
 			CardsView.jumpToCard(MainController.getTotalQuestions() - 1);
 		});
 		$(this.submitBtn).click(function () {
+			// TODO: get confirmation
 			MainController.displayResult();
 		});
 		
@@ -234,6 +237,3 @@ var HUDView = {
 		this.progress.innerHTML = n;
 	}
 };
-
-// For rendering dynamic mathematics written in LaTeX
-//MathJax.Hub.Queue(["Typeset",MathJax.Hub]);

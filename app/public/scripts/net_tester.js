@@ -1,12 +1,3 @@
-/*
- *
- *    Copyright. All rights reserved, M. Mustaghees Butt.
- *    
- *    GUIDE:
- *    1. We load all raw questions data(JSON) via Ajax. Then we create objects for each question whose subject gets filtered, i.e: if chemistry is not in the subjects of current session then its questions will not be added. This happens in
- *    the initialization function, initialize().
- *
- */
 
 var xhr = new XMLHttpRequest();
 
@@ -255,9 +246,10 @@ function displayResult() {
 	});
 
 	$.get("otests.php/", {test_name: "NET Mockup Exam", user_choices: userChoices, result: true, subject_list: subjects, marks: marks, total: Questions.length, time_taken: timeTaken, perc: percentage}, function (data) {
-		console.log(data);
-		if (data == "inserted")
-			return 0; // redirect to test detail in user's profile
+		if (data[0] != "<") { // '<' would mean it's an HTML tag
+			window.location = data; // in this case, html is the URL
+			return 0;
+		}
 
 		var resultPage = document.createElement("main");
 		resultPage.innerHTML = data;

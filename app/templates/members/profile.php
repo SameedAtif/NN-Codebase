@@ -10,13 +10,18 @@
 </section>
 
 <section>
-	<div id="tabs">
+	<?php
+		$rows = query("SELECT * FROM tests WHERE user_id = ? AND public = 1", $Data["id"]);
+		if (empty($rows)) {
+			echo "<div class=\"nothing\"><h2>Nothing to Show Here...</h2><h3>:(</h3></div>";
+		} else {
+			echo "<div id=\"tabs\">
 		<ul>
-			<li><a href="<?= $_SERVER['REQUEST_URI'] ?>#tabs-1">Tests History</a></li>
-			<li><a href="<?= $_SERVER['REQUEST_URI'] ?>#tabs-2">Stats</a></li>
+			<li><a href=\"" . $_SERVER['REQUEST_URI'] . "#tabs-1\">Tests History</a></li>
+			<li><a href=\"".  $_SERVER['REQUEST_URI'] . "#tabs-2\">Stats</a></li>
 		</ul>
-		<div id="tabs-1">
-			<table class="tests_list bordered">
+		<div id=\"tabs-1\">
+			<table class=\"tests_list bordered\">
 				<thead>
 					<tr>
 						<td>#</td>
@@ -28,38 +33,40 @@
 					</tr>
 				</thead>
 
-				<tbody>
-				<?php
-					$percentage_sum = 0;
-					$total_public = 0;
-					$rows = query("SELECT * FROM tests WHERE user_id = ?", $Data["id"]);
-					foreach ($rows as $key => $value) {
-						if ($value["public"] == 1) {
-							$percentage = round( ($value["score"]/$value["total"]) * 100, 2 );
-							$percentage_sum += $percentage;
-							$total_public++;
+				<tbody>";
+			$percentage_sum = 0;
+			$total_public = 0;
+			
+			foreach ($rows as $key => $value) {
+				if ($value["public"] == 1) {
+					$percentage = round( ($value["score"]/$value["total"]) * 100, 2 );
+					$percentage_sum += $percentage;
+					$total_public++;
 
-							$keys = array_keys($Model);
-							echo "<tr><td>" . ($key + 1) . "</td>
-							<td><a href=\"" . SITE_PROTOCOL . "://" . SITE_DOMAIN . SITE_BASE_LINK . "profile/" . $Data["username"] . "/" . $value["counter"] . "/\">" . $Model[ $keys[$value["test_id"]] ]["title"]  . "</a></td>
-							<td>" . $value["total"] . "</td>
-							<td>" . $value["score"] . "</td>
-							<td>" . $percentage . "%</td>
-							<td>" . $value["date"] . "</td></tr>";
-						}
-					}
-					$average_percentage = $percentage_sum/$total_public;
-				?>
-				</tbody>
+					$keys = array_keys($Model);
+					echo "<tr><td>" . ($key + 1) . "</td>
+					<td><a href=\"" . SITE_PROTOCOL . "://" . SITE_DOMAIN . SITE_BASE_LINK . "profile/" . $Data["username"] . "/" . $value["counter"] . "/\">" . $Model[ $keys[$value["test_id"]] ]["title"]  . "</a></td>
+					<td>" . $value["total"] . "</td>
+					<td>" . $value["score"] . "</td>
+					<td>" . $percentage . "%</td>
+					<td>" . $value["date"] . "</td></tr>";
+				}
+			}
+			$average_percentage = $percentage_sum/$total_public;
+
+			echo "</tbody>
 			</table>
 		</div>
-		<div id="tabs-2">
-			<div id="chart">graph goes here...</div>
+		<div id=\"tabs-2\">
+			<div id=\"chart\">graph goes here...</div>
 		</div>
 	</div>
 
-	<h4>Average Percentage: <?= $average_percentage ?>%</h4>
-	<p><em>Excludes tests which are not made publicly available by the user.</em></p>
+	<h4>Average Percentage: " . $average_percentage . "%</h4>
+	<p><em>Excludes tests which are not made publicly available by the user.</em></p>";
+		}
+	?>
+
 </section>
 
 <style>
@@ -95,6 +102,13 @@
 	}
 	li.ui-tabs-active {
 		background-color: #9de0f9;
+	}
+	.nothing {
+		text-align: center;
+		color: #e0e0e0;
+	}
+	.nothing h3 {
+		font-size: 48px;
 	}
 </style>
 
