@@ -7,12 +7,50 @@
 
 	/** Saving test **/
 	if ( isset($_GET["result"]) && isset($_SESSION["username"]) ) {
-		$query_string = "INSERT INTO `tests` (`user_id`, `test_id`, `subjects`, `score`, `total`, `time_taken`, `date`, `answers`) VALUES (?, ?, ?, ?, ?, ?, ?, ?);";
-		$test_id = array_search($_GET["test_name"], array_keys($Model)); // index of test (to get details like test name)
+		$query_string = "INSERT INTO `tests`(`user_id`, `test_id`, `source_index`, `subjects`, `score`, `total`, `time_taken`, `date`, `answers`) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?);";
+		$test_id = $_GET["test_name"]; // so we can get info from the model
 
-		$result = query($query_string, $_SESSION["id"], $test_id, json_encode($_GET["subject_list"]), $_GET["marks"], $_GET["total"], $_GET["time_taken"], date("Y/m/d"), json_encode($_GET["user_choices"]) );
+		$subjects = $_GET["subject_list"];
+		$user_choices = json_decode($_GET["user_choices"]);
+		$questions = json_decode(file_get_contents($Model[$test_id]["test_data"]["path_data"][$_GET["source_index"]]), TRUE);
+		$filtered_questions = [];
+		foreach ($questions as $key => $value) {
+			if (in_array($value["subject"], $subjects))
+				array_push($filtered_questions, $value);
+		}
+		$score = calculate_score($filtered_questions, $subjects, $user_choices);
+		if ($score == -1) die("Something went wrong!");
 
-		die(SITE_PROTOCOL . "://" . SITE_DOMAIN . SITE_BASE_LINK . "profile/" . $_SESSION["id"] . "/" . $result["counter"] . "/");
+		query($query_string, $_SESSION["id"], $test_id, $_GET["source_index"], json_encode($subjects), $score, $_GET["total"], $_GET["time_taken"], date("Y/m/d"), json_encode($user_choices));
+
+		$result = query("SELECT `counter` FROM `tests` WHERE counter = LAST_INSERT_ID()")[0];
+
+		die(SITE_PROTOCOL . "://" . SITE_DOMAIN . SITE_BASE_LINK . "profile/" . $_SESSION["username"] . "/" . $result["counter"] . "/");
+	} elseif ( isset($_GET["result"]) ) {
+		$test_id = $_GET["test_name"];
+		
+		$subjects = $_GET["subject_list"];
+		$user_choices = json_decode($_GET["user_choices"]);
+		$questions = json_decode(file_get_contents($Model[$test_id]["test_data"]["path_data"][$_GET["source_index"]]), TRUE);
+		$filtered_questions = [];
+		foreach ($questions as $key => $value) {
+			if (in_array($value["subject"], $subjects))
+				array_push($filtered_questions, $value);
+		}
+
+		$score = calculate_score($filtered_questions, $subjects, $user_choices);
+
+		render("online_tests/result", [
+			"source_index" => $_GET["source_index"],
+			"subjects" => $subjects,
+			"questions" => $filtered_questions,
+			"user_answers" => $user_choices,
+			"score" => $score,
+			"total" => $_GET["total"],
+			"time_taken" => $_GET["time_taken"],
+			"Model" => $Model,
+			"test_id" => $test_id]);
+		die();
 	}
 	
 	/**
@@ -50,12 +88,6 @@
 			if ( isset($test) ) {
 				render($Model[$test]["path_home"], $Model[$test]["test_data"]);
 				update_trending_data("http://notesnetwork.org" . $_SERVER['REQUEST_URI'], $Model[$test]["title"] . " | Online Tests");
-			}
-			// Result Handler - Result page also does not requires a description(meta tag)
-			elseif ( isset($_GET["result"]) ) {
-				render("online_tests/result", ["marks" => $_GET["marks"],
-											"percentage" => $_GET["perc"],
-											"time_taken" => $_GET["time_taken"]]);
 			}
 			/**
 			 ** POST REQUEST

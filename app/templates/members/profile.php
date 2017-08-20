@@ -43,9 +43,8 @@
 					$percentage_sum += $percentage;
 					$total_public++;
 
-					$keys = array_keys($Model);
 					echo "<tr><td>" . ($key + 1) . "</td>
-					<td><a href=\"" . SITE_PROTOCOL . "://" . SITE_DOMAIN . SITE_BASE_LINK . "profile/" . $Data["username"] . "/" . $value["counter"] . "/\">" . $Model[ $keys[$value["test_id"]] ]["title"]  . "</a></td>
+					<td><a href=\"" . SITE_PROTOCOL . "://" . SITE_DOMAIN . SITE_BASE_LINK . "profile/" . $Data["username"] . "/" . $value["counter"] . "/\">" . $Model[$value["test_id"]]["title"]  . "</a></td>
 					<td>" . $value["total"] . "</td>
 					<td>" . $value["score"] . "</td>
 					<td>" . $percentage . "%</td>

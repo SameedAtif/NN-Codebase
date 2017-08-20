@@ -22,7 +22,6 @@
 				</div>
 				
 				<label>Select Subjects:</label>
-				
 				<div class="setting">
 					<input type="checkbox" name="subjects[]" value="math" checked="checked" /><label>Math</label>
 				</div>
@@ -42,6 +41,15 @@
 				</div>
 				<div class="setting">
 					<input type="checkbox" name="subjects[]" value="intelligence" checked="checked" /><label>Intelligence</label>
+				</div>
+
+				<label>Test Set</label>
+				<div class="setting">
+					<select name="source_index">
+						<option value="0">1</option>
+						<option value="1" selected>2</option>
+						<option value="2">3</option>
+					</select>
 				</div>
 			</div>
 

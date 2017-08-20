@@ -9,7 +9,8 @@
 		"China"
 	],
 	"answer": 1,
-	"explanation": "Russia is the largest country with area of 17,075,200 sq. km, while Canada is the second largest."
+	"explanation": "Russia is the largest country with area of 17,075,200 sq. km, while Canada is the second largest.",
+	"subject": "general_knowledge"
 },
 {
 	"statement": "Microsoft, the multinational technology company, was co-founded by who?",
@@ -21,7 +22,8 @@
 		"Steve Jobs"
 	],
 	"answer": 0,
-	"explanation": "Microsoft was founded by Paul Allen and Bill Gates on April 4, 1975."
+	"explanation": "Microsoft was founded by Paul Allen and Bill Gates on April 4, 1975.",
+	"subject": "general_knowledge"
 },
 {
 	"statement": "Newton's first law is also known as:",
@@ -33,7 +35,8 @@
 		"Law of Inertia"
 	],
 	"answer": 3,
-	"explanation": "Law of Inertia states that: <em>An object at rest stays at rest and an object in motion stays in motion, unless acted upon by an unbalanced force</em>."
+	"explanation": "Law of Inertia states that: <em>An object at rest stays at rest and an object in motion stays in motion, unless acted upon by an unbalanced force</em>.",
+	"subject": "general_knowledge"
 },
 {
 	"statement": "Nitrous oxide, commonly used in racing cars, is represented by:",
@@ -45,7 +48,8 @@
 		"N<sub>2</sub>O"
 	],
 	"answer": 3,
-	"explanation": "Nitrous oxide is also known as \"Nitro\" and NOS."
+	"explanation": "Nitrous oxide is also known as \"Nitro\" and NOS.",
+	"subject": "general_knowledge"
 },
 {
 	"statement": "Information in computers is stored as:",
@@ -57,7 +61,8 @@
 		"Symbols"
 	],
 	"answer": 1,
-	"explanation": "All information in computers is stored as a combination of 0s and 1s, called Binary."
+	"explanation": "All information in computers is stored as a combination of 0s and 1s, called Binary.",
+	"subject": "general_knowledge"
 },
 {
 	"statement": "Kathmandu is the capital of which country?",
@@ -69,7 +74,8 @@
 		"Bangladesh"
 	],
 	"answer": 0,
-	"explanation": null
+	"explanation": null,
+	"subject": "general_knowledge"
 },
 {
 	"statement": "Which one of these is not a metal?",
@@ -81,7 +87,8 @@
 		"Nickel"
 	],
 	"answer": 2,
-	"explanation": "Sillica is a non-metal."
+	"explanation": "Sillica is a non-metal.",
+	"subject": "general_knowledge"
 },
 {
 	"statement": "The second most populous country is",
@@ -93,7 +100,8 @@
 		"India"
 	],
 	"answer": 3,
-	"explanation": "In 2013, India had a population of 1.252 billion."
+	"explanation": "In 2013, India had a population of 1.252 billion.",
+	"subject": "general_knowledge"
 },
 {
 	"statement": "Which branch of mathematics deals with angles, triangles and functions such as sine, cosine?",
@@ -105,7 +113,8 @@
 		"Calculus"
 	],
 	"answer": 1,
-	"explanation": "Trigonometry is the study of angles and triangles."
+	"explanation": "Trigonometry is the study of angles and triangles.",
+	"subject": "general_knowledge"
 },
 {
 	"statement": "What is the capital of Libya?",
@@ -117,7 +126,8 @@
 		"Abu Dhabi"
 	],
 	"answer": 2,
-	"explanation": "Tripoli, the capital of Libya, has a population of about  1.1 million."
+	"explanation": "Tripoli, the capital of Libya, has a population of about  1.1 million.",
+	"subject": "general_knowledge"
 },
 {
 	"statement": "Napoleon Bonaparte, the famous French military leader, was defeated at",
@@ -129,7 +139,8 @@
 		"Liverpool"
 	],
 	"answer": 1,
-	"explanation": "Napoleon Bonaparte was defeated at Waterloo by two allied armies."
+	"explanation": "Napoleon Bonaparte was defeated at Waterloo by two allied armies.",
+	"subject": "general_knowledge"
 },
 {
 	"statement": "The percentage of Nitrogen in air is",
@@ -141,7 +152,8 @@
 		"80%"
 	],
 	"answer": 2,
-	"explanation": "The percentage of Nitogen in air is approximately 78%."
+	"explanation": "The percentage of Nitogen in air is approximately 78%.",
+	"subject": "general_knowledge"
 },
 {
 	"statement": "The Greek god of war is",
@@ -153,7 +165,8 @@
 		"Thor"
 	],
 	"answer": 0,
-	"explanation": "Ares is the Greek god of war, while Mars is the Roman god of war."
+	"explanation": "Ares is the Greek god of war, while Mars is the Roman god of war.",
+	"subject": "general_knowledge"
 },
 {
 	"statement": "Who wrote the series \"Harry Potter\"?",
@@ -165,7 +178,8 @@
 		"J. K. Rowling"
 	],
 	"answer": 3,
-	"explanation": "Joanne \"Jo\" Rowling, also known as J. K. Rowling and Robert Galbraith, is a British author famous for the Harry Potter novel/series."
+	"explanation": "Joanne \"Jo\" Rowling, also known as J. K. Rowling and Robert Galbraith, is a British author famous for the Harry Potter novel/series.",
+	"subject": "general_knowledge"
 },
 {
 	"statement": "Stomata are found on which part of a plant?",
@@ -177,7 +191,8 @@
 		"Roots"
 	],
 	"answer": 1,
-	"explanation": "Stomate (plural stomata) is a tiny opening or pore that is used for gas exchange. They are mostly found on the under-surface of plant leaves."
+	"explanation": "Stomate (plural stomata) is a tiny opening or pore that is used for gas exchange. They are mostly found on the under-surface of plant leaves.",
+	"subject": "general_knowledge"
 },
 {
 	"statement": "<strong>LCD</strong> stands for",
@@ -189,7 +204,8 @@
 		"Liquid Crystal Display"
 	],
 	"answer": 3,
-	"explanation": "A <strong>L</strong>iquid-<strong>C</strong>rystal <strong>D</strong>isplay uses the light-modulating properties of liquid crystals."
+	"explanation": "A <strong>L</strong>iquid-<strong>C</strong>rystal <strong>D</strong>isplay uses the light-modulating properties of liquid crystals.",
+	"subject": "general_knowledge"
 },
 {
 	"statement": "Paper is made from",
@@ -201,7 +217,8 @@
 		"Stones"
 	],
 	"answer": 2,
-	"explanation": "Wood from trees is converted to fiber to make paper."
+	"explanation": "Wood from trees is converted to fiber to make paper.",
+	"subject": "general_knowledge"
 },
 {
 	"statement": "The longest bone in the human body is",
@@ -213,7 +230,8 @@
 		"Nasal bone"
 	],
 	"answer": 2,
-	"explanation": "The femur or thigh bone, is the longest bone in the human body."
+	"explanation": "The femur or thigh bone, is the longest bone in the human body.",
+	"subject": "general_knowledge"
 },
 {
 	"statement": "Who brought the Hindu religion to India?",
@@ -225,7 +243,8 @@
 		"Africans"
 	],
 	"answer": 0,
-	"explanation": "The Aryans brought Hindu religious thought to India."
+	"explanation": "The Aryans brought Hindu religious thought to India.",
+	"subject": "general_knowledge"
 },
 {
 	"statement": "The official language of Brazil is",
@@ -237,7 +256,8 @@
 		"English"
 	],
 	"answer": 1,
-	"explanation": "The official language is Portuguese, while in some parts it is a mixture of Portuguese and Spanish."
+	"explanation": "The official language is Portuguese, while in some parts it is a mixture of Portuguese and Spanish.",
+	"subject": "general_knowledge"
 },
 {
 	"statement": "A . (B + C) = AB + AC is which property of real number?",
@@ -249,7 +269,8 @@
 		"Distributive property"
 	],
 	"answer": 3,
-	"explanation": "Distributive property holds true for all real number. For example, 2(3 + 4) = (2 . 3) + (2 . 4) = 14."
+	"explanation": "Distributive property holds true for all real number. For example, 2(3 + 4) = (2 . 3) + (2 . 4) = 14.",
+	"subject": "general_knowledge"
 },
 {
 	"statement": "The Alhambra palace is located in",
@@ -261,7 +282,8 @@
 		"Norway"
 	],
 	"answer": 2,
-	"explanation": "The Alhambra (originally Qalat Al-Hamra) is a palace located in Granada, Andalusia, Spain."
+	"explanation": "The Alhambra (originally Qalat Al-Hamra) is a palace located in Granada, Andalusia, Spain.",
+	"subject": "general_knowledge"
 },
 {
 	"statement": "Which one of these languages has the highest number of native speakers?",
@@ -273,7 +295,8 @@
 		"Spanish"
 	],
 	"answer": 2,
-	"explanation": "Chinese (Mandarin, to be more precise) has more than a billion native speakers."
+	"explanation": "Chinese (Mandarin, to be more precise) has more than a billion native speakers.",
+	"subject": "general_knowledge"
 },
 {
 	"statement": "With reference to Electronics/Computers, <strong>CMOS</strong> stands for",
@@ -285,7 +308,8 @@
 		"Compulsory Middle-Oriented-Server"
 	],
 	"answer": 0,
-	"explanation": "CMOS is the small amount of memory on a computer motherboard that stores the BIOS settings."
+	"explanation": "CMOS is the small amount of memory on a computer motherboard that stores the BIOS settings.",
+	"subject": "general_knowledge"
 },
 {
 	"statement": "Which one of these was a US president?",
@@ -297,7 +321,8 @@
 		"George Lincoln"
 	],
 	"answer": 1,
-	"explanation": "John F. Kennedy was the 35<sup>th</sub> president of USA."
+	"explanation": "John F. Kennedy was the 35<sup>th</sub> president of USA.",
+	"subject": "general_knowledge"
 },
 {
 	"statement": "Which one of these is not a Shakespearean poem?",
@@ -309,7 +334,8 @@
 		"The Phoenix and the Turtle"
 	],
 	"answer": 1,
-	"explanation": "Paradise Lost is an epic poem by the 17th-century English poet John Milton (1608–1674)."
+	"explanation": "Paradise Lost is an epic poem by the 17th-century English poet John Milton (1608–1674).",
+	"subject": "general_knowledge"
 },
 {
 	"statement": "One horsepower is equivalent to approximately",
@@ -321,7 +347,8 @@
 		"10 kWatts"
 	],
 	"answer": 2,
-	"explanation": "The powers of engines are usually measured in the imperial unit, horsepower."
+	"explanation": "The powers of engines are usually measured in the imperial unit, horsepower.",
+	"subject": "general_knowledge"
 },
 {
 	"statement": "<em>Journey to the West</em> is a/an",
@@ -333,7 +360,8 @@
 		"Chinese novel"
 	],
 	"answer": 3,
-	"explanation": "Journey to the West is a Chinese novel published in the 16th century during the Ming dynasty."
+	"explanation": "Journey to the West is a Chinese novel published in the 16th century during the Ming dynasty.",
+	"subject": "general_knowledge"
 },
 {
 	"statement": "Nelson Mandela was an anti-racism revolutionary, politician, and philanthropist, who also served as President of",
@@ -345,7 +373,8 @@
 		"New Zealand"
 	],
 	"answer": 0,
-	"explanation": "Nelson Mandela served as the President of South Africa from 1994 to 1999."
+	"explanation": "Nelson Mandela served as the President of South Africa from 1994 to 1999.",
+	"subject": "general_knowledge"
 },
 {
 	"statement": "How many cents are there in an Australian dollar (AUD)?",
@@ -357,7 +386,8 @@
 		"10"
 	],
 	"answer": 2,
-	"explanation": "Same as the US dollar (USD)."
+	"explanation": "Same as the US dollar (USD).",
+	"subject": "general_knowledge"
 },
 {
 	"statement": "The exact time taken by the Earth for a single rotation on its own axis is",
@@ -369,7 +399,8 @@
 		"23 hours 56 minutes and 4.09 seconds"
 	],
 	"answer": 3,
-	"explanation": "A <strong>solar day</strong> is nearly 24 hours. A <strong>sidereal</strong> day is 23 hours 56 minutes and 4.09 seconds long. Sidereal day is more accurate as a solar day varies over the course of a year."
+	"explanation": "A <strong>solar day</strong> is nearly 24 hours. A <strong>sidereal</strong> day is 23 hours 56 minutes and 4.09 seconds long. Sidereal day is more accurate as a solar day varies over the course of a year.",
+	"subject": "general_knowledge"
 },
 {
 	"statement": "Which countries were involved in the Hundred Years' War?",
@@ -381,7 +412,8 @@
 		"Japan and China"
 	],
 	"answer": 1,
-	"explanation": "The Hundred Years' War is the modern term for a series of conflicts waged from 1337 to 1453 by the House of Plantagenet, rulers of the Kingdom of England, against the House of Valois, rulers of the Kingdom of France."
+	"explanation": "The Hundred Years' War is the modern term for a series of conflicts waged from 1337 to 1453 by the House of Plantagenet, rulers of the Kingdom of England, against the House of Valois, rulers of the Kingdom of France.",
+	"subject": "general_knowledge"
 },
 {
 	"statement": "Pablo Escobar is a famous",
@@ -393,7 +425,8 @@
 		"Pirate"
 	],
 	"answer": 1,
-	"explanation": "Pablo Emilio Escobar Gaviria was a Colombian drug lord and drug trafficker."
+	"explanation": "Pablo Emilio Escobar Gaviria was a Colombian drug lord and drug trafficker.",
+	"subject": "general_knowledge"
 },
 {
 	"statement": "Which one of these is not a programming language?",
@@ -405,7 +438,8 @@
 		"Java"
 	],
 	"answer": 0,
-	"explanation": "Although Python is also not a programming language, HTML is definitely not a programming language."
+	"explanation": "Although Python is also not a programming language, HTML is definitely not a programming language.",
+	"subject": "general_knowledge"
 },
 {
 	"statement": "Which country has a Maple leaf on its flag?",
@@ -417,7 +451,8 @@
 		"Russia"
 	],
 	"answer": 2,
-	"explanation": "Canada is also called \"The Land of the Maple leaf\"."
+	"explanation": "Canada is also called \"The Land of the Maple leaf\".",
+	"subject": "general_knowledge"
 },
 {
 	"statement": "Operation Desert Storm was conducted by",
@@ -429,7 +464,8 @@
 		"U.S. Army"
 	],
 	"answer": 3,
-	"explanation": "During the Gulf war, the U.S. army conducted the Operation Desert Storm."
+	"explanation": "During the Gulf war, the U.S. army conducted the Operation Desert Storm.",
+	"subject": "general_knowledge"
 },
 {
 	"statement": "The author of <em>Philosophiæ Naturalis <strong>Principia Mathematica</strong></em> is",
@@ -441,7 +477,8 @@
 		"Aristotle"
 	],
 	"answer": 0,
-	"explanation": "Written in Latin, often referred to as simply the Principia, it is a work in three books by Isaac Newton."
+	"explanation": "Written in Latin, often referred to as simply the Principia, it is a work in three books by Isaac Newton.",
+	"subject": "general_knowledge"
 },
 {
 	"statement": "Atlantis is a fictional city in \"Timaeus\" and \"Critias\", both written by",
@@ -453,7 +490,8 @@
 		"Plato"
 	],
 	"answer": 3,
-	"explanation": "\"Timaeus\" and \"Critias\" both are dialogues written by Plato."
+	"explanation": "\"Timaeus\" and \"Critias\" both are dialogues written by Plato.",
+	"subject": "general_knowledge"
 },
 {
 	"statement": "Which company originally created the PlayStation game console?",
@@ -465,7 +503,8 @@
 		"Microsoft"
 	],
 	"answer": 2,
-	"explanation": "PlayStation is a series of video game consoles created and owned by Sony Interactive Entertainment. The brand was first introduced on December 3, 1994 in Japan."
+	"explanation": "PlayStation is a series of video game consoles created and owned by Sony Interactive Entertainment. The brand was first introduced on December 3, 1994 in Japan.",
+	"subject": "general_knowledge"
 },
 {
 	"statement": "The currency of Greece is",
@@ -477,6 +516,7 @@
 		"Euro"
 	],
 	"answer": 3,
-	"explanation": "Before 2002, it was Drachma. Now, it is Euro."
+	"explanation": "Before 2002, it was Drachma. Now, it is Euro.",
+	"subject": "general_knowledge"
 }
 ]

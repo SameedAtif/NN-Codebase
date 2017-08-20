@@ -1,13 +1,19 @@
+<?php
+	$test_name = $_POST["name"];
+	$source_index = $_POST["source_index"]; // index for the source path in Model
+?>
 <section>
 	<h2 class="center"><?= $test_title ?></h2>
+	<div id="meta" style="display: none;">
+		<span id="test-name"><?= $test_name ?></span>
+		<span id="source"><?= $source_index ?></span>
+		<span id="subj-list"><?= $test_name ?></span>
+	</div>
+	<noscript>This application requires JavaScript to be enabled! Please enable JavaScript, and then reload this page.</noscript>
 	
+	<div class="direct">
 	<?php
-		$test_name = $_POST["name"];
-		$source = $path_data; // path to JSON file
-		
-		echo "<div id='meta' style='display: none;'><span id='test_name'>" . $test_name . "</span><span id='source'>" . $source . "</span></div>";
-		
-		$data = file_get_contents($source);
+		$data = file_get_contents($path_data[$source_index]);
 		$questions = json_decode($data);
 		foreach ($questions as $index => $question) {
 			echo '<div class="card">';
@@ -33,9 +39,9 @@
 			echo '</div>'; // CARD END
 		}
 	?>
+	</div>
 	
 	<div id="hud">
-		
 		<div id="controls">
 			<button class="ghost-btn first-btn" title="First Question"><i class="fa fa-lg fa-step-backward"></i> First</button>
 			<button class="ghost-btn prev-btn" title="Previous Question"><i class="fa fa-lg fa-arrow-left"></i> Prev</button>
@@ -55,7 +61,8 @@
 		<div id="final" class="center">
 			<button class="ghost-btn">Submit</button>
 		</div>
-			
+
+		<?php loadConfirmationBox(); ?>
 	</div>
 	
 </section>
@@ -108,9 +115,3 @@
 	}
 	
 </style>
-
-<script>
-	window.onload = function () {
-		MainController.init();
-	}
-</script>

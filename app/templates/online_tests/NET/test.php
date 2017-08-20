@@ -1,5 +1,5 @@
 <section>
-	<h2 class="center">
+	<h2 id="test-title" class="center">
 	<?php
 		if ( sizeof($_POST["subjects"]) == 5) {
 			($_POST["timed"] == "on") ? print("Full Scale NET &dash; Timed") : print("Full Scale NET &dash; Timeless");
@@ -9,45 +9,66 @@
 		}
 	?>
 	</h2>
-	<div style="display: none;" id="subjList"><?php foreach ($_POST["subjects"] as $subject) { echo $subject . " "; } ?></div>
-	
-	<div class="test-component">
-		<span id="currSection">Current Section</span>
-		<span id="nthQuestion">Q/A Progress</span>
+	<div id="meta" style="display: none;">
+		<span id="test-name"><?= $_POST["name"]; ?></span>
+		<span id="source"><?= $_POST["source_index"] ?></span>
+		<span id="subj-list"><?= implode(",", $_POST["subjects"]) ?></span>
 	</div>
+	<noscript>This application requires JavaScript to be enabled! Please enable JavaScript and then reload this page.</noscript>
 	
-	<div id="question" class="test-component">
-		<h4>Question:</h4>
-	</div>
+	<div class="indirect">
+	<?php
+		$data = file_get_contents($path_data[$_POST["source_index"]]);
+		$questions = json_decode($data);
+		$filtered_questions = [];
+		// Filter questions array so it contains requested subjects only
+		foreach ($questions as $question) {
+			if (array_search($question->subject, $_POST["subjects"]) !== FALSE)
+				array_push($filtered_questions, $question);
+		}
+
+		foreach ($filtered_questions as $index => $question) {
+			echo '<div class="card">';
+			
+			echo '<div class="test-component">
+					<span class="curr-section">' . $question->subject . '</span>
+					<span class="nth-question">' . ($index + 1) . ' of ' . count($filtered_questions) . '</span>
+				</div>';
+
+			echo '<div class="statement test-component"><h4> ' . ($index+1) . ". " . $question->statement . '</h4></div>'; // QUESTION STATEMENT
+			echo '<div class="answer test-component">
+					Please Select an Answer:
+					<ol type="i">
+						<li>
+							<div class="option"> 
+								<input type="radio" name="answer' . ($index + 1) . '" />
+								<span class="option-text">' . $question->options[0] . '</span>
+							</div>
+						</li>
+						<li>
+							<div class="option">
+								<input type="radio" name="answer' . ($index + 1) . '" />
+								<span class="option-text">' . $question->options[1] . '</span>
+							</div>
+						</li>
+						<li>
+							<div class="option">
+								<input type="radio" name="answer' . ($index + 1) . '" />
+								<span class="option-text">' . $question->options[2] . '</span>
+							</div>
+						</li>
+						<li>
+							<div class="option">
+								<input type="radio" name="answer' . ($index + 1) . '" />
+								<span class="option-text">' . $question->options[3] . '</span>
+							</div>
+						</li>
+					</ol>
+				</div>';
 	
-	<div id="answer" class="test-component">
-		Please Select an Answer:
-		<ol type="i">
-			<li>
-				<div class="option"> 
-					<input type="radio" name="answer" />
-					<span class="option-text"></span>
-				</div>
-			</li>
-			<li>
-				<div class="option">
-					<input type="radio" name="answer" />
-					<span class="option-text"></span>
-				</div>
-			</li>
-			<li>
-				<div class="option">
-					<input type="radio" name="answer" />
-					<span class="option-text"></span>
-				</div>
-			</li>
-			<li>
-				<div class="option">
-					<input type="radio" name="answer" />
-					<span class="option-text"></span>
-				</div>
-			</li>
-		</ol>
+			echo '</div>'; // CARD END
+		}
+	?>
 	</div>
 	
 	<div id="hud" class="test-component">
@@ -65,66 +86,68 @@
 		</div>
 		
 		<div id="controls">
-			<button title="Save" onclick="save();">Save</button>
-			<button title="Next Question" onclick="nextQ();">Next</button>
-			<button title="Previous Question" onclick="prevQ();">Prev</button>
-			<button title="Mark for Review" onclick="setReview();">Review</button>
-			<button title="Next Section" onclick="nextSection();">Next Section</button>
-			<button title="Previous Section" onclick="prevSection();">Prev Section</button>
-			<button title="First Question" onclick="firstQ();">First</button>
-			<button title="Last Question" onclick="lastQ();">Last</button>
-			<button title="Help">Help</button>
+			<button class="save-btn" title="Save">Save</button>
+			<button class="next-btn" title="Next Question">Next</button>
+			<button class="prev-btn" title="Previous Question">Prev</button>
+			<button class="review-btn" title="Mark for Review">Review</button>
+			<button class="next-section-btn" title="Next Section">Next Section</button>
+			<button class="prev-section-btn" title="Previous Section">Prev Section</button>
+			<button class="first-btn" title="First Question">First</button>
+			<button class="last-btn" title="Last Question">Last</button>
+			<button class="help-btn" title="Help">Help</button>
 		</div>
 		
 		<div id="final" class="center">
-			<button onclick="displayResult();">Submit</button>
+			<button>Submit</button>
 		</div>
+
+		<?php loadConfirmationBox(); ?>
 	</div>
 	
 </section>
 
-<script src="scripts/net_tester.js"></script>
+<script src="scripts/generic_tester.js"></script>
 
 <style>
 	.test-component {
 		padding: 5px;
 		border: 1px solid black;
 	}
-	#currSection {
+	.curr-section {
 		color: #32E832;
 		margin: 0 20px;
 		text-transform: capitalize;
 	}
-	#nthQuestion {
+	.nth-question {
 		color: blue;
 	}
-	#question {
+	.statement {
 		height: 200px;
 		overflow-y: scroll;
 	}
-	#question h4 {
+	.statement h4 {
 		font-size: 18px;
 		font-weight: 400;
 	}
 	.MathJax {
 		font-size: 180%;
 	}
-	#answer {
+	.answer {
 		background-color: #e6f6ff;
 	}
-	#answer .option {
+	.answer .option {
 		background-color: #ffffff;
 		margin: 5px;
 		padding: 10px;
 		border: 1px solid black;
 	}
-	#answer .option:hover {
+	.answer .option:hover {
 		background-color: #b2b2b2;
 	}
-	#answer .option.active {
+	.answer .option.active {
 		background-color: #00ff00;
 	}
-	#answer .option.selected {
+	.answer .option.selected {
 		background-color: #73CBFF;
 	}
 	#hud #timer {
@@ -157,17 +180,14 @@
 		content: " ";
 		clear: both;
 	}
-	
 </style>
 
 <script>
 	window.onload = function () {
-		loadQuestions(<?= "\"" . $path_data[1] . "\"" ?>);
-		if ( $("section h2").text().indexOf("Timeless") == -1) {
-			timer(180);
+		if ($("section h2").text().indexOf("Timeless") == -1) {
+			MainController.init(180); // passing time (in minutes)
 		} else {
-			// unlimited time
-			timer(-1);
+			MainController.init(-1); // unlimited time
 		}
 	}
 </script>

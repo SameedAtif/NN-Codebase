@@ -9,7 +9,8 @@
 		"<strong>R</strong>ed <strong>G</strong>rey <strong>B</strong>lue"
 	],
 	"answer": 2,
-	"explanation": "RGB (Red, Green, and Blue) refers to a system for representing the colors to be used on computer displays."
+	"explanation": "RGB (Red, Green, and Blue) refers to a system for representing the colors to be used on computer displays.",
+	"subject": "computer_science"
 },
 {
 	"statement": "What is an algorithm?",
@@ -21,7 +22,8 @@
 		"A hardware"
 	],
 	"answer": 1,
-	"explanation": "An algorithm is a set of instructions to solve a problem."
+	"explanation": "An algorithm is a set of instructions to solve a problem.",
+	"subject": "computer_science"
 },
 {
 	"statement": "<strong>C</strong> language was developed at",
@@ -33,7 +35,8 @@
 		"Microsoft"
 	],
 	"answer": 0,
-	"explanation": "C language was developed by Dennis Ritchie at Bell Labs."
+	"explanation": "C language was developed by Dennis Ritchie at Bell Labs.",
+	"subject": "computer_science"
 },
 {
 	"statement": "Wi-Fi stands for",
@@ -45,7 +48,8 @@
 		"It's a name, not an abbreviation"
 	],
 	"answer": 1,
-	"explanation": "Wi-Fi or WiFi is a technology for wireless local area networking."
+	"explanation": "Wi-Fi or WiFi is a technology for wireless local area networking.",
+	"subject": "computer_science"
 },
 {
 	"statement": "RAM acts as a",
@@ -57,7 +61,8 @@
 		"Temporary storage"
 	],
 	"answer": 3,
-	"explanation": "RAM (Random Access Memory) is a volatile (temporary) memory."
+	"explanation": "RAM (Random Access Memory) is a volatile (temporary) memory.",
+	"subject": "computer_science"
 },
 {
 	"statement": "Bugs, in a computer program, are what?",
@@ -69,7 +74,8 @@
 		"A logical error"
 	],
 	"answer": 2,
-	"explanation": "A bug is an error, flaw, failure or fault in a computer program or system that causes it to produce an incorrect or unexpected result."
+	"explanation": "A bug is an error, flaw, failure or fault in a computer program or system that causes it to produce an incorrect or unexpected result.",
+	"subject": "computer_science"
 },
 {
 	"statement": "<strong>PHP</strong> stands for",
@@ -81,7 +87,8 @@
 		"<strong>P</strong>reprocessor <strong>H</strong>ypertext <strong>P</strong>rotocol"
 	],
 	"answer": 0,
-	"explanation": "Consider it a joke! It originally stood for Personal Home Page. Now it has a recursive acronym <strong>P</strong>HP: <strong>H</strong>ypertext <strong>P</strong>reprocessor."
+	"explanation": "Consider it a joke! It originally stood for Personal Home Page. Now it has a recursive acronym <strong>P</strong>HP: <strong>H</strong>ypertext <strong>P</strong>reprocessor.",
+	"subject": "computer_science"
 },
 {
 	"statement": "0s and 1s in a computer system are stored in",
@@ -93,7 +100,8 @@
 		"Circuits"
 	],
 	"answer": 2,
-	"explanation": "The 0s and 1s in a computer system are represented by the ON (1) and OFF (0) states of the transistors."
+	"explanation": "The 0s and 1s in a computer system are represented by the ON (1) and OFF (0) states of the transistors.",
+	"subject": "computer_science"
 },
 {
 	"statement": "Scratch, a graphical programming language for beginners, was built at",
@@ -105,7 +113,8 @@
 		"MIT"
 	],
 	"answer": 3,
-	"explanation": "Scratch is a project of the Lifelong Kindergarten Group at the MIT Media Lab."
+	"explanation": "Scratch is a project of the Lifelong Kindergarten Group at the MIT Media Lab.",
+	"subject": "computer_science"
 },
 {
 	"statement": "A server is a computer system which does what?",
@@ -117,7 +126,8 @@
 		"None of these"
 	],
 	"answer": 1,
-	"explanation": "A server is a computer program or a device that provides functionality/services for other programs or devices, called clients. Most common servers are webservers, running HTTP service."
+	"explanation": "A server is a computer program or a device that provides functionality/services for other programs or devices, called clients. Most common servers are webservers, running HTTP service.",
+	"subject": "computer_science"
 },
 {
 	"statement": "<strong>IoT</strong> stands for",
@@ -129,7 +139,8 @@
 		"<strong>I</strong>nternet <strong>o</strong>f <strong>T</strong>rackers"
 	],
 	"answer": 1,
-	"explanation": "IoT is made up of things such as microwaves, refrigerators and cars, all connected to the internet."
+	"explanation": "IoT is made up of things such as microwaves, refrigerators and cars, all connected to the internet.",
+	"subject": "computer_science"
 },
 {
 	"statement": "<em>Segmentation fault</em> is which type of error?",
@@ -141,7 +152,8 @@
 		"It's a bug"
 	],
 	"answer": 2,
-	"explanation": "Segmentation fault is a memory error which occurs at runtime."
+	"explanation": "Segmentation fault is a memory error which occurs at runtime.",
+	"subject": "computer_science"
 },
 {
 	"statement": "A Hard Disk has 12 tracks in total. If each track has 5 sectors and each sector can hold 512 kB, then what is the total capacity of the Hard Disk?",
@@ -153,7 +165,8 @@
 		"30720 kB"
 	],
 	"answer": 3,
-	"explanation": "Total capacity = total tracks &times; sectors per track &times; bit density of a track"
+	"explanation": "Total capacity = total tracks &times; sectors per track &times; bit density of a track",
+	"subject": "computer_science"
 },
 {
 	"statement": "<strong>LCD</strong> stands for",
@@ -165,7 +178,8 @@
 		"Liquid Crystal Display"
 	],
 	"answer": 3,
-	"explanation": "A <strong>L</strong>iquid-<strong>C</strong>rystal <strong>D</strong>isplay uses the light-modulating properties of liquid crystals."
+	"explanation": "A <strong>L</strong>iquid-<strong>C</strong>rystal <strong>D</strong>isplay uses the light-modulating properties of liquid crystals.",
+	"subject": "computer_science"
 },
 {
 	"statement": "A boolean is a data type with how many possible values?",
@@ -177,7 +191,8 @@
 		"512"
 	],
 	"answer": 1,
-	"explanation": "A boolean can have only two possible values, true (ON) or false (OFF)."
+	"explanation": "A boolean can have only two possible values, true (ON) or false (OFF).",
+	"subject": "computer_science"
 },
 {
 	"statement": "Which one of these memory types is faster?",
@@ -189,7 +204,8 @@
 		"Dynamic Word-length"
 	],
 	"answer": 0,
-	"explanation": "Fixed Word-length memory is faster because the computer knows where a new record starts."
+	"explanation": "Fixed Word-length memory is faster because the computer knows where a new record starts.",
+	"subject": "computer_science"
 },
 {
 	"statement": "Torrents use which network architecture?",
@@ -201,7 +217,8 @@
 		"Peer-to-Peer"
 	],
 	"answer": 3,
-	"explanation": "Downloaders of torrents also contribute to upload bandwidth, keeping the torrent fast."
+	"explanation": "Downloaders of torrents also contribute to upload bandwidth, keeping the torrent fast.",
+	"subject": "computer_science"
 },
 {
 	"statement": "Which of the following is a lossy image format?",
@@ -213,7 +230,8 @@
 		"PNG"
 	],
 	"answer": 2,
-	"explanation": "RAW, BMP and PNG are all lossless image formats."
+	"explanation": "RAW, BMP and PNG are all lossless image formats.",
+	"subject": "computer_science"
 },
 {
 	"statement": "SVG stands for?",
@@ -225,7 +243,8 @@
 		"Software Vision Guide"
 	],
 	"answer": 0,
-	"explanation": "Scalable Vector Graphics (SVG) is an XML-based vector image format for two-dimensional graphics with support for interactivity and animation."
+	"explanation": "Scalable Vector Graphics (SVG) is an XML-based vector image format for two-dimensional graphics with support for interactivity and animation.",
+	"subject": "computer_science"
 },
 {
 	"statement": "Which one of these is not a programming language?",
@@ -237,7 +256,8 @@
 		"Java"
 	],
 	"answer": 0,
-	"explanation": "Although Python is also not a programming language (it's a scripting language), HTML is definitely not a programming language."
+	"explanation": "Although Python is also not a programming language (it's a scripting language), HTML is definitely not a programming language.",
+	"subject": "computer_science"
 },
 {
 	"statement": "Which of the following languages is faster at execution?",
@@ -249,7 +269,8 @@
 		"Java"
 	],
 	"answer": 2,
-	"explanation": "C language doesn't have many features such as Garbage Collection. Moreover, its executables are in native machine code."
+	"explanation": "C language doesn't have many features such as Garbage Collection. Moreover, its executables are in native machine code.",
+	"subject": "computer_science"
 },
 {
 	"statement": "Sorting algorithm rarely used in practical applications is",
@@ -261,7 +282,8 @@
 		"Merge sort"
 	],
 	"answer": 1,
-	"explanation": "The circumstances under which it can perform well are limited. It is mostly used for learning sorting algorithms."
+	"explanation": "The circumstances under which it can perform well are limited. It is mostly used for learning sorting algorithms.",
+	"subject": "computer_science"
 },
 {
 	"statement": "With reference to Electronics/Computers, <strong>CMOS</strong> stands for",
@@ -273,7 +295,8 @@
 		"Compulsory Middle-Oriented-Server"
 	],
 	"answer": 0,
-	"explanation": "CMOS is the small amount of memory on a computer motherboard that stores the BIOS settings."
+	"explanation": "CMOS is the small amount of memory on a computer motherboard that stores the BIOS settings.",
+	"subject": "computer_science"
 },
 {
 	"statement": "Pointers in C/C++ are variables which",
@@ -285,7 +308,8 @@
 		"hold the address of another variable"
 	],
 	"answer": 3,
-	"explanation": "Pointers in C/C++ hold the address of another variable (point to the location of another variable in memory)."
+	"explanation": "Pointers in C/C++ hold the address of another variable (point to the location of another variable in memory).",
+	"subject": "computer_science"
 },
 {
 	"statement": "Linux is an open source",
@@ -297,7 +321,8 @@
 		"component of macOS"
 	],
 	"answer": 2,
-	"explanation": "Linux is an open source, Unix-based kernel developed by Linus Trovalds."
+	"explanation": "Linux is an open source, Unix-based kernel developed by Linus Trovalds.",
+	"subject": "computer_science"
 },
 {
 	"statement": "Implementation of hardware components such as amplifiers, mixers, modulators/demodulators by means of software is called",
@@ -309,7 +334,8 @@
 		"Software realization"
 	],
 	"answer": 1,
-	"explanation": "Software-defined radio (SDR) is a radio communication system where components that have been typically implemented in hardware (e.g. mixers, amplifiers, modulators/demodulators, etc.) are instead implemented by means of software on a PC or embedded system."
+	"explanation": "Software-defined radio (SDR) is a radio communication system where components that have been typically implemented in hardware (e.g. mixers, amplifiers, modulators/demodulators, etc.) are instead implemented by means of software on a PC or embedded system.",
+	"subject": "computer_science"
 },
 {
 	"statement": "Cryptographic hash functions take in data of any size and",
@@ -321,7 +347,8 @@
 		"Return required time to decrypt"
 	],
 	"answer": 0,
-	"explanation": "A hash function is any function that can be used to map data of arbitrary size to data of fixed size."
+	"explanation": "A hash function is any function that can be used to map data of arbitrary size to data of fixed size.",
+	"subject": "computer_science"
 },
 {
 	"statement": "In cloud computing, <em>containers</em> create an <em>isolation boundary</em> at what level?",
@@ -333,7 +360,8 @@
 		"Server level"
 	],
 	"answer": 1,
-	"explanation": "If anything goes wrong in a single container (e.g., excessive consumption of resources by a process) it only affects that individual container and not the whole VM or whole server."
+	"explanation": "If anything goes wrong in a single container (e.g., excessive consumption of resources by a process) it only affects that individual container and not the whole VM or whole server.",
+	"subject": "computer_science"
 },
 {
 	"statement": "Most commonly used public key encryption algorithm is",
@@ -345,7 +373,8 @@
 		"RSA"
 	],
 	"answer": 3,
-	"explanation": "RSA is made of the initial letters of the surnames of Ron Rivest, Adi Shamir, and Leonard Adleman. It's an asymmetric encryption algorithm."
+	"explanation": "RSA is made of the initial letters of the surnames of Ron Rivest, Adi Shamir, and Leonard Adleman. It's an asymmetric encryption algorithm.",
+	"subject": "computer_science"
 },
 {
 	"statement": "Machine learning is related to which one of the following?",
@@ -357,7 +386,8 @@
 		"Cloud computing"
 	],
 	"answer": 2,
-	"explanation": "Machine learning can be used for data mining. However, for data mining other techniques can be used besides or on top of machine learning."
+	"explanation": "Machine learning can be used for data mining. However, for data mining other techniques can be used besides or on top of machine learning.",
+	"subject": "computer_science"
 },
 {
 	"statement": "Which of the following is a form of DoS (Denial of Service) attack?",
@@ -369,7 +399,8 @@
 		"John the Ripper"
 	],
 	"answer": 0,
-	"explanation": "A ping of death is a type of attack on a computer system that involves sending a malformed or otherwise malicious ping to a computer."
+	"explanation": "A ping of death is a type of attack on a computer system that involves sending a malformed or otherwise malicious ping to a computer.",
+	"subject": "computer_science"
 },
 {
 	"statement": "Which one of the following is an example of IaaS (Infrastructure as a Service)?",
@@ -381,7 +412,8 @@
 		"SalesForce"
 	],
 	"answer": 1,
-	"explanation": "Infrastructure as a Service (IaaS), are cloud infrastructure self-service models for accessing, monitoring, and managing remote datacenter infrastructures, such as compute, storage, networking, and networking services (e.g. firewalls)."
+	"explanation": "Infrastructure as a Service (IaaS), are cloud infrastructure self-service models for accessing, monitoring, and managing remote datacenter infrastructures, such as compute, storage, networking, and networking services (e.g. firewalls).",
+	"subject": "computer_science"
 },
 {
 	"statement": "TLS (Transport Layer Security) is the successor of SSL (Secure Sockets Layer). SSL had which one of the following flaws?",
@@ -393,7 +425,8 @@
 		"CSRF (Cross Site Request Forgery)"
 	],
 	"answer": 2,
-	"explanation": "Heartbleed was a vulnerability in the implementation of OpenSSL. POODLE affected the whole standard of SSL version 3."
+	"explanation": "Heartbleed was a vulnerability in the implementation of OpenSSL. POODLE affected the whole standard of SSL version 3.",
+	"subject": "computer_science"
 },
 {
 	"statement": "A data structure in which items are added at one end and removed from other end, is called",
@@ -405,7 +438,8 @@
 		"Linked List"
 	],
 	"answer": 2,
-	"explanation": "A Queue is a First-In-First-Out (FIFO) data structure. In a FIFO data structure, the first element added to the queue will be the first one to be removed."
+	"explanation": "A Queue is a First-In-First-Out (FIFO) data structure. In a FIFO data structure, the first element added to the queue will be the first one to be removed.",
+	"subject": "computer_science"
 },
 {
 	"statement": "Bitcoin transactions are verified by",
@@ -417,7 +451,8 @@
 		"Miners"
 	],
 	"answer": 3,
-	"explanation": "Miners keep the blockchain consistent, complete, and unalterable by repeatedly verifying and collecting newly broadcast transactions into a new group of transactions called a block."
+	"explanation": "Miners keep the blockchain consistent, complete, and unalterable by repeatedly verifying and collecting newly broadcast transactions into a new group of transactions called a block.",
+	"subject": "computer_science"
 },
 {
 	"statement": "A method of encrypting alphabetic text by using a series of interwoven Caesar ciphers based on the letters of a keyword is",
@@ -429,7 +464,8 @@
 		"Transposition cipher"
 	],
 	"answer": 1,
-	"explanation": "Vigenère cipher is a form of polyalphabetic substitution."
+	"explanation": "Vigenère cipher is a form of polyalphabetic substitution.",
+	"subject": "computer_science"
 },
 {
 	"statement": "A binary search algorithm, in worst case scenario, is asymptotically",
@@ -441,7 +477,8 @@
 		"O(n<sup>2</sup>)"
 	],
 	"answer": 2,
-	"explanation": "In Binary search algorithm, a set of data is repeatedly divided into half and the middle element is processed. Which is the case of O(logn)."
+	"explanation": "In Binary search algorithm, a set of data is repeatedly divided into half and the middle element is processed. Which is the case of O(logn).",
+	"subject": "computer_science"
 },
 {
 	"statement": "Which one of the following is a non-linear data structure?",
@@ -453,7 +490,8 @@
 		"Stacks"
 	],
 	"answer": 0,
-	"explanation": "In a non-linear data structure, items are connected with each other."
+	"explanation": "In a non-linear data structure, items are connected with each other.",
+	"subject": "computer_science"
 },
 {
 	"statement": "<strong>OSPF</strong> (<strong>O</strong>pen <strong>S</strong>hortest <strong>P</strong>ath <strong>F</strong>irst) is an example of",
@@ -465,7 +503,8 @@
 		"Border Gateway protocol (BGP)"
 	],
 	"answer": 1,
-	"explanation": "Open Shortest Path First (OSPF) is a routing protocol for Internet Protocol (IP) networks. It uses a link state routing (LSR) algorithm and falls into the group of interior gateway protocols (IGPs)."
+	"explanation": "Open Shortest Path First (OSPF) is a routing protocol for Internet Protocol (IP) networks. It uses a link state routing (LSR) algorithm and falls into the group of interior gateway protocols (IGPs).",
+	"subject": "computer_science"
 },
 {
 	"statement": "A binary search tree whose right-subtree and left-subtree differ in height by at most one, is called",
@@ -477,6 +516,7 @@
 		"AVL tree"
 	],
 	"answer": 3,
-	"explanation": "In an AVL tree, the heights of the two child subtrees of any node differ by at most one; if at any time they differ by more than one, rebalancing is done to restore this property."
+	"explanation": "In an AVL tree, the heights of the two child subtrees of any node differ by at most one; if at any time they differ by more than one, rebalancing is done to restore this property.",
+	"subject": "computer_science"
 }
 ]

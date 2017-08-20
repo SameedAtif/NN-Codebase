@@ -138,6 +138,41 @@ button[type=submit] {
 	list-style: none;
 	padding-left: 2%;
 }
+.confirmation-box {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: rgba(0, 0, 0, 0.7);
+}
+.confirmation-box > div {
+	background-color: #ffffff;
+	padding: 15px;
+	border-radius: 3px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translateX(-50%);
+}
+.confirmation-box > div > div {
+	margin: 10px 0;
+}
+.confirmation-buttons {
+	color: #00abea;
+	float: right;
+}
+.confirmation-buttons span {
+	margin: 0 5px;
+	text-transform: uppercase;
+	cursor: pointer;
+}
+.confirmation-buttons span:hover {
+	border-bottom: 2px solid #cccccc;
+}
+.confirmation-buttons span.false {
+	color: #cc0000;
+}
 .clear-fix {
 	clear: both;
 }

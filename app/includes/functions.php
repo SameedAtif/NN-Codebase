@@ -219,6 +219,17 @@
 	<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>';
 	}
 
+	function loadConfirmationBox() {
+		echo '<div class="confirmation-box" style="display: none;">
+					<div>
+						<div>Are You Sure You Want to Submit?</div>
+						<div class="confirmation-buttons">
+							<span class="true">yes</span>
+							<span class="false">no</span>
+						</div>
+					</div>
+				</div>';
+	}
 	/**
 	 ** TRENDING NOW
 	 **/
@@ -450,5 +461,25 @@
 		}
 		// exit immediately since we're redirecting anyway
 		exit;
+	}
+
+	function calculate_score($all_questions, $subjects, $user_answers) {
+		$score = 0;
+		if (count($all_questions) != count($user_answers))
+		{
+			echo "questions and answers arrays are not of the same size :(</br>";
+			return -1;
+		}
+		foreach ($all_questions as $key => $value) {
+			if (!in_array($value["subject"], $subjects)) {
+				unset($all_questions[$key]); // keep previous indices
+			}
+		}
+		foreach ($all_questions as $key => $value) {
+			if ($value["answer"] === $user_answers[$key]) {
+				$score++;
+			}
+		}
+		return $score;
 	}
 ?>

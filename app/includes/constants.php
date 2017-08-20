@@ -56,14 +56,14 @@
 			"desc" => "Test you general knowledge with our specially crafted quiz to benchmark your knowledge and memory.",
 			"path_home" => "online_tests/Generic/home",
 			"path_test" => "online_tests/Generic/test",
-			"test_data" => ["test" => "general_knowledge", "test_title" => "General Knowledge", "path_data" => "./data/otests/general_knowledge.json"]
+			"test_data" => ["test" => "general_knowledge", "test_title" => "General Knowledge", "path_data" => ["./data/otests/general_knowledge.json"]]
 		],
 		"computer_science" => [
 			"title" => "Computer Science Test",
 			"desc" => "Test you Computer Science knowledge with our specially crafted quiz to benchmark your knowledge and memory.",
 			"path_home" => "online_tests/Generic/home",
 			"path_test" => "online_tests/Generic/test",
-			"test_data" => ["test" => "computer_science", "test_title" => "Computer Science", "path_data" => "./data/otests/computer_science.json"]
+			"test_data" => ["test" => "computer_science", "test_title" => "Computer Science", "path_data" => ["./data/otests/computer_science.json"]]
 		]
 	];
 ?>
