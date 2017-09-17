@@ -47,18 +47,18 @@
 				<ul class="nav-menu no-padding">
 					<li><a href="notes/">Notes</a>
 						<ul class="dropdown">
-							<li><a href="./notes.php?grade=9th">9th</a></li>
-							<li><a href="./notes.php?grade=10th">10th</a></li>
-							<li><a href="./notes.php?grade=first-year">First Year</a></li>
-							<li><a href="./notes.php?grade=second-year">Second Year</a></li>
+							<li><a href="notes/9th/">9th</a></li>
+							<li><a href="notes/10th/">10th</a></li>
+							<li><a href="notes/first-year/">First Year</a></li>
+							<li><a href="notes/second-year/">Second Year</a></li>
 						</ul>
 					</li>
-					<li><a href="./past_papers.php">Past Papers</a>
+					<li><a href="past-papers/">Past Papers</a>
 						<ul class="dropdown">
-							<li><a href="./past_papers.php?grade=9th">9th</a></li>
-							<li><a href="./past_papers.php?grade=10th">10th</a></li>
-							<li><a href="./past_papers.php?grade=first-year">First Year</a></li>
-							<li><a href="./past_papers.php?grade=second-year">Second Year</a></li>
+							<li><a href="past-papers/9th/">9th</a></li>
+							<li><a href="past-papers/10th/">10th</a></li>
+							<li><a href="past-papers/first-year/">First Year</a></li>
+							<li><a href="past-papers/second-year/">Second Year</a></li>
 						</ul>
 					</li>
 					<li><a href="articles/">Articles</a></li>

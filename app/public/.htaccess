@@ -6,9 +6,13 @@ RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_URI} !(.*)/$
 RewriteRule ^(.*)$ %{REQUEST_URI}/ [L,R=301]
 
+ErrorDocument 404 /app/templates/404.php
+
 RewriteRule ^notes/(.*)/$ notes.php?grade=$1
 
 RewriteRule ^notes/$ notes.php
+
+RewriteRule ^past-papers/$ past_papers.php
 
 # server.php (notes and past papers)
 

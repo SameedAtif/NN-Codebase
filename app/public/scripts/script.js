@@ -12,6 +12,9 @@ $(document).ready(function () {
 	
 	$("#tabs").tabs();
 
+	if (document.querySelector(".sidebar"))
+		getDisplayQuote();
+
 	// IMPORTANT HIGHLIGHTER
 	$(".imp-highlighter").click(function () {
 		$(this).toggleClass("active");
@@ -173,3 +176,17 @@ $(document).ready(function () {
 		});
 	});
 });
+
+function getDisplayQuote() {
+	var xhr = new XMLHttpRequest();
+	xhr.onreadystatechange = function() {
+		if (this.readyState == 4 && this.status == 200) {
+			allQuotes = JSON.parse(xhr.responseText);
+			x = Math.round(Math.random() * allQuotes.length)
+			document.querySelector("#random-quote > blockquote").innerHTML = allQuotes[x].quote;
+			document.querySelector("#random-quote > cite").innerHTML = "&mdash; " + allQuotes[x].name
+		}
+	};
+	xhr.open("GET", "data/quotes.json", true);
+	xhr.send();
+}

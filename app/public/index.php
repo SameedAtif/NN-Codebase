@@ -12,7 +12,6 @@
 				<h1>The Best Notes, Past Papers and Online Tests <small>anywhere, anytime</small></h1>
 			</div>
 			<div class="right">
-				<!-- FB JS SDK is now in header -->
 				<!-- Facebook Page Plugin -->
 				<div class="fb-page" data-href="https://www.facebook.com/notesnetworkofficial/" data-tabs="" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/notesnetworkofficial/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/notesnetworkofficial/">NotesNetwork</a></blockquote></div>
 			</div>
@@ -27,7 +26,7 @@
 						if ($key >= 8) {
 							break;
 						}
-						echo "<li><a href='" . $ele->url . "'>" . $ele->title . "</a></li>";
+						echo "<li><a href='" . $ele["url"] . "'>" . $ele["title"] . "</a></li>";
 					}
 				?>
 			</ol>
@@ -37,17 +36,17 @@
 			<div class="card">
 				<h1>Notes</h1>
 				<h4>Self-explaining, easy-to-understand, detailed notes of all subjects.</h4>
-				<a href="./notes.php"><button class="ghost-btn btn-blue">GO</button></a>
+				<a href="notes/"><button class="ghost-btn btn-blue">GO</button></a>
 			</div>
 			<div class="card">
 				<h1>Past Papers</h1>
 				<h4>Archives of previous Lahore and Gujranwala board papers.</h4>
-				<a href="./past_papers.php" class="btn"><button class="ghost-btn btn-blue">GO</button></a>
+				<a href="past-papers/" class="btn"><button class="ghost-btn btn-blue">GO</button></a>
 			</div>
 			<div class="card">
 				<h1>Online Tests</h1>
 				<h4>Test your knowledge and skills or prepare for exams with our modern testing application. </h4>
-				<a href="./otests.php" class="btn"><button class="ghost-btn btn-blue">GO</button></a>
+				<a href="online-tests/" class="btn"><button class="ghost-btn btn-blue">GO</button></a>
 			</div>
 		</section>
 		

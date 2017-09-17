@@ -57,6 +57,6 @@
 </main>
 
 <?php
-	loadSidebar();
+	render("components/sidebar");
 	render("footer");
 ?>

@@ -7,7 +7,7 @@
 	 **/
 	
 	$mode = "default";
-	$Article;
+	$Article = NULL;
 
 	if ( isset($_GET["uri"]) ) {
 		$mode = "article";
@@ -20,6 +20,9 @@
 			if ($value["uri"] == $uri)
 				$Article = $value;
 		}
+
+		if (!$Article)
+			error_404();
 
 		render("header", ["title" => $Article["title"] . " | Articles", "desc" => $Article["desc"],
 			"injection" => ["<meta property=\"og:image\" content=\"http://notesnetwork.org/images/articles/" . $Article["uri"] . "/header-bg.jpg\" />", "<script type=\"text/javascript\" src=\"//platform-api.sharethis.com/js/sharethis.js#property=59202e17baf27a00129fc5cb&product=inline-share-buttons\" async></script>"]]);
@@ -81,11 +84,11 @@
 	</main>
 	
 <?php
-	loadSidebar();
+	render("components/sidebar");
 	if ($mode == "article")
-		loadCommentsSection();
+		render("components/comments-section");
 	
-	loadMathjax();
+	render("components/MathJax");
 	
 	render("footer", ["injection" => ["<script id=\"dsq-count-scr\" src=\"//notesnetwork.disqus.com/count.js\" async></script>"]]);
 ?>

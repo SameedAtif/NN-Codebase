@@ -25,6 +25,8 @@
 
 		$result = query("SELECT `counter` FROM `tests` WHERE counter = LAST_INSERT_ID()")[0];
 
+		// TODO: calculate and update user's rank
+
 		die(SITE_PROTOCOL . "://" . SITE_DOMAIN . SITE_BASE_LINK . "profile/" . $_SESSION["username"] . "/" . $result["counter"] . "/");
 	} elseif ( isset($_GET["result"]) ) {
 		$test_id = $_GET["test_name"];
@@ -98,7 +100,7 @@
 				
 				render($Model[$name]["path_test"], $Model[$name]["test_data"]);
 
-				loadMathjax();
+					render("components/MathJax");
 			}
 			/**
 			 ** DEFAULT
@@ -114,10 +116,10 @@
 <?php
 	
 	if ( !isset($_GET["result"]) && empty($_POST) )
-		loadSidebar();
+		render("components/sidebar");
 	
 	if ( isset($test) )
-		loadCommentsSection();
+		render("components/comments-section");
 	
 	render("footer");
 

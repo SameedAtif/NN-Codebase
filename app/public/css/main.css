@@ -29,6 +29,7 @@ p {
 q, blockquote {
 	quotes: "\201C" "\201D" "\2018" "\2019";
 	font-family: Georgia;
+	margin: 0;
 }
 q:before, blockquote:before {
     content: open-quote;
@@ -403,16 +404,6 @@ footer div.ftr-bottom {
 footer div.ftr-bottom .fa-heart {
 	color: crimson;
 	filter: drop-shadow(0px 0px 0px #000000);
-}
-
-/**
- ** COMING SOON
- **/
-.coming-soon {
-	background-image: url("../images/backgrounds/mountains.jpg");
-	background-size: cover;
-	height: 700px;
-	text-align: center;
 }
 
 /**

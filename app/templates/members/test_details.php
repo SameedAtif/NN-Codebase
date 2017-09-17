@@ -136,4 +136,3 @@ tbody tr td:first-child {
 		}
 	}
 </script>
-<?php loadMathJax(); ?>

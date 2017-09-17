@@ -17,6 +17,14 @@
 			require($path);
 		}
 	}
+
+	/** 404 **/
+	function error_404() {
+		render("header", ["title" => "404 - Not Found", "desc" => "The page you were looking for does not exist or has been removed."]);
+		render("404");
+		render("footer");
+		exit;
+	}
 	
 	/**
 	 ** TITLE GENERATOR - generates title for served content
@@ -147,163 +155,46 @@
 			}
 		}
 	}
-	
-	/**
-	 ** For rendering Mathematics
-	 **/
-	function loadMathjax() {
-		echo '<script type="text/x-mathjax-config">
-		MathJax.Hub.Config({
-			tex2jax: {
-				inlineMath: [ ["\\\(", "\\\)"] ]
-			},
-			displayAlign: "left",
-			showProcessingMessages: false,
-			showMathMenu: false
-		});
-	</script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML" async></script>';
-	}
 
-	/**
-	 ** For rendering Sidebar
-	 **/
-	function loadSidebar() {
-		echo '<aside class="sidebar">
-			
-			<div class="side-element" id="fb-widget">
-				<!-- FB JS SDK is now in header -->
-				<!-- Facebook Page Plugin -->
-				<div class="fb-page" data-href="https://www.facebook.com/notesnetworkofficial/" data-tabs="" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/notesnetworkofficial/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/notesnetworkofficial/">NotesNetwork</a></blockquote></div>
-			</div>
-			
-			<div class="side-element" id="side-ad">
-				<h5>ADVERTISEMENT</h5>
-			</div>
-			
-			<div class="side-element" id="trending">
-				<h4>TRENDING NOW</h4>
-				<ol class="no-bullets dark-links">';
-						$data = get_trending_data();
-						forEach ($data as $key => $ele) {
-							if ($key >= 14) {
-								break;
-							}
-							echo "<li><a href='" . $ele->url . "'>" . $ele->title . "</a></li>";
-						}
-				echo '</ol>
-			</div>
-			
-		</aside>
-		<div class="clear-fix"></div>
-		';
-	}
-	/**
-	 ** For rendering Comments section
-	 **/
-	function loadCommentsSection() {
-		echo "<!-- COMMENTS SECTION - Powered by Disqus -->\n<div id=\"disqus_thread\"></div>\n
-	<script>var disqus_config = function () {";
-
-		$uniform_URI = str_replace(["?i=1", "&i=1", "/app/public"], "", $_SERVER['REQUEST_URI']);
-		echo "this.page.url = \"http://notesnetwork.org" . $uniform_URI . "\";\n";  // Replace PAGE_URL with your page's canonical URL variable
-		echo "this.page.identifier = \"" . $uniform_URI . "\";"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-
-		echo '};(function() { // DON\'T EDIT BELOW THIS LINE
-	var d = document, s = d.createElement(\'script\');
-	s.src = \'https://notesnetwork.disqus.com/embed.js\';
-	s.setAttribute(\'data-timestamp\', +new Date());
-	(d.head || d.body).appendChild(s);
-	})();
-	</script>
-	<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>';
-	}
-
-	function loadConfirmationBox() {
-		echo '<div class="confirmation-box" style="display: none;">
-					<div>
-						<div>Are You Sure You Want to Submit?</div>
-						<div class="confirmation-buttons">
-							<span class="true">yes</span>
-							<span class="false">no</span>
-						</div>
-					</div>
-				</div>';
-	}
 	/**
 	 ** TRENDING NOW
 	 **/
 	function update_trending_data($url, $title) {
-		$data = json_decode( file_get_contents("./data/trending_now.json"), true );
-		
 		// remove ?i=1 or &i=1 if present
 		$url = preg_replace("/\?i=[0-9]$/", "", $url);
 		$url = preg_replace("/&i=[0-9]$/", "", $url);
 		
-		// see if URL already has an entry
-		$exists = false; $index = -1;
-		forEach ($data as $key => $value) {
-			if ($value["url"] == $url) {
-				$exists = true;
-				$index = $key;
-			}
-		}
-		
-		if ($exists == true) {
-			if ( isset( $data[$index]["hits"][ date("Y-m-d") ] ) ) { // checking if record for current data exists
-				// record exists
-				$data[$index]["hits"][ date("Y-m-d") ]++;
-				// greater than 15 so removing last (just in case!)
-				if ( count($data[$index]["hits"]) > 15 ) {
-					array_shift($data[$index]["hits"]);
-				}
-				// updating score
-				$sum = 0;
-				forEach($data[$index]["hits"] as $value) {
-					$sum += $value;
-				}
-				$data[$index]["score"] = $sum;
-			} else {
-				// record exists but record for current date doesnt
-				$data[$index]["hits"][date("Y-m-d")] = 1;
-				// greater than 15 so removing last
-				if ( count($data[$index]["hits"]) > 15 ) {
-					array_shift($data[$index]["hits"]);
-				}
-				// updating score
-				$sum = 0;
-				forEach($data[$index]["hits"] as $value) {
-					$sum += $value;
-				}
-				$data[$index]["score"] = $sum;
-			}
+		$data = query("SELECT * FROM `stats.trending_data` WHERE url = ?", $url); // url should have only one record
+
+		if ( !empty($data[0]) ) {
+			$views = json_decode($data[0]["views"], true);
+			
+			if ( isset($views[date("Y-m-d")]) ) // checking if record for current date exists
+				$views[date("Y-m-d")]++;
+			else // record exists but record for current date doesn't
+				$views[date("Y-m-d")] = 1;
+
+			if (count($views) > 15)
+				array_shift($views);
+
+			query("UPDATE `stats.trending_data` SET `views` = ?, `date_modified` = ? WHERE url = ?",
+				json_encode($views),
+				date("Y-m-d h:i:sa"),
+				$url
+			);
 		} else {
-			// entry does not exist
-			array_push($data, array(
-				"title" => $title,
-				"url" => $url,
-				"hits" => array(date("Y-m-d") => 1),
-				"score" => 1
-			));
-		}
-		
-		// SORTING in DESCENDING ORDER
-		usort($data, function($a, $b) { //Sort the array using a user defined function
-			return $a["score"] > $b["score"] ? -1 : 1; //Compare the scores
-		});
-		
-		if ($data == null) {
-			echo "Something went wrong. Trending data was null. Update failed!";
-			$txt = "A null error was detected at " . date("Y-m-d");
-			file_put_contents('./data/trending_error.txt', $txt.PHP_EOL , FILE_APPEND | LOCK_EX);
-		} else {
-			file_put_contents( "./data/trending_now.json", json_encode($data) );
+			query("INSERT INTO `stats.trending_data` (url, views, title, date_modified) VALUES (?, ?, ?, ?)",
+				$url,
+				json_encode([date("Y-m-d") => 1]),
+				$title,
+				date("Y-m-d h:i:sa")
+			);
 		}
 	}
 	
-	// return data of top objects in trending_now.json
 	function get_trending_data() {
-		return json_decode( file_get_contents("./data/trending_now.json") );
+		$data = query("SELECT * FROM `stats.trending_data` ORDER BY `date_modified` DESC LIMIT 15");
+		return $data;
 	}
 
 	/**
@@ -436,22 +327,18 @@
 	* Because this function outputs an HTTP header, it
 	* must be called before caller outputs any HTML.
 	*/
-	function redirect($destination)
-	{
-		// handle URL
-		if (preg_match("/^https?:\/\//", $destination))
+	function redirect($destination) {
+		if (preg_match("/^https?:\/\//", $destination)) // handle URL
 		{
 			header("Location: " . $destination);
 		}
-		// handle absolute path
-		else if (preg_match("/^\//", $destination))
+		else if (preg_match("/^\//", $destination)) // handle absolute path
 		{
 			$protocol = (isset($_SERVER["HTTPS"])) ? "https" : "http";
 			$host = $_SERVER["HTTP_HOST"];
 			header("Location: $protocol://$host$destination");
 		}
-		// handle relative path
-		else
+		else // handle relative path
 		{
 			// adapted from http://www.php.net/header
 			$protocol = (isset($_SERVER["HTTPS"])) ? "https" : "http";

@@ -144,8 +144,10 @@
 		</main>
 		
 	<?php
+		if ($mode == "test")
+			render("components/MathJax");
 		if ($mode == "login")
-			loadSidebar();
+			render("components/sidebar");
 		
 		render("footer");
 	}

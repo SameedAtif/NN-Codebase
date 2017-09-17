@@ -89,9 +89,9 @@
 	</main>
 	
 <?php
-	loadSidebar();
-	loadCommentsSection();
+	render("components/sidebar");
+	render("components/comments-section");
 	
-	loadMathjax();
+	render("components/MathJax");
 	render("footer");
 ?>
