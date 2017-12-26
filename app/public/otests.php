@@ -100,7 +100,7 @@
 				
 				render($Model[$name]["path_test"], $Model[$name]["test_data"]);
 
-					render("components/MathJax");
+				render("components/MathJax");
 			}
 			/**
 			 ** DEFAULT

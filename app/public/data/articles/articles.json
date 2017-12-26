@@ -1,8 +1,18 @@
 [
 {
+	"uri": "top-10-resources-for-computer-science-students",
+	"title": "Top 10 Resources For Computer Science Students",
+	"desc": "The best of the best online resources for Computer Science students listed in one place.",
+	"category": "post",
+	"template": "posts/top-10-resources-for-computer-science-students.html",
+	"author": "Mustaghees Butt",
+	"date-published": "2017-12-26",
+	"tags": ["online courses", "moocs", "harvard", "mit", "khanacademy", "edx", "computer science", "programming"]
+},
+{
 	"uri": "the-best-shortcut-methods-for-entry-tests",
 	"title": "The Best Shortcut Methods For Entry Tests",
-	"desc": "A comprehensive collection of shortcut methods useful for entry tests. ",
+	"desc": "A comprehensive collection of shortcut methods useful for entry tests.",
 	"category": "guide",
 	"template": "guides/the-best-shortcut-methods-for-entry-tests.html",
 	"author": "Mustaghees Butt",
